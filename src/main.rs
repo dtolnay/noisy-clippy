@@ -1,3 +1,9 @@
+#![allow(
+    clippy::let_underscore_drop,
+    clippy::match_same_arms,
+    clippy::similar_names
+)]
+
 use anyhow::{ensure, Result};
 use flate2::read::GzDecoder;
 use parking_lot::Mutex;
