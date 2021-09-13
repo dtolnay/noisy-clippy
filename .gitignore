@@ -1,2 +1,4 @@
+*.crate
 /target
 Cargo.lock
+lints.json
