@@ -30,6 +30,8 @@ struct Ignores {
     local: usize,
 }
 
+// Find all #[allow(...)] and #![allow(...)] attributes and count how many times
+// each Clippy lint is allowed.
 impl<'ast> Visit<'ast> for &AttrVisitor {
     fn visit_attribute(&mut self, attr: &'ast Attribute) {
         if !attr.path.is_ident("allow") {
@@ -97,11 +99,16 @@ impl Display for LintGroup {
 }
 
 fn main() -> Result<()> {
+    // Argument is path to a directory containing *.crate files. See these links
+    // for how to bulk download crate sources without violating crawlers policy:
+    // https://twitter.com/m_ou_se/status/1433085053056262144
+    // https://www.pietroalbini.org/blog/downloading-crates-io/
     let mut args = env::args_os();
     ensure!(args.len() == 2);
     let _arg0 = args.next().unwrap();
     let crates_dir = args.next().unwrap();
 
+    // Find the most recent version among .crate files with the same crate name.
     let mut crate_max_versions = Map::new();
     for entry in fs::read_dir(&crates_dir)? {
         let entry = entry?;
@@ -124,6 +131,7 @@ fn main() -> Result<()> {
         .build_global()
         .unwrap();
 
+    // Parse .crate files in parallel on rayon thread pool.
     let visitor = AttrVisitor::default();
     crate_max_versions.par_iter().for_each(|(krate, version)| {
         let filename = format!("{}-{}.crate", krate, version);
@@ -133,6 +141,7 @@ fn main() -> Result<()> {
         }
     });
 
+    // Sort lints by how many times ignored.
     let clippy_allows = visitor.clippy_allows.into_inner();
     let mut clippy_allows = Vec::from_iter(&clippy_allows);
     clippy_allows.sort_by(|(lname, lcount), (rname, rcount)| {
@@ -141,10 +150,12 @@ fn main() -> Result<()> {
         lcount.cmp(&rcount).reverse().then_with(|| lname.cmp(rname))
     });
 
+    // Download clippy lints.json to get group and level for every lint.
     let req = reqwest::blocking::get("https://rust-lang.github.io/rust-clippy/master/lints.json")?;
     let lints: Vec<Lint> = req.json()?;
     let lints: Map<&str, &Lint> = lints.iter().map(|lint| (lint.id.as_str(), lint)).collect();
 
+    // Print markdown table of results.
     let stdout = io::stdout();
     let mut stdout = stdout.lock();
     let _ = writeln!(stdout, "global | local | lint name | category");
