@@ -206,7 +206,7 @@ fn main() -> Result<()> {
     // Print markdown table of results.
     let stdout = io::stdout();
     let mut stdout = stdout.lock();
-    let _ = writeln!(stdout, "global | local | lint name | category");
+    let _ = writeln!(stdout, "local | global | lint name | category");
     let _ = writeln!(stdout, "--- | --- | --- | ---");
     let site = "https://dtolnay.github.io/noisy-clippy";
     for (lint_id, findings) in &findings {
