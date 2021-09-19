@@ -1,4 +1,6 @@
 *.crate
+/*.css
+/*.html
 /target
 Cargo.lock
 lints.json
