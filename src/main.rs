@@ -216,20 +216,20 @@ fn main() -> Result<()> {
         };
         let allowed = level == LintLevel::Allow;
         let _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
-        let global: usize = findings.values().map(|loc| loc.global.len()).sum();
-        let _ = if global == 0 {
-            write!(stdout, "{}", global)
-        } else {
-            write!(stdout, "[{}]({}/{}.html#global)", global, site, lint_id)
-        };
-        let _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
-        let _ = write!(stdout, " | ");
-        let _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
         let local: usize = findings.values().map(|loc| loc.local.len()).sum();
         let _ = if local == 0 {
             write!(stdout, "{}", local)
         } else {
             write!(stdout, "[{}]({}/{}.html#local)", local, site, lint_id)
+        };
+        let _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
+        let _ = write!(stdout, " | ");
+        let _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
+        let global: usize = findings.values().map(|loc| loc.global.len()).sum();
+        let _ = if global == 0 {
+            write!(stdout, "{}", global)
+        } else {
+            write!(stdout, "[{}]({}/{}.html#global)", global, site, lint_id)
         };
         let _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
         let _ = write!(stdout, " | ");
