@@ -7,6 +7,7 @@
 )]
 
 mod name;
+mod parse;
 mod render;
 
 use crate::name::Crate;
@@ -30,10 +31,9 @@ use std::io::{self, BufReader, Read, Write};
 use std::iter::{self, FromIterator};
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
-use syn::parse::{ParseStream, Parser};
-use syn::punctuated::Punctuated;
+use syn::parse::Parser;
 use syn::visit::Visit;
-use syn::{parenthesized, AttrStyle, Attribute, Token};
+use syn::{AttrStyle, Attribute};
 use tar::Archive;
 
 struct AttrVisitor<'a> {
@@ -63,44 +63,34 @@ struct Span {
     end: LineColumn,
 }
 
-// Find all #[allow(...)] and #![allow(...)] attributes and count how many times
-// each Clippy lint is allowed.
+// Find all lint level attributes and count how many times each Clippy lint is
+// allowed.
 impl<'ast, 'a> Visit<'ast> for AttrVisitor<'a> {
     fn visit_attribute(&mut self, attr: &'ast Attribute) {
         if !attr.path.is_ident("allow") {
             return;
         }
-        let parse_allow_attribute = |input: ParseStream| {
-            let content;
-            parenthesized!(content in input);
-            Punctuated::<syn::Path, Token![,]>::parse_terminated(&content)
-        };
-        let paths = match parse_allow_attribute.parse2(attr.tokens.clone()) {
-            Ok(paths) => paths,
+        let lints = match parse::allow.parse2(attr.tokens.clone()) {
+            Ok(lints) => lints,
             Err(_) => return,
         };
-        for path in paths {
-            if path.segments.len() == 2 && path.segments[0].ident == "clippy" {
-                let clippy_ident = &path.segments[0].ident;
-                let lint_ident = &path.segments[1].ident;
-                let span = Span {
-                    start: clippy_ident.span().start(),
-                    end: lint_ident.span().end(),
-                };
-                let mut findings = self.findings.lock();
-                let locations = findings
-                    .entry(lint_ident.to_string())
-                    .or_insert_with(Map::new)
-                    .entry(self.source_file.clone())
-                    .or_insert_with(|| Locations {
-                        contents: Arc::clone(&self.contents),
-                        global: Vec::new(),
-                        local: Vec::new(),
-                    });
-                match attr.style {
-                    AttrStyle::Outer => locations.local.push(span),
-                    AttrStyle::Inner(_) => locations.global.push(span),
-                }
+        if lints.is_empty() {
+            return;
+        }
+        let mut findings = self.findings.lock();
+        for (lint_id, span) in lints {
+            let locations = findings
+                .entry(lint_id)
+                .or_insert_with(Map::new)
+                .entry(self.source_file.clone())
+                .or_insert_with(|| Locations {
+                    contents: Arc::clone(&self.contents),
+                    global: Vec::new(),
+                    local: Vec::new(),
+                });
+            match attr.style {
+                AttrStyle::Outer => locations.local.push(span),
+                AttrStyle::Inner(_) => locations.global.push(span),
             }
         }
     }
