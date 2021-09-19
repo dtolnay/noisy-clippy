@@ -11,7 +11,7 @@ mod render;
 use crate::render::render;
 use anyhow::{ensure, Result};
 use flate2::read::GzDecoder;
-use git2::{FileMode, Repository, Signature};
+use git2::{BranchType, FileMode, Repository, Signature};
 use parking_lot::Mutex;
 use proc_macro2::LineColumn;
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
@@ -276,10 +276,23 @@ fn main() -> Result<()> {
         builder.insert("style.css", oid, filemode)?;
         let oid = builder.write()?;
 
+        let tree = repo.find_tree(oid)?;
+        if let Ok(diff) = repo
+            .find_branch("gh-pages", BranchType::Local)
+            .and_then(|old_branch| old_branch.get().peel_to_tree())
+            .and_then(|old_tree| {
+                let diff_options = None;
+                repo.diff_tree_to_tree(Some(&old_tree), Some(&tree), diff_options)
+            })
+        {
+            if diff.deltas().len() == 0 {
+                break;
+            }
+        }
+
         let update_ref = None;
         let signature = Signature::now("David Tolnay", "dtolnay@gmail.com")?;
         let msg = "Update gh-pages";
-        let tree = repo.find_tree(oid)?;
         let parents = &[];
         let oid = repo.commit(update_ref, &signature, &signature, msg, &tree, parents)?;
 
