@@ -6,8 +6,10 @@
     clippy::too_many_lines
 )]
 
+mod name;
 mod render;
 
+use crate::name::Crate;
 use crate::render::render;
 use anyhow::{ensure, Result};
 use flate2::read::GzDecoder;
@@ -44,7 +46,7 @@ type Findings = Map<String, Map<SourceFile, Locations>>;
 
 #[derive(Clone, Ord, PartialOrd, Eq, PartialEq)]
 struct SourceFile {
-    krate: String,
+    krate: Crate,
     version: Version,
     relative_path: PathBuf,
 }
@@ -305,7 +307,7 @@ fn main() -> Result<()> {
     Ok(())
 }
 
-fn parse_filename(file: &OsStr) -> Option<(String, Version)> {
+fn parse_filename(file: &OsStr) -> Option<(Crate, Version)> {
     let extension = Path::new(file).extension()?;
     if extension != "crate" {
         return None;
@@ -314,13 +316,13 @@ fn parse_filename(file: &OsStr) -> Option<(String, Version)> {
     let file = file.to_str()?;
     let first_dot = file.find('.')?;
     let separator = file[..first_dot].rfind('-')?;
-    let crate_name = file[..separator].to_owned();
+    let crate_name = Crate::new(file[..separator].to_owned());
     let version = Version::parse(&file[1 + separator..file.len() - ".crate".len()]).ok()?;
     Some((crate_name, version))
 }
 
 fn parse_contents(
-    krate: String,
+    krate: Crate,
     version: Version,
     path: &Path,
     findings: &Mutex<Findings>,

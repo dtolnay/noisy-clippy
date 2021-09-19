@@ -74,7 +74,7 @@ fn render_file(
     html.push_str("      <div class=\"result-title\">\n");
     html.push_str("        <div class=\"result-file-info\">\n");
     html.push_str("          <div class=\"result-file\"><span class=\"result-crate\">");
-    html.push_str(&source_file.krate);
+    html.push_str(&source_file.krate.to_string());
     html.push_str("&nbsp;");
     html.push_str(&source_file.version.to_string());
     html.push_str("</span><a href=\"");
