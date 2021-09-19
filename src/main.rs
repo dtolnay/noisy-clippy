@@ -1,44 +1,69 @@
 #![allow(
+    clippy::cast_possible_wrap,
     clippy::let_underscore_drop,
     clippy::match_same_arms,
-    clippy::similar_names
+    clippy::similar_names,
+    clippy::too_many_lines
 )]
 
+mod render;
+
+use crate::render::render;
 use anyhow::{ensure, Result};
 use flate2::read::GzDecoder;
+use git2::{FileMode, Repository, Signature};
 use parking_lot::Mutex;
-use rayon::iter::{IntoParallelRefIterator, ParallelIterator};
+use proc_macro2::LineColumn;
+use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use rayon::ThreadPoolBuilder;
 use semver::Version;
 use serde::Deserialize;
+use std::cmp::Reverse;
 use std::collections::btree_map::{BTreeMap as Map, Entry};
 use std::env;
 use std::ffi::OsStr;
 use std::fmt::{self, Display};
 use std::fs::{self, File};
 use std::io::{self, BufReader, Read, Write};
-use std::iter::FromIterator;
-use std::path::Path;
+use std::iter::{self, FromIterator};
+use std::path::{Path, PathBuf};
+use std::sync::Arc;
 use syn::parse::{ParseStream, Parser};
 use syn::punctuated::Punctuated;
 use syn::visit::Visit;
 use syn::{parenthesized, AttrStyle, Attribute, Token};
 use tar::Archive;
 
-#[derive(Default)]
-struct AttrVisitor {
-    clippy_allows: Mutex<Map<String, Ignores>>,
+struct AttrVisitor<'a> {
+    source_file: &'a SourceFile,
+    contents: Arc<String>,
+    findings: &'a Mutex<Findings>,
 }
 
-#[derive(Default)]
-struct Ignores {
-    global: usize,
-    local: usize,
+type Findings = Map<String, Map<SourceFile, Locations>>;
+
+#[derive(Clone, Ord, PartialOrd, Eq, PartialEq)]
+struct SourceFile {
+    krate: String,
+    version: Version,
+    relative_path: PathBuf,
+}
+
+struct Locations {
+    contents: Arc<String>,
+    global: Vec<Span>,
+    local: Vec<Span>,
+}
+
+#[derive(Copy, Clone, Ord, PartialOrd, Eq, PartialEq)]
+struct Span {
+    start: LineColumn,
+    end: LineColumn,
 }
 
 // Find all #[allow(...)] and #![allow(...)] attributes and count how many times
 // each Clippy lint is allowed.
-impl<'ast> Visit<'ast> for &AttrVisitor {
+impl<'ast, 'a> Visit<'ast> for AttrVisitor<'a> {
     fn visit_attribute(&mut self, attr: &'ast Attribute) {
         if !attr.path.is_ident("allow") {
             return;
@@ -54,12 +79,25 @@ impl<'ast> Visit<'ast> for &AttrVisitor {
         };
         for path in paths {
             if path.segments.len() == 2 && path.segments[0].ident == "clippy" {
-                let lint = path.segments.last().unwrap().ident.to_string();
-                let mut clippy_allows = self.clippy_allows.lock();
-                let ignores = clippy_allows.entry(lint).or_default();
+                let clippy_ident = &path.segments[0].ident;
+                let lint_ident = &path.segments[1].ident;
+                let span = Span {
+                    start: clippy_ident.span().start(),
+                    end: lint_ident.span().end(),
+                };
+                let mut findings = self.findings.lock();
+                let locations = findings
+                    .entry(lint_ident.to_string())
+                    .or_insert_with(Map::new)
+                    .entry(self.source_file.clone())
+                    .or_insert_with(|| Locations {
+                        contents: Arc::clone(&self.contents),
+                        global: Vec::new(),
+                        local: Vec::new(),
+                    });
                 match attr.style {
-                    AttrStyle::Outer => ignores.local += 1,
-                    AttrStyle::Inner(_) => ignores.global += 1,
+                    AttrStyle::Outer => locations.local.push(span),
+                    AttrStyle::Inner(_) => locations.global.push(span),
                 }
             }
         }
@@ -138,22 +176,26 @@ fn main() -> Result<()> {
         .unwrap();
 
     // Parse .crate files in parallel on rayon thread pool.
-    let visitor = AttrVisitor::default();
-    crate_max_versions.par_iter().for_each(|(krate, version)| {
-        let filename = format!("{}-{}.crate", krate, version);
-        let path = Path::new(&crates_dir).join(filename);
-        if let Err(err) = parse_contents(&path, &visitor) {
-            eprintln!("{}: {}", path.display(), err);
-        }
-    });
+    let findings = Mutex::new(Map::new());
+    crate_max_versions
+        .into_par_iter()
+        .for_each(|(krate, version)| {
+            let filename = format!("{}-{}.crate", krate, version);
+            let path = Path::new(&crates_dir).join(filename);
+            if let Err(err) = parse_contents(krate, version, &path, &findings) {
+                eprintln!("{}: {}", path.display(), err);
+            }
+        });
 
     // Sort lints by how many times ignored.
-    let clippy_allows = visitor.clippy_allows.into_inner();
-    let mut clippy_allows = Vec::from_iter(&clippy_allows);
-    clippy_allows.sort_by(|(lname, lcount), (rname, rcount)| {
-        let lcount = lcount.global + lcount.local;
-        let rcount = rcount.global + rcount.local;
-        lcount.cmp(&rcount).reverse().then_with(|| lname.cmp(rname))
+    let findings = findings.into_inner();
+    let mut findings = Vec::from_iter(&findings);
+    findings.sort_by_cached_key(|(_lint_id, findings)| {
+        let sum: usize = findings
+            .values()
+            .map(|loc| loc.global.len() + loc.local.len())
+            .sum();
+        Reverse(sum)
     });
 
     // Download clippy lints.json to get group and level for every lint.
@@ -166,18 +208,29 @@ fn main() -> Result<()> {
     let mut stdout = stdout.lock();
     let _ = writeln!(stdout, "global | local | lint name | category");
     let _ = writeln!(stdout, "--- | --- | --- | ---");
-    for (lint_id, count) in &clippy_allows {
+    let site = "https://dtolnay.github.io/noisy-clippy";
+    for (lint_id, findings) in &findings {
         let (group, level) = match lints.get(lint_id.as_str()) {
             Some(lint) => (lint.group, lint.level),
             None => (LintGroup::Unknown, LintLevel::None),
         };
         let allowed = level == LintLevel::Allow;
         let _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
-        let _ = write!(stdout, "{}", count.global);
+        let global: usize = findings.values().map(|loc| loc.global.len()).sum();
+        let _ = if global == 0 {
+            write!(stdout, "{}", global)
+        } else {
+            write!(stdout, "[{}]({}/{}.html#global)", global, site, lint_id)
+        };
         let _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
         let _ = write!(stdout, " | ");
         let _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
-        let _ = write!(stdout, "{}", count.local);
+        let local: usize = findings.values().map(|loc| loc.local.len()).sum();
+        let _ = if local == 0 {
+            write!(stdout, "{}", local)
+        } else {
+            write!(stdout, "[{}]({}/{}.html#local)", local, site, lint_id)
+        };
         let _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
         let _ = write!(stdout, " | ");
         let _ = write!(stdout, "{}", if allowed { "~*" } else { "**" });
@@ -194,6 +247,46 @@ fn main() -> Result<()> {
         }
         let _ = write!(stdout, "{}", group);
         let _ = writeln!(stdout);
+    }
+
+    for () in iter::once(()) {
+        let repo = match Repository::discover(".") {
+            Ok(repo) => repo,
+            Err(_) => break,
+        };
+        let origin = match repo.find_remote("origin") {
+            Ok(origin) => origin,
+            Err(_) => break,
+        };
+        if origin.url_bytes() != b"gh:dtolnay/noisy-clippy" {
+            break;
+        }
+
+        let tree_entries = None;
+        let mut builder = repo.treebuilder(tree_entries)?;
+        let filemode = u32::from(FileMode::Blob) as i32;
+        for (lint_id, findings) in &findings {
+            let html = render(lint_id, findings);
+            let filename = format!("{}.html", lint_id);
+            let oid = repo.blob(html.as_bytes())?;
+            builder.insert(filename, oid, filemode)?;
+        }
+
+        let oid = repo.blob(include_bytes!("style.css"))?;
+        builder.insert("style.css", oid, filemode)?;
+        let oid = builder.write()?;
+
+        let update_ref = None;
+        let signature = Signature::now("David Tolnay", "dtolnay@gmail.com")?;
+        let msg = "Update gh-pages";
+        let tree = repo.find_tree(oid)?;
+        let parents = &[];
+        let oid = repo.commit(update_ref, &signature, &signature, msg, &tree, parents)?;
+
+        let branch_name = "gh-pages";
+        let commit = repo.find_commit(oid)?;
+        let force = true;
+        repo.branch(branch_name, &commit, force)?;
     }
 
     Ok(())
@@ -213,11 +306,21 @@ fn parse_filename(file: &OsStr) -> Option<(String, Version)> {
     Some((crate_name, version))
 }
 
-fn parse_contents(path: &Path, mut visitor: &AttrVisitor) -> Result<()> {
+fn parse_contents(
+    krate: String,
+    version: Version,
+    path: &Path,
+    findings: &Mutex<Findings>,
+) -> Result<()> {
     let file = File::open(path)?;
     let reader = BufReader::new(file);
     let tar = GzDecoder::new(reader);
     let mut archive = Archive::new(tar);
+    let mut source_file = SourceFile {
+        krate,
+        version,
+        relative_path: PathBuf::new(),
+    };
     for entry in archive.entries()? {
         let mut entry = entry?;
         if entry.size() > 10 * 1024 * 1024 {
@@ -227,6 +330,7 @@ fn parse_contents(path: &Path, mut visitor: &AttrVisitor) -> Result<()> {
         if path.extension() != Some(OsStr::new("rs")) {
             continue;
         }
+        let path = path.into_owned();
         let mut contents = String::new();
         if entry.read_to_string(&mut contents).is_err() {
             break;
@@ -234,6 +338,12 @@ fn parse_contents(path: &Path, mut visitor: &AttrVisitor) -> Result<()> {
         let syn = match syn::parse_file(&contents) {
             Ok(syn) => syn,
             Err(_) => continue,
+        };
+        source_file.relative_path = path.iter().skip(1).collect();
+        let mut visitor = AttrVisitor {
+            source_file: &source_file,
+            contents: Arc::new(contents),
+            findings,
         };
         visitor.visit_file(&syn);
     }
