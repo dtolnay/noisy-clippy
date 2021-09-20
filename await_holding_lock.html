@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ipfs-embed-net&nbsp;0.11.0</span><a href="https://docs.rs/crate/ipfs-embed-net/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3aawait_holding_lock"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ipfs-embed-net/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3aawait_holding_lock','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::await_holding_lock</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub async fn listen_on(&amp;self, addr: Multiaddr) -&gt; Result&lt;Multiaddr&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">kludgine-app&nbsp;0.1.0-dev.2</span><a href="https://docs.rs/crate/kludgine-app/0.1.0-dev.2/source/src/runtime/smol.rs#:~:text=clippy%3a%3aawait_holding_lock"><span class="result-file-directory">/src/<wbr>runtime/<wbr></span><span class="result-file-name">smol.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/kludgine-app/0.1.0-dev.2/source/src/runtime/smol.rs#:~:text=clippy%3a%3aawait_holding_lock','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            .each(0..4, |_| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::await_holding_lock</mark>)] // this is an rwlock, not a mutex.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                futures::executor::block_on(async {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">librice&nbsp;0.0.1</span><a href="https://docs.rs/crate/librice/0.0.1/source/src/component.rs#:~:text=clippy%3a%3aawait_holding_lock"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">component.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/librice/0.0.1/source/src/component.rs#:~:text=clippy%3a%3aawait_holding_lock','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">94</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // XXX: temporary for bring up</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">95</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::await_holding_lock</mark>)] /* !!! FIXME !!! */</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">96</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub async fn set_local_addr(&amp;self, addr: SocketAddr) -&gt; Result&lt;(), AgentError&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">101</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // XXX: temporary for bring up</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">102</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::await_holding_lock</mark>)] /* !!! FIXME !!! */</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">103</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub async fn set_local_channel(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // XXX: temporary for bring up</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::await_holding_lock</mark>)] /* !!! FIXME !!! */</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">113</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub async fn set_remote_addr(&amp;self, addr: SocketAddr) -&gt; Result&lt;(), AgentError&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">meio&nbsp;0.94.0</span><a href="https://docs.rs/crate/meio/0.94.0/source/src/thread.rs#:~:text=clippy%3a%3aawait_holding_lock"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">thread.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/meio/0.94.0/source/src/thread.rs#:~:text=clippy%3a%3aawait_holding_lock','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// TODO: Consider to deny and refactor</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::await_holding_lock</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>async fn entrypoint&lt;T&gt;(actor: T, term_rx: term::Receiver) -&gt; Result&lt;(), Error&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">nats&nbsp;0.15.1</span><a href="https://docs.rs/crate/nats/0.15.1/source/src/lib.rs#:~:text=clippy%3a%3aawait_holding_lock"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/nats/0.15.1/source/src/lib.rs#:~:text=clippy%3a%3aawait_holding_lock','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">175</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::match_like_matches_macro,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">176</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::await_holding_lock</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">177</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::shadow_reuse,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cucumber_rust_codegen&nbsp;0.9.0</span><a href="https://docs.rs/crate/cucumber_rust_codegen/0.9.0/source/src/attribute.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">attribute.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cucumber_rust_codegen/0.9.0/source/src/attribute.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">121</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            } else {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">122</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::redundant_closure_for_method_calls</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">123</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let (idents, parsings): (Vec&lt;_&gt;, Vec&lt;_&gt;) = itertools::process_results(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fumio-pool&nbsp;0.1.0</span><a href="https://docs.rs/crate/fumio-pool/0.1.0/source/src/current.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">current.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fumio-pool/0.1.0/source/src/current.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn current_local() -&gt; Option&lt;LocalSpawner&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::redundant_closure_for_method_calls</mark>)] // sadly the suggestion doesn't compile</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	Current::with(&amp;CURRENT, |h| h.cloned())</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fumio-reactor&nbsp;0.1.0</span><a href="https://docs.rs/crate/fumio-reactor/0.1.0/source/src/reactor/executor.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr>reactor/<wbr></span><span class="result-file-name">executor.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fumio-reactor/0.1.0/source/src/reactor/executor.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn current() -&gt; Option&lt;Handle&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::redundant_closure_for_method_calls</mark>)] // sadly the suggestion doesn't compile</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	Current::with(&amp;CURRENT, |h| h.cloned())</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hls_m3u8&nbsp;0.4.1</span><a href="https://docs.rs/crate/hls_m3u8/0.4.1/source/src/master_playlist.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">master_playlist.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hls_m3u8/0.4.1/source/src/master_playlist.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">281</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">282</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_closure_for_method_calls</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">283</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn into_owned(self) -&gt; MasterPlaylist&lt;'static&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hls_m3u8&nbsp;0.4.1</span><a href="https://docs.rs/crate/hls_m3u8/0.4.1/source/src/media_segment.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">media_segment.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hls_m3u8/0.4.1/source/src/media_segment.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">185</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">186</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_closure_for_method_calls</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">187</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn into_owned(self) -&gt; MediaSegment&lt;'static&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">json_schema_test_suite_proc_macro&nbsp;0.3.0</span><a href="https://docs.rs/crate/json_schema_test_suite_proc_macro/0.3.0/source/src/attribute_config.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">attribute_config.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/json_schema_test_suite_proc_macro/0.3.0/source/src/attribute_config.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                braced!(braced_content in input);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::redundant_closure_for_method_calls</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let res: syn::punctuated::Punctuated&lt;LitStr, Token![,]&gt; = braced_content.parse_terminated(|v| v.parse())?;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">girt-core&nbsp;1.0.0</span><a href="https://docs.rs/crate/girt-core/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/girt-core/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::panic,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::redundant_closure_for_method_calls</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::too_many_lines,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rta-for-fps-lib&nbsp;0.2.0</span><a href="https://docs.rs/crate/rta-for-fps-lib/0.2.0/source/src/system.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">system.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rta-for-fps-lib/0.2.0/source/src/system.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">126</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    ) -&gt; impl CurveIterator&lt;CurveKind = UnconstrainedServerExecution&gt; + Clone + '_ {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #![allow(<mark>clippy::redundant_closure_for_method_calls</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">s3-ext&nbsp;0.3.0</span><a href="https://docs.rs/crate/s3-ext/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/s3-ext/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::redundant_closure)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_closure_for_method_calls</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::should_implement_trait)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">s4&nbsp;0.0.15</span><a href="https://docs.rs/crate/s4/0.0.15/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/s4/0.0.15/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::redundant_closure)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_closure_for_method_calls</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">slotmap&nbsp;1.0.6</span><a href="https://docs.rs/crate/slotmap/1.0.6/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/slotmap/1.0.6/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        module_name_repetitions,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        <mark>redundant_closure_for_method_calls</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        unseparated_literal_suffix,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">slotmap-fork-otter&nbsp;1.0.2</span><a href="https://docs.rs/crate/slotmap-fork-otter/1.0.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/slotmap-fork-otter/1.0.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_closure_for_method_calls','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        module_name_repetitions,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        <mark>redundant_closure_for_method_calls</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        unseparated_literal_suffix,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

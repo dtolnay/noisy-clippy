@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">calyx&nbsp;0.1.1</span><a href="https://docs.rs/crate/calyx/0.1.1/source/src/frontend/parser.rs#:~:text=clippy%3a%3afrom_str_radix_10"><span class="result-file-directory">/src/<wbr>frontend/<wbr></span><span class="result-file-name">parser.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/calyx/0.1.1/source/src/frontend/parser.rs#:~:text=clippy%3a%3afrom_str_radix_10','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">117</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn decimal(input: Node) -&gt; ParseResult&lt;u64&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::from_str_radix_10</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        u64::from_str_radix(input.as_str(), 10)</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r-u-still-there&nbsp;0.1.1</span><a href="https://docs.rs/crate/r-u-still-there/0.1.1/source/src/util.rs#:~:text=clippy%3a%3afrom_str_radix_10"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">util.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r-u-still-there/0.1.1/source/src/util.rs#:~:text=clippy%3a%3afrom_str_radix_10','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Otherwise the string is treated as a decimal integer.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::from_str_radix_10</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn parse_int_decimal_hex&lt;U: Num&gt;(num_str: &amp;str) -&gt; Result&lt;U, &lt;U as Num&gt;::FromStrRadixErr&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

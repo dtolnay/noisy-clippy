@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tiny-skia&nbsp;0.6.1</span><a href="https://docs.rs/crate/tiny-skia/0.6.1/source/src/scan/hairline.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr>scan/<wbr></span><span class="result-file-name">hairline.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tiny-skia/0.6.1/source/src/scan/hairline.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">95</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let slope = fdot16::div(dy, dx);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">96</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::precedence</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">97</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let mut start_y = fdot6::to_fdot16(y0) + (slope * ((32 - x0) &amp; 63) &gt;&gt; 6);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let slope = fdot16::div(dx, dy);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">128</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::precedence</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">129</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let mut start_x = fdot6::to_fdot16(x0) + (slope * ((32 - y0) &amp; 63) &gt;&gt; 6);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-drone&nbsp;0.4.3</span><a href="https://docs.rs/crate/cargo-drone/0.4.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-drone/0.4.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![warn(missing_docs)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-core&nbsp;0.14.3</span><a href="https://docs.rs/crate/drone-core/0.14.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-core/0.14.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">57</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_doctest_main,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">58</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::precedence</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::type_repetition_in_bounds,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-cortex-m&nbsp;0.11.1</span><a href="https://docs.rs/crate/drone-cortex-m/0.11.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-cortex-m/0.11.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_doctest_main,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::precedence</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">56</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::shadow_unrelated,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-cortexm&nbsp;0.14.1</span><a href="https://docs.rs/crate/drone-cortexm/0.14.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-cortexm/0.14.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_doctest_main,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">66</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::precedence</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">67</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::shadow_unrelated,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-fatfs&nbsp;0.2.3</span><a href="https://docs.rs/crate/drone-fatfs/0.2.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-fatfs/0.2.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(not(feature = "std"), no_std)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>, inline_always))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-fatfs-sd&nbsp;0.2.3</span><a href="https://docs.rs/crate/drone-fatfs-sd/0.2.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-fatfs-sd/0.2.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(not(feature = "std"), no_std)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-micropython-core&nbsp;0.1.1</span><a href="https://docs.rs/crate/drone-micropython-core/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-micropython-core/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">44</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(not(feature = "std"), no_std)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">45</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>, inline_always))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-micropython-stm32&nbsp;0.1.1</span><a href="https://docs.rs/crate/drone-micropython-stm32/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-micropython-stm32/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(test, default_lib_allocator)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-sd-core&nbsp;0.2.2</span><a href="https://docs.rs/crate/drone-sd-core/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-sd-core/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(not(feature = "std"), no_std)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>, inline_always))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-sd-stm32&nbsp;0.2.2</span><a href="https://docs.rs/crate/drone-sd-stm32/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-sd-stm32/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(test, default_lib_allocator)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-stm32&nbsp;0.8.3</span><a href="https://docs.rs/crate/drone-stm32/0.8.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-stm32/0.8.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(test, default_lib_allocator)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>, inline_always))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-stm32-macros&nbsp;0.8.3</span><a href="https://docs.rs/crate/drone-stm32-macros/0.8.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-stm32-macros/0.8.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![recursion_limit = "256"]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drone-stm32-svd&nbsp;0.8.3</span><a href="https://docs.rs/crate/drone-stm32-svd/0.8.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drone-stm32-svd/0.8.3/source/src/lib.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![doc(html_root_url = "https://docs.rs/drone-stm32-svd/0.8.3")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>precedence</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pqc_kyber&nbsp;0.2.0</span><a href="https://docs.rs/crate/pqc_kyber/0.2.0/source/src/reference/polyvec.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr>reference/<wbr></span><span class="result-file-name">polyvec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pqc_kyber/0.2.0/source/src/reference/polyvec.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::precedence</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>use crate::{</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">terminus-store&nbsp;0.19.3</span><a href="https://docs.rs/crate/terminus-store/0.19.3/source/src/structure/bitarray.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr>structure/<wbr></span><span class="result-file-name">bitarray.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/terminus-store/0.19.3/source/src/structure/bitarray.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::precedence</mark>, clippy::verbose_bit_mask)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">terminus-store&nbsp;0.19.3</span><a href="https://docs.rs/crate/terminus-store/0.19.3/source/src/structure/logarray.rs#:~:text=clippy%3a%3aprecedence"><span class="result-file-directory">/src/<wbr>structure/<wbr></span><span class="result-file-name">logarray.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/terminus-store/0.19.3/source/src/structure/logarray.rs#:~:text=clippy%3a%3aprecedence','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::precedence</mark>, clippy::verbose_bit_mask)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

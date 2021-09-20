@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fluvio-cli&nbsp;0.3.1</span><a href="https://docs.rs/crate/fluvio-cli/0.3.1/source/src/consume/fetch_log_loop.rs#:~:text=clippy%3a%3aneg_multiply"><span class="result-file-directory">/src/<wbr>consume/<wbr></span><span class="result-file-name">fetch_log_loop.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fluvio-cli/0.3.1/source/src/consume/fetch_log_loop.rs#:~:text=clippy%3a%3aneg_multiply','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Fetch log continuously</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::neg_multiply</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub async fn fetch_log_loop&lt;O&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">interprocess&nbsp;1.1.1</span><a href="https://docs.rs/crate/interprocess/1.1.1/source/src/os/unix/signal.rs#:~:text=clippy%3a%3aneg_multiply"><span class="result-file-directory">/src/<wbr>os/<wbr>unix/<wbr></span><span class="result-file-name">signal.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/interprocess/1.1.1/source/src/os/unix/signal.rs#:~:text=clippy%3a%3aneg_multiply','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">809</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn send_to_group(signal: impl Into&lt;Option&lt;SignalType&gt;&gt;, pid: impl Into&lt;u32&gt;) -&gt; io::Result&lt;()&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">810</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::neg_multiply</mark>)] // "it's more readable to just negate"? how about no</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">811</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let pid = i32::try_from(pid.into())</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">836</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn send_rt_to_group(signal: impl Into&lt;Option&lt;u32&gt;&gt;, pid: impl Into&lt;u32&gt;) -&gt; io::Result&lt;()&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">837</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::neg_multiply</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">838</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let pid = i32::try_from(pid.into())</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mycelium_command&nbsp;0.1.1</span><a href="https://docs.rs/crate/mycelium_command/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aneg_multiply"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mycelium_command/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aneg_multiply','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">520</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    impl Test {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">521</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::neg_multiply</mark>, clippy::cast_lossless)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">522</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        pub fn new&lt;S&gt;(text: S, index: usize) -&gt; Test</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rav1e&nbsp;0.5.0-beta</span><a href="https://docs.rs/crate/rav1e/0.5.0-beta/source/src/cdef.rs#:~:text=clippy%3a%3aneg_multiply"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">cdef.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rav1e/0.5.0-beta/source/src/cdef.rs#:~:text=clippy%3a%3aneg_multiply','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">198</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[cold_for_target_arch("x86_64")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">199</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(clippy::erasing_op, clippy::identity_op, <mark>clippy::neg_multiply</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  pub(crate) unsafe fn cdef_filter_block&lt;T: Pixel, U: Pixel&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tuc&nbsp;0.4.0</span><a href="https://docs.rs/crate/tuc/0.4.0/source/src/bin/tuc.rs#:~:text=clippy%3a%3aneg_multiply"><span class="result-file-directory">/src/<wbr>bin/<wbr></span><span class="result-file-name">tuc.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tuc/0.4.0/source/src/bin/tuc.rs#:~:text=clippy%3a%3aneg_multiply','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">155</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::neg_multiply</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">156</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn cut_line(delimiter_indices: &amp;[(usize, usize)], f: &amp;Range, line: &amp;str) -&gt; Result&lt;(usize, usize)&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">dakv_cuckoo&nbsp;0.1.1</span><a href="https://docs.rs/crate/dakv_cuckoo/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aneg_multiply"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/dakv_cuckoo/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aneg_multiply','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::unreadable_literal)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::neg_multiply</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

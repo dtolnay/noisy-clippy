@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">borsholder&nbsp;0.9.3</span><a href="https://docs.rs/crate/borsholder/0.9.3/source/src/render.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">render.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/borsholder/0.9.3/source/src/render.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">149</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if cfg!(debug_assertions) {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        tera.register_filter("debug", |input, _| {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">223</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl From&lt;tera::Error&gt; for TeraFailure {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">224</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">225</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn from(e: tera::Error) -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bve&nbsp;0.0.1</span><a href="https://docs.rs/crate/bve/0.0.1/source/src/parse/mesh/mod.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr>parse/<wbr>mesh/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bve/0.0.1/source/src/parse/mesh/mod.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Debugging code that can fuck off in other situations</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">163</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(dead_code, <mark>clippy::use_debug</mark>, clippy::print_stdout)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">164</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(never)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-asm&nbsp;0.1.16</span><a href="https://docs.rs/crate/cargo-asm/0.1.16/source/src/asm/parse.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr>asm/<wbr></span><span class="result-file-name">parse.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-asm/0.1.16/source/src/asm/parse.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Parses the assembly function at `path` from the file `file`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn function(file: &amp;::std::path::Path) -&gt; Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-asm&nbsp;0.1.16</span><a href="https://docs.rs/crate/cargo-asm/0.1.16/source/src/main.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-asm/0.1.16/source/src/main.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg_attr(feature = "cargo-clippy", allow(print_stdout, <mark>use_debug</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn main() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-asm&nbsp;0.1.16</span><a href="https://docs.rs/crate/cargo-asm/0.1.16/source/src/rust.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rust.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-asm/0.1.16/source/src/rust.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Returns the files used by the function.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn parse(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gitig&nbsp;0.2.3</span><a href="https://docs.rs/crate/gitig/0.2.3/source/src/main.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gitig/0.2.3/source/src/main.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>///           having to put the error message pretty-printing inside main()</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::result_expect_used, clippy::exit, <mark>clippy::use_debug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">61</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn main() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">nng&nbsp;1.0.0</span><a href="https://docs.rs/crate/nng/1.0.0/source/src/protocol.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">protocol.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/nng/1.0.0/source/src/protocol.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">138</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::use_debug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">139</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Display for Protocol</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">shio&nbsp;0.3.0</span><a href="https://docs.rs/crate/shio/0.3.0/source/src/handler.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">handler.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/shio/0.3.0/source/src/handler.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg_attr(feature = "cargo-clippy", allow(needless_pass_by_value, <mark>use_debug</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub(crate) fn default_catch&lt;E: fmt::Debug + Send&gt;(err: E) -&gt; Response {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">shio&nbsp;0.3.0</span><a href="https://docs.rs/crate/shio/0.3.0/source/src/shio.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">shio.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/shio/0.3.0/source/src/shio.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>, never_loop))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn run&lt;A: ToSocketAddrsExt&gt;(&amp;self, addr: A) -&gt; Result&lt;(), ListenError&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">slice-deque&nbsp;0.3.0</span><a href="https://docs.rs/crate/slice-deque/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/slice-deque/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2629</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::use_debug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2630</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    default fn spec_extend(&amp;mut self, iterator: I) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">core_arch&nbsp;0.1.5</span><a href="https://docs.rs/crate/core_arch/0.1.5/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">cpu-detection.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/core_arch/0.1.5/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(stdsimd_strict, deny(warnings))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::option_unwrap_used, clippy::print_stdout, <mark>clippy::use_debug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">coresimd&nbsp;0.1.2</span><a href="https://docs.rs/crate/coresimd/0.1.2/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">cpu-detection.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/coresimd/0.1.2/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    feature = "cargo-clippy",</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    allow(option_unwrap_used, print_stdout, <mark>use_debug</mark>)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cov&nbsp;0.0.5</span><a href="https://docs.rs/crate/cov/0.0.5/source/src/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cov/0.0.5/source/src/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">61</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", warn(warnings, clippy_pedantic))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">62</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(missing_docs_in_private_items, <mark>use_debug</mark>, cast_possible_truncation))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">get_if_addrs&nbsp;0.5.3</span><a href="https://docs.rs/crate/get_if_addrs/0.5.3/source/src/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/get_if_addrs/0.5.3/source/src/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>, too_many_arguments))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">get_if_addrs-sys&nbsp;0.1.1</span><a href="https://docs.rs/crate/get_if_addrs-sys/0.1.1/source/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/</span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/get_if_addrs-sys/0.1.1/source/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>, too_many_arguments))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg(target_os = "android")]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ifaddrs&nbsp;0.1.0</span><a href="https://docs.rs/crate/ifaddrs/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ifaddrs/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>           deny(clippy, unicode_not_nfc, wrong_pub_self_convention, option_unwrap_used))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>, too_many_arguments))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ifaddrs-sys&nbsp;0.1.0</span><a href="https://docs.rs/crate/ifaddrs-sys/0.1.0/source/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/</span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ifaddrs-sys/0.1.0/source/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>           deny(clippy, unicode_not_nfc, wrong_pub_self_convention, option_unwrap_used))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>use_debug</mark>, too_many_arguments))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">just&nbsp;0.10.1</span><a href="https://docs.rs/crate/just/0.10.1/source/src/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/just/0.10.1/source/src/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::unwrap_used,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  <mark>clippy::use_debug</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::wildcard_enum_match_arm,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rust_lib_example&nbsp;0.2.0</span><a href="https://docs.rs/crate/rust_lib_example/0.2.0/source/examples/show_odd_values.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">show_odd_values.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rust_lib_example/0.2.0/source/examples/show_odd_values.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>//! Example that uses the library.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::print_stdout, <mark>clippy::use_debug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">serde_test&nbsp;1.0.130</span><a href="https://docs.rs/crate/serde_test/1.0.130/source/src/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/serde_test/1.0.130/source/src/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">163</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        too_many_lines,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">164</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        <mark>use_debug</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">165</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        use_self</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sqm_parser&nbsp;1.0.1</span><a href="https://docs.rs/crate/sqm_parser/1.0.1/source/src/lib.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sqm_parser/1.0.1/source/src/lib.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>clippy::print_stdout,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre><mark>clippy::use_debug</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>clippy::integer_arithmetic,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">std_detect&nbsp;0.1.5</span><a href="https://docs.rs/crate/std_detect/0.1.5/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">cpu-detection.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/std_detect/0.1.5/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(stdsimd_strict, deny(warnings))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::option_unwrap_used, <mark>clippy::use_debug</mark>, clippy::print_stdout)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">std_detect&nbsp;0.1.5</span><a href="https://docs.rs/crate/std_detect/0.1.5/source/tests/macro_trailing_commas.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">macro_trailing_commas.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/std_detect/0.1.5/source/tests/macro_trailing_commas.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(stdsimd_strict, deny(warnings))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::option_unwrap_used, <mark>clippy::use_debug</mark>, clippy::print_stdout)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">stdsimd&nbsp;0.1.2</span><a href="https://docs.rs/crate/stdsimd/0.1.2/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">cpu-detection.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/stdsimd/0.1.2/source/tests/cpu-detection.rs#:~:text=clippy%3a%3ause_debug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    feature = "cargo-clippy",</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    allow(option_unwrap_used, <mark>use_debug</mark>, print_stdout)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

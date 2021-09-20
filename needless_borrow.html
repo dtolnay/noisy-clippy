@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">coreutils&nbsp;0.0.7</span><a href="https://docs.rs/crate/coreutils/0.0.7/source/tests/by-util/test_users.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/tests/<wbr>by-util/<wbr></span><span class="result-file-name">test_users.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/coreutils/0.0.7/source/tests/by-util/test_users.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // note: clippy::needless_borrow *false positive*</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let expected = TestScenario::new(&amp;util_name)</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">elrond-wasm&nbsp;0.19.0</span><a href="https://docs.rs/crate/elrond-wasm/0.19.0/source/src/types/general/token_identifier.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr>types/<wbr>general/<wbr></span><span class="result-file-name">token_identifier.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/elrond-wasm/0.19.0/source/src/types/general/token_identifier.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// This special representation is interpreted as the EGLD token.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_borrow</mark>)] // clippy is wrog here, there is no other way</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const EGLD_REPRESENTATION: &amp;'static [u8; 4] = &amp;b"EGLD";</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer&nbsp;0.17.3</span><a href="https://docs.rs/crate/gstreamer/0.17.3/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer/0.17.3/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::use_self)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod auto;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer-audio&nbsp;0.17.2</span><a href="https://docs.rs/crate/gstreamer-audio/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer-audio/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::use_self)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod auto;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer-editing-services&nbsp;0.17.2</span><a href="https://docs.rs/crate/gstreamer-editing-services/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer-editing-services/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::use_self)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">56</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">57</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod auto;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer-video&nbsp;0.17.2</span><a href="https://docs.rs/crate/gstreamer-video/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer-video/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::use_self)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod auto;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer-webrtc&nbsp;0.17.2</span><a href="https://docs.rs/crate/gstreamer-webrtc/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer-webrtc/0.17.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::use_self)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod auto;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">wundergraph_cli&nbsp;0.1.1</span><a href="https://docs.rs/crate/wundergraph_cli/0.1.1/source/src/print_schema/print_helper.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr>print_schema/<wbr></span><span class="result-file-name">print_helper.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/wundergraph_cli/0.1.1/source/src/print_schema/print_helper.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">338</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Debug, Clone)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">339</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">340</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>struct GraphqlType&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-graphql&nbsp;2.9.15</span><a href="https://docs.rs/crate/async-graphql/2.9.15/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-graphql/2.9.15/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::missing_const_for_fn)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::future_not_send)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">break-time&nbsp;0.1.2</span><a href="https://docs.rs/crate/break-time/0.1.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/break-time/0.1.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::needless_borrow</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::expect_fun_call,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cretonne-codegen&nbsp;0.13.2</span><a href="https://docs.rs/crate/cretonne-codegen/0.13.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cretonne-codegen/0.13.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                identity_op,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                <mark>needless_borrow</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                cast_lossless,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gull&nbsp;1.0.2</span><a href="https://docs.rs/crate/gull/1.0.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gull/1.0.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::new_without_default)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lodepng&nbsp;3.4.6</span><a href="https://docs.rs/crate/lodepng/3.4.6/source/src/ffi.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ffi.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lodepng/3.4.6/source/src/ffi.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>needless_borrow</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(non_upper_case_globals)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">unsafe-io&nbsp;0.9.1</span><a href="https://docs.rs/crate/unsafe-io/0.9.1/source/src/os/windows/stdio.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr>os/<wbr>windows/<wbr></span><span class="result-file-name">stdio.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/unsafe-io/0.9.1/source/src/os/windows/stdio.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::unwrap_used,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::needless_borrow</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::let_underscore_drop,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">wow_srp&nbsp;0.3.0</span><a href="https://docs.rs/crate/wow_srp/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/wow_srp/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">101</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// take ownership of something unnecessarily.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">102</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">x11rb&nbsp;0.9.0</span><a href="https://docs.rs/crate/x11rb/0.9.0/source/src/protocol/mod.rs#:~:text=clippy%3a%3aneedless_borrow"><span class="result-file-directory">/src/<wbr>protocol/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/x11rb/0.9.0/source/src/protocol/mod.rs#:~:text=clippy%3a%3aneedless_borrow','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This is not easy to fix, so ignore it.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_borrow</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+body {
+  font-family: Roboto, Avenir, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+}
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  -webkit-text-decoration-skip: objects;
+}
+a:hover {
+  color: #40a9ff;
+}
+a:active {
+  color: #096dd9;
+}
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  overflow: auto;
+}
+mark {
+  background-color: #ffe58f;
+  border-radius: 2px;
+  padding: 0;
+}
+.results-container {
+  padding: 0 14px 0 0;
+  list-style: none;
+}
+.result {
+  font-family: Roboto, Avenir, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+.result+.result {
+  margin-top: 32px;
+}
+.result-title {
+  font-size: 14px;
+  padding: 0 2px 6px 22px;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+.result-body {
+  line-height: 1.5;
+  margin-top: 0;
+  display: flex;
+  position: relative;
+}
+.result-background {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 48px;
+  right: 0;
+}
+.result-details {
+  list-style: none;
+  width: 100%;
+  padding: 6px 6px 0;
+  outline: 0;
+  z-index: 1;
+}
+.result-file-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2px 0 0 27px;
+}
+.result-file {
+  font-size: 16px;
+}
+.result-crate {
+  font-weight: bold;
+  margin-right: 2px;
+}
+.result-file-directory {
+  color: rgba(0, 0, 0, .65);
+}
+.result-file-name {
+  font-weight: 500;
+}
+.lineno {
+  color: #888;
+  width: 35px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 2px 0 1px;
+  text-align: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.highlight-table {
+  margin-bottom: 6px;
+}
+.highlight-table tr:hover {
+  cursor: pointer;
+}
+.highlight-table td {
+  padding: 0;
+  vertical-align: top;
+}
+.highlight-table pre {
+  color: #262626;
+  margin: 0;
+  font-size: 12px;
+}
+.highlight-table td:nth-child(2) {
+  width: 100%;
+}
+.highlight {
+  padding-left: 15px;
+}
+.jump {
+  height: 14px;
+  margin: 0 -5px 0 -7px;
+  background-color: #f2f2f2;
+}

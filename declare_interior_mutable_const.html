@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bevy_hecs&nbsp;0.3.0</span><a href="https://docs.rs/crate/bevy_hecs/0.3.0/source/src/query.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">query.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bevy_hecs/0.3.0/source/src/query.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">44</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// A value on which `get` may never be called</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">45</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)] // no const fn in traits</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">46</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const DANGLING: Self;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bh_alloc&nbsp;0.2.4</span><a href="https://docs.rs/crate/bh_alloc/0.2.4/source/src/fuzz/mod.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>fuzz/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bh_alloc/0.2.4/source/src/fuzz/mod.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>trait ConstInit {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// See the binaries in this repository for full examples.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const INIT: Self = &lt;Self as ConstInit&gt;::INIT;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bh_alloc&nbsp;0.2.4</span><a href="https://docs.rs/crate/bh_alloc/0.2.4/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bh_alloc/0.2.4/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">45</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>trait ConstInit {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">46</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">58</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl BumpAlloc {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const INIT: Self = &lt;Self as ConstInit&gt;::INIT;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bitvec&nbsp;0.22.3</span><a href="https://docs.rs/crate/bitvec/0.22.3/source/src/macros/tests.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>macros/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bitvec/0.22.3/source/src/macros/tests.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn constexpr_macros() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">core_detect&nbsp;1.0.0</span><a href="https://docs.rs/crate/core_detect/1.0.0/source/src/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/core_detect/1.0.0/source/src/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Creates an uninitialized cache.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">80</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const fn uninitialized() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">defmt-decoder&nbsp;0.2.2</span><a href="https://docs.rs/crate/defmt-decoder/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/defmt-decoder/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">223</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">224</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">225</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const FALSE: Self = Self(AtomicBool::new(false));</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">drop-bin&nbsp;0.2.1</span><a href="https://docs.rs/crate/drop-bin/0.2.1/source/src/inner.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">inner.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/drop-bin/0.2.1/source/src/inner.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Associated constant as fn pointers and mutable refs aren't allowed in const fn</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const NEW: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fontfor&nbsp;0.3.1</span><a href="https://docs.rs/crate/fontfor/0.3.1/source/src/fc/consts.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>fc/<wbr></span><span class="result-file-name">consts.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fontfor/0.3.1/source/src/fc/consts.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::declare_interior_mutable_const</mark>)] // We init it only once (when `Fontconfig` library init), then read-only</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub const THE_OBJECT_SET: Lazy&lt;ObjectSet&gt; = Lazy::new(|| {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">heph&nbsp;0.3.1</span><a href="https://docs.rs/crate/heph/0.3.1/source/src/rt/shared/scheduler/inactive.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>rt/<wbr>shared/<wbr>scheduler/<wbr></span><span class="result-file-name">inactive.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/heph/0.3.1/source/src/rt/shared/scheduler/inactive.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">205</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const fn empty() -&gt; Branch {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">206</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">207</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        const NONE: AtomicPtr&lt;()&gt; = AtomicPtr::new(ptr::null_mut());</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hyper-simple-server&nbsp;0.2.1</span><a href="https://docs.rs/crate/hyper-simple-server/0.2.1/source/exports.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/</span><span class="result-file-name">exports.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hyper-simple-server/0.2.1/source/exports.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">142</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[ allow (dead_code) ]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">143</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[ allow (<mark>clippy::declare_interior_mutable_const</mark>) ]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">144</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[ cfg (feature = "hss-http") ]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">imgui-winit-support&nbsp;0.7.1</span><a href="https://docs.rs/crate/imgui-winit-support/0.7.1/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/imgui-winit-support/0.7.1/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">298</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // `const fn new()`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">299</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">300</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Button = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">leaky-bucket&nbsp;0.11.0</span><a href="https://docs.rs/crate/leaky-bucket/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/leaky-bucket/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">728</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl AcquireState {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">729</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">730</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INITIAL: AcquireState = AcquireState {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lock_api&nbsp;0.4.5</span><a href="https://docs.rs/crate/lock_api/0.4.5/source/src/mutex.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">mutex.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lock_api/0.4.5/source/src/mutex.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // static items. Can hopefully be replaced with `const fn new() -&gt; Self` at some point.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lock_api&nbsp;0.4.5</span><a href="https://docs.rs/crate/lock_api/0.4.5/source/src/remutex.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">remutex.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lock_api/0.4.5/source/src/remutex.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // static items. Can hopefully be replaced with `const fn new() -&gt; Self` at some point.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Initial value for an unlocked mutex.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">80</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const INIT: Self = RawReentrantMutex {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lock_api&nbsp;0.4.5</span><a href="https://docs.rs/crate/lock_api/0.4.5/source/src/rwlock.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rwlock.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lock_api/0.4.5/source/src/rwlock.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // static items. Can hopefully be replaced with `const fn new() -&gt; Self` at some point.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">43</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">node-replication&nbsp;0.1.1</span><a href="https://docs.rs/crate/node-replication/0.1.1/source/src/log.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">log.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/node-replication/0.1.1/source/src/log.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">230</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">231</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        const LMASK_DEFAULT: CachePadded&lt;Cell&lt;bool&gt;&gt; = CachePadded::new(Cell::new(true));</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">234</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">235</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">236</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            const LTAIL_DEFAULT: CachePadded&lt;AtomicUsize&gt; = CachePadded::new(AtomicUsize::new(0));</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">node-replication&nbsp;0.1.1</span><a href="https://docs.rs/crate/node-replication/0.1.1/source/src/rwlock.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rwlock.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/node-replication/0.1.1/source/src/rwlock.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>const RLOCK_DEFAULT: CachePadded&lt;AtomicUsize&gt; = CachePadded::new(AtomicUsize::new(0));</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">otter&nbsp;0.7.3</span><a href="https://docs.rs/crate/otter/0.7.3/source/src/error.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">error.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/otter/0.7.3/source/src/error.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">236</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  type Error;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">237</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">238</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  // https://github.com/rust-lang/rust-clippy/issues/3962#issuecomment-667957112</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/kernel/mutex.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>kernel/<wbr></span><span class="result-file-name">mutex.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/kernel/mutex.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">472</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;System: PortThreading&gt; Init for MutexCb&lt;System&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">473</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">474</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/kernel/semaphore.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>kernel/<wbr></span><span class="result-file-name">semaphore.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/kernel/semaphore.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">190</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;System: Port&gt; Init for SemaphoreCb&lt;System&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">191</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">192</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/kernel/task/readyqueue.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>kernel/<wbr>task/<wbr></span><span class="result-file-name">readyqueue.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/kernel/task/readyqueue.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">214</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">215</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">216</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self { link: Init::INIT };</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/kernel/timeout.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>kernel/<wbr></span><span class="result-file-name">timeout.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/kernel/timeout.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">384</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;System: Kernel&gt; Init for Timeout&lt;System&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">385</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">386</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/kernel/timer.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>kernel/<wbr></span><span class="result-file-name">timer.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/kernel/timer.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">469</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;System: Kernel&gt; Init for TimerCb&lt;System&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">470</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">471</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/kernel/wait.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>kernel/<wbr></span><span class="result-file-name">wait.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/kernel/wait.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">178</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;System: PortThreading&gt; Init for WaitQueue&lt;System&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">179</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">180</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">209</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;System: PortThreading&gt; Init for TaskWait&lt;System&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">210</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">211</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/kernel.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">kernel.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/kernel.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">455</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// The initial value of [`TaskCb::port_task_state`] for all tasks.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">456</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)] // it's intentional</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">457</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const PORT_TASK_STATE_INIT: Self::PortTaskState;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3_port_std&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3_port_std/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3_port_std/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">104</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Init for TaskState {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">105</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">106</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self::new();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rust-fsm&nbsp;0.6.0</span><a href="https://docs.rs/crate/rust-fsm/0.6.0/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rust-fsm/0.6.0/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">147</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // allow since there is usually no interior mutability because states are enums</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">148</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">149</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INITIAL_STATE: Self::State;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rustfmt_lib&nbsp;2.0.0-rc.2</span><a href="https://docs.rs/crate/rustfmt_lib/2.0.0-rc.2/source/tests/source/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/tests/<wbr>source/<wbr>cfg_if/<wbr>detect/<wbr></span><span class="result-file-name">cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rustfmt_lib/2.0.0-rc.2/source/tests/source/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Creates an uninitialized cache.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const fn uninitialized() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rustfmt_lib&nbsp;2.0.0-rc.2</span><a href="https://docs.rs/crate/rustfmt_lib/2.0.0-rc.2/source/tests/target/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/tests/<wbr>target/<wbr>cfg_if/<wbr>detect/<wbr></span><span class="result-file-name">cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rustfmt_lib/2.0.0-rc.2/source/tests/target/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Creates an uninitialized cache.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const fn uninitialized() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rustfmt-nightly&nbsp;1.4.21</span><a href="https://docs.rs/crate/rustfmt-nightly/1.4.21/source/tests/source/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/tests/<wbr>source/<wbr>cfg_if/<wbr>detect/<wbr></span><span class="result-file-name">cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rustfmt-nightly/1.4.21/source/tests/source/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Creates an uninitialized cache.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const fn uninitialized() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rustfmt-nightly&nbsp;1.4.21</span><a href="https://docs.rs/crate/rustfmt-nightly/1.4.21/source/tests/target/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/tests/<wbr>target/<wbr>cfg_if/<wbr>detect/<wbr></span><span class="result-file-name">cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rustfmt-nightly/1.4.21/source/tests/target/cfg_if/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Creates an uninitialized cache.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const fn uninitialized() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">softposit&nbsp;0.3.9</span><a href="https://docs.rs/crate/softposit/0.3.9/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/softposit/0.3.9/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub trait MathConsts {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">spin&nbsp;0.9.2</span><a href="https://docs.rs/crate/spin/0.9.2/source/src/once.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">once.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/spin/0.9.2/source/src/once.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">303</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Initialization constant of [`Once`].</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">304</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">305</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const INIT: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">starlark&nbsp;0.5.0</span><a href="https://docs.rs/crate/starlark/0.5.0/source/src/values/layout/avalue.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>values/<wbr>layout/<wbr></span><span class="result-file-name">avalue.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/starlark/0.5.0/source/src/values/layout/avalue.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">63</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub(crate) const VALUE_STR_A_VALUE_PTR: AValueHeader = {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">64</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const VTABLE: Wrapper&lt;Direct, StarlarkStr&gt; = Wrapper(Direct, unsafe { StarlarkStr::new(0) });</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">static_init&nbsp;1.0.1</span><a href="https://docs.rs/crate/static_init/1.0.1/source/src/exit_sequentializer.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">exit_sequentializer.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/static_init/1.0.1/source/src/exit_sequentializer.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">106</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">107</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// This object is only used to for const initialization</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">318</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">319</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// This object is only used to be copied</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">staticinit&nbsp;1.0.0</span><a href="https://docs.rs/crate/staticinit/1.0.0/source/src/exit_sequentializer.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">exit_sequentializer.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/staticinit/1.0.0/source/src/exit_sequentializer.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">106</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">107</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// This object is only used to for const initialization</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">318</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">319</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// This object is only used to be copied</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">std_detect&nbsp;0.1.5</span><a href="https://docs.rs/crate/std_detect/0.1.5/source/src/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>detect/<wbr></span><span class="result-file-name">cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/std_detect/0.1.5/source/src/detect/cache.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Creates an uninitialized cache.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const fn uninitialized() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">user_doc-doc_proc_macro&nbsp;0.0.1</span><a href="https://docs.rs/crate/user_doc-doc_proc_macro/0.0.1/source/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/</span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/user_doc-doc_proc_macro/0.0.1/source/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">63</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  /// A default path for docs</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">64</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  pub const DOC_PATH: Lazy&lt;Path&gt; = Lazy::new(|| parse_str::&lt;Path&gt;("doc").expect("must parse doc path"));</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">yarte_lexer&nbsp;0.0.1</span><a href="https://docs.rs/crate/yarte_lexer/0.0.1/source/src/error.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">error.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/yarte_lexer/0.0.1/source/src/error.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub trait KiError: Error + PartialEq + Clone {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zkp-primefield&nbsp;0.2.0</span><a href="https://docs.rs/crate/zkp-primefield/0.2.0/source/src/prime_field.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">prime_field.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zkp-primefield/0.2.0/source/src/prime_field.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// UInt can not have interior mutability</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">43</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// HACK: Ideally we'd use MontgomeryParameters&lt;UInt: FieldUInt&gt;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">85</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // UInt can not have interior mutability</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">86</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">87</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const MODULUS: P::UInt = P::MODULUS;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zkp-u256&nbsp;0.2.1</span><a href="https://docs.rs/crate/zkp-u256/0.2.1/source/src/traits/mod.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>traits/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zkp-u256/0.2.1/source/src/traits/mod.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">276</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// `T` can not have interior mutability.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">277</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">278</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub trait MontgomeryParameters: 'static + Send + Sync + Sized {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">abi_stable&nbsp;0.10.2</span><a href="https://docs.rs/crate/abi_stable/0.10.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/abi_stable/0.10.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">203</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">204</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::needless_doctest_main)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cxx&nbsp;1.0.54</span><a href="https://docs.rs/crate/cxx/1.0.54/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cxx/1.0.54/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">373</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cognitive_complexity,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">374</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::declare_interior_mutable_const</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">375</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::doc_markdown,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">intrusive-collections&nbsp;0.9.2</span><a href="https://docs.rs/crate/intrusive-collections/0.9.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/intrusive-collections/0.9.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">270</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "nightly", feature(const_fn_trait_bound))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">271</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::declare_interior_mutable_const</mark>, clippy::collapsible_if)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ntex-amqp&nbsp;0.5.0-b.11</span><a href="https://docs.rs/crate/ntex-amqp/0.5.0-b.11/source/src/error_code.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">error_code.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ntex-amqp/0.5.0-b.11/source/src/error_code.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pui-core&nbsp;0.5.2</span><a href="https://docs.rs/crate/pui-core/0.5.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pui-core/0.5.2/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(not(feature = "std"), no_std)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![forbid(missing_docs, clippy::missing_safety_doc)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3&nbsp;0.1.1</span><a href="https://docs.rs/crate/r3/0.1.1/source/src/utils/init.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr>utils/<wbr></span><span class="result-file-name">init.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3/0.1.1/source/src/utils/init.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>use core::{</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">structural&nbsp;0.4.3</span><a href="https://docs.rs/crate/structural/0.4.3/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/structural/0.4.3/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">645</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// Also,the constants don't use cell types,they're just generic.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">646</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">647</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This triggers for types that represent values, like `NestedFieldPath&lt;(TS!(0), TS!(1))&gt;`,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sunshine-util&nbsp;0.1.1</span><a href="https://docs.rs/crate/sunshine-util/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sunshine-util/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3adeclare_interior_mutable_const','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::too_many_arguments)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::declare_interior_mutable_const</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(not(feature = "std"), no_std)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ep-miniaudio-sys&nbsp;2.4.0</span><a href="https://docs.rs/crate/ep-miniaudio-sys/2.4.0/source/build.rs#:~:text=clippy%3a%3alogic_bug"><span class="result-file-directory">/</span><span class="result-file-name">build.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ep-miniaudio-sys/2.4.0/source/build.rs#:~:text=clippy%3a%3alogic_bug','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">175</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Enables SIMD flags for CC based on enabled Rust features.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">176</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::logic_bug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">177</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn apply_flags(b: &amp;mut cc::Build) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">195</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Emits features that map to miniaudio platform feature macros.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">196</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::logic_bug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">197</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn emit_supported_features() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

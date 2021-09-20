@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bolero&nbsp;0.6.0</span><a href="https://docs.rs/crate/bolero/0.6.0/source/src/test/mod.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/src/<wbr>test/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bolero/0.6.0/source/src/test/mod.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">166</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // miri doesn't capture explicit writes to stderr</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">167</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">168</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = write!(stderr(), ".");</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

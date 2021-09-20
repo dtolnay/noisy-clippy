@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">breadx&nbsp;1.2.1</span><a href="https://docs.rs/crate/breadx/1.2.1/source/src/lib.rs#:~:text=clippy%3a%3aneedless_for_each"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/breadx/1.2.1/source/src/lib.rs#:~:text=clippy%3a%3aneedless_for_each','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">129</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::module_name_repetitions, // doesn't matter IMO</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">130</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::needless_for_each</mark>, // i like using for_each instead of for loops</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">131</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_pass_by_value,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-cache&nbsp;0.6.3</span><a href="https://docs.rs/crate/cargo-cache/0.6.3/source/src/main.rs#:~:text=clippy%3a%3aneedless_for_each"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-cache/0.6.3/source/src/main.rs#:~:text=clippy%3a%3aneedless_for_each','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">57</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::upper_case_acronyms)] // questionable</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">58</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_for_each</mark>)] // I like my iterators :(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

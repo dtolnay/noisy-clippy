@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ndarray&nbsp;0.15.3</span><a href="https://docs.rs/crate/ndarray/0.15.3/source/tests/iterators.rs#:~:text=clippy%3a%3aunnecessary_fold"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">iterators.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ndarray/0.15.3/source/tests/iterators.rs#:~:text=clippy%3a%3aunnecessary_fold','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">770</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">771</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::unnecessary_fold</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">772</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn test_fold() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vrp-core&nbsp;1.11.4</span><a href="https://docs.rs/crate/vrp-core/1.11.4/source/src/solver/population/greedy.rs#:~:text=clippy%3a%3aunnecessary_fold"><span class="result-file-directory">/src/<wbr>solver/<wbr>population/<wbr></span><span class="result-file-name">greedy.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vrp-core/1.11.4/source/src/solver/population/greedy.rs#:~:text=clippy%3a%3aunnecessary_fold','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn add_all(&amp;mut self, individuals: Vec&lt;Individual&gt;) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::unnecessary_fold</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        individuals.into_iter().fold(false, |acc, individual| acc || self.add(individual))</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

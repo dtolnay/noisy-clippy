@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">grpcio&nbsp;0.9.0</span><a href="https://docs.rs/crate/grpcio/0.9.0/source/src/buf.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">buf.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/grpcio/0.9.0/source/src/buf.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">264</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// A buffer, which length is 1, is allocated for the slice.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">265</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">266</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn from(s: &amp;'a GrpcSlice) -&gt; GrpcByteBuffer {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mmtk&nbsp;0.6.0</span><a href="https://docs.rs/crate/mmtk/0.6.0/source/src/policy/space.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>policy/<wbr></span><span class="result-file-name">space.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mmtk/0.6.0/source/src/policy/space.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">136</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // FIXME: We need a safe implementation.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">137</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">138</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::mut_from_ref)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mmtk&nbsp;0.6.0</span><a href="https://docs.rs/crate/mmtk/0.6.0/source/src/scheduler/gc_work.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>scheduler/<wbr></span><span class="result-file-name">gc_work.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mmtk/0.6.0/source/src/scheduler/gc_work.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // We assume this is the only running work packet that accesses plan at the point of execution</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let plan_mut: &amp;mut P = unsafe { &amp;mut *(self.plan as *const _ as *mut _) };</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">124</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // We assume this is the only running work packet that accesses plan at the point of execution</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">125</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">126</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let plan_mut: &amp;mut P = unsafe { &amp;mut *(self.plan as *const _ as *mut _) };</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mmtk&nbsp;0.6.0</span><a href="https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/freelistpageresource.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>util/<wbr>heap/<wbr></span><span class="result-file-name">freelistpageresource.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/freelistpageresource.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">89</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // FIXME: We need a safe implementation</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">90</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">91</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let self_mut: &amp;mut Self = unsafe { &amp;mut *(self as *const _ as *mut _) };</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">357</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // FIXME</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">358</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">359</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let me = unsafe { &amp;mut *(self as *const _ as *mut Self) };</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mmtk&nbsp;0.6.0</span><a href="https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/layout/fragmented_mapper.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>util/<wbr>heap/<wbr>layout/<wbr></span><span class="result-file-name">fragmented_mapper.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/layout/fragmented_mapper.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">230</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">231</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::mut_from_ref)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mmtk&nbsp;0.6.0</span><a href="https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/layout/map32.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>util/<wbr>heap/<wbr>layout/<wbr></span><span class="result-file-name">map32.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/layout/map32.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">175</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            if let Some(fl) = fl {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">176</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">177</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let fl_mut: &amp;mut CommonFreeListPageResource =</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">245</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// In other cases, use mut_self_with_sync().</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">246</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">247</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::mut_from_ref)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mmtk&nbsp;0.6.0</span><a href="https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/layout/map64.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>util/<wbr>heap/<wbr>layout/<wbr></span><span class="result-file-name">map64.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mmtk/0.6.0/source/src/util/heap/layout/map64.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">168</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            if let Some(fl) = self_mut.fl_map[pr] {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">169</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">170</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let fl_mut: &amp;mut RawMemoryFreeList = unsafe { &amp;mut *(fl as *const _ as *mut _) };</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">181</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            if let Some(fl) = self_mut.fl_page_resources[pr] {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">182</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">183</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let fl_mut: &amp;mut CommonFreeListPageResource =</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">218</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// In other cases, use mut_self_with_sync().</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">219</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">220</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::mut_from_ref)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mmtk&nbsp;0.6.0</span><a href="https://docs.rs/crate/mmtk/0.6.0/source/src/util/int_array_freelist.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>util/<wbr></span><span class="result-file-name">int_array_freelist.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mmtk/0.6.0/source/src/util/int_array_freelist.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">58</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // FIXME: We need a safe implementation</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn table_mut(&amp;mut self) -&gt; &amp;mut Vec&lt;i32&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mownstr&nbsp;0.1.1</span><a href="https://docs.rs/crate/mownstr/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mownstr/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // extract data to make box</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut_ref: &amp;mut str = &amp;mut *(self.0 as *const str as *mut str);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">nib&nbsp;0.0.8</span><a href="https://docs.rs/crate/nib/0.0.8/source/src/renderer.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">renderer.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/nib/0.0.8/source/src/renderer.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let ms: &amp;mut MySection = unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        &amp;mut *(&amp;**s as *const Section as *mut MySection)</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">safecoin-runtime&nbsp;1.6.19</span><a href="https://docs.rs/crate/safecoin-runtime/1.6.19/source/src/append_vec.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">append_vec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/safecoin-runtime/1.6.19/source/src/append_vec.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">569</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    impl&lt;'a&gt; StoredAccountMeta&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">570</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">571</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        fn set_data_len_unsafe(&amp;self, new_data_len: u64) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">585</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">586</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        fn set_executable_as_byte(&amp;self, new_executable_byte: u8) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">safety_breaker&nbsp;0.1.0</span><a href="https://docs.rs/crate/safety_breaker/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/safety_breaker/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::needless_lifetimes)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;T: ?Sized&gt; ForceMut for T {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">scc&nbsp;0.5.2</span><a href="https://docs.rs/crate/scc/0.5.2/source/src/common/cell.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>common/<wbr></span><span class="result-file-name">cell.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/scc/0.5.2/source/src/common/cell.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">407</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">408</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let cell_mut_ref =</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">452</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">453</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">454</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let data_array_mut_ref = &amp;mut *(data_array_ref as *const DataArray&lt;K, V, SIZE&gt;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">492</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            debug_assert!(self.cell_ref.num_entries &gt; 0);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">493</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">494</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let cell_mut_ref =</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">496</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            cell_mut_ref.num_entries -= 1;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">497</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">498</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let data_array_mut_ref = unsafe {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">520</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let num_entries = self.cell_ref.num_entries;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">521</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">522</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let cell_mut_ref =</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">557</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">558</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">559</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let data_array_mut_ref = &amp;mut *(data_array_ref as *const DataArray&lt;K, V, SIZE&gt;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">561</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    data_array_mut_ref.removed |= 1_u32 &lt;&lt; index;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">562</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">563</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let cell_mut_ref =</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">scc&nbsp;0.5.2</span><a href="https://docs.rs/crate/scc/0.5.2/source/src/hash_map.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">hash_map.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/scc/0.5.2/source/src/hash_map.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">244</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                // The presence of `locker` prevents the entry from being modified outside it.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">245</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">246</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                return Some(updater(k, unsafe { &amp;mut *(v as *const V as *mut V) }));</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">283</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                // The presence of `locker` prevents the entry from being modified outside it.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">284</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">285</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                updater(k, unsafe { &amp;mut *(v as *const V as *mut V) });</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">477</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        let retain = if let Some((k, v)) = iterator.get() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">478</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                            #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">479</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                            filter(k, unsafe { &amp;mut *(v as *const V as *mut V) })</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">scc&nbsp;0.5.2</span><a href="https://docs.rs/crate/scc/0.5.2/source/src/tree_index/node.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>tree_index/<wbr></span><span class="result-file-name">node.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/scc/0.5.2/source/src/tree_index/node.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">146</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let new_nodes = unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">147</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">148</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    &amp;mut *(internal_node</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">626</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let new_split_nodes_mut_ref = unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">627</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">628</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            &amp;mut *(new_split_nodes_ptr.as_ref().unwrap() as *const NewNodes&lt;K, V&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">solana-runtime&nbsp;1.7.11</span><a href="https://docs.rs/crate/solana-runtime/1.7.11/source/src/append_vec.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">append_vec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/solana-runtime/1.7.11/source/src/append_vec.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">591</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    impl&lt;'a&gt; StoredAccountMeta&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">592</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">593</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        fn set_data_len_unsafe(&amp;self, new_data_len: u64) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">607</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">608</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        fn set_executable_as_byte(&amp;self, new_executable_byte: u8) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">starlark&nbsp;0.5.0</span><a href="https://docs.rs/crate/starlark/0.5.0/source/src/values/traits.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>values/<wbr></span><span class="result-file-name">traits.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/starlark/0.5.0/source/src/values/traits.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">89</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            // so things like Hash/Ord/Eq will work the same</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">90</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">91</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let k_mut = unsafe { &amp;mut *(k as *const K as *mut K) };</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">starlark&nbsp;0.5.0</span><a href="https://docs.rs/crate/starlark/0.5.0/source/src/values/types/enumeration.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr>values/<wbr>types/<wbr></span><span class="result-file-name">enumeration.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/starlark/0.5.0/source/src/values/types/enumeration.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">148</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let t = typ.downcast_ref::&lt;EnumType&gt;().unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">149</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">patricia_tree&nbsp;0.3.1</span><a href="https://docs.rs/crate/patricia_tree/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3acast_ref_to_mut"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/patricia_tree/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3acast_ref_to_mut','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![warn(missing_docs)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::cast_ptr_alignment, <mark>clippy::cast_ref_to_mut</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

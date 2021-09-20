@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">minivec&nbsp;0.3.1</span><a href="https://docs.rs/crate/minivec/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/minivec/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">837</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">838</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::ptr_as_ptr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">839</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  pub fn new() -&gt; MiniVec&lt;T&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1433</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  ///</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1434</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::ptr_as_ptr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1435</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  pub fn split_off(&amp;mut self, at: usize) -&gt; MiniVec&lt;T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">region&nbsp;3.0.0</span><a href="https://docs.rs/crate/region/3.0.0/source/src/protect.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">protect.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/region/3.0.0/source/src/protect.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">172</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn protect_can_alter_text_segments() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">173</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::ptr_as_ptr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">174</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let address = &amp;mut protect_can_alter_text_segments as *mut _ as *mut u8;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">signalo_filters&nbsp;0.6.0</span><a href="https://docs.rs/crate/signalo_filters/0.6.0/source/src/median/mod.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr>median/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/signalo_filters/0.6.0/source/src/median/mod.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::ptr_as_ptr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    (&amp;array as *const _ as *const [ListNode&lt;T&gt;; N]).read()</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">breadx&nbsp;1.2.1</span><a href="https://docs.rs/crate/breadx/1.2.1/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/breadx/1.2.1/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::used_underscore_binding,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::ptr_as_ptr</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">135</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    unknown_lints,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-tally&nbsp;1.0.0</span><a href="https://docs.rs/crate/cargo-tally/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-tally/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::option_if_let_else,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::ptr_as_ptr</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::too_many_lines,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">dragonbox&nbsp;0.1.0</span><a href="https://docs.rs/crate/dragonbox/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/dragonbox/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::never_loop,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::ptr_as_ptr</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">61</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::shadow_unrelated,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">nng&nbsp;1.0.0</span><a href="https://docs.rs/crate/nng/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/nng/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">155</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// for a clippy lint.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">156</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::ptr_as_ptr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">157</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// In these cases, I just don't like what Clippy suggests.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">physx&nbsp;0.12.1</span><a href="https://docs.rs/crate/physx/0.12.1/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/physx/0.12.1/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">168</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::doc_markdown,                   // TODO: fixup comments and docs (though annoyingly complains about "PhysX")</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">169</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::ptr_as_ptr</mark>,                     // There are just too many of these</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">170</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::semicolon_if_nothing_returned,  // Too many of these</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rocksdb&nbsp;0.17.0</span><a href="https://docs.rs/crate/rocksdb/0.17.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rocksdb/0.17.0/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">72</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::option_if_let_else,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::ptr_as_ptr</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_panics_doc,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">semver&nbsp;1.0.4</span><a href="https://docs.rs/crate/semver/1.0.4/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/semver/1.0.4/source/src/lib.rs#:~:text=clippy%3a%3aptr_as_ptr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::option_if_let_else,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::ptr_as_ptr</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">80</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::redundant_else,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
