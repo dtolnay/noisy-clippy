@@ -1,6 +1,6 @@
 ## How often is each Clippy lint suppressed on crates.io
 
-Clippy's most severe flaw in my experience has been low-signal lints that are
+[Clippy]'s most severe flaw in my experience has been low-signal lints that are
 enabled by default, aren't worth resolving and commonly need to be suppressed.
 
 I use Clippy across a large number of my Rust projects, so I already get good
@@ -22,6 +22,7 @@ suppressed **perf** lints indicate that the community does not consider it
 valuable to make their code more obtuse for the sake of questionable alleged
 performance. I think it would be wise to delete or downgrade many of these.
 
+[Clippy]: https://github.com/rust-lang/rust-clippy
 [hobbies]: https://github.com/rust-lang/rust-clippy/pulls?q=is%3Apr+is%3Amerged+author%3Adtolnay+downgrade
 
 <br>
