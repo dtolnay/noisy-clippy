@@ -1,5 +1,6 @@
 #![allow(
     clippy::cast_possible_wrap,
+    clippy::derive_partial_eq_without_eq,
     clippy::let_underscore_drop,
     clippy::match_same_arms,
     clippy::similar_names,
