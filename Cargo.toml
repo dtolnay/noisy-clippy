@@ -1,11 +1,11 @@
 [package]
 name = "noisy-clippy"
 version = "0.0.0"
+description = "How often is each Clippy lint suppressed on crates.io"
 edition = "2021"
 license = "MIT OR Apache-2.0"
-description = "How often is each Clippy lint suppressed on crates.io"
-repository = "https://github.com/dtolnay/noisy-clippy"
 publish = false
+repository = "https://github.com/dtolnay/noisy-clippy"
 
 [dependencies]
 anyhow = "1.0"
