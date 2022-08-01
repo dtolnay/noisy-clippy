@@ -1,6 +1,7 @@
 [package]
 name = "noisy-clippy"
 version = "0.0.0"
+authors = ["David Tolnay <dtolnay@gmail.com>"]
 description = "How often is each Clippy lint suppressed on crates.io"
 edition = "2021"
 license = "MIT OR Apache-2.0"
