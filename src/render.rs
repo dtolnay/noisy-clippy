@@ -162,9 +162,8 @@ fn render_file(
             };
 
             while pos < emit_to {
-                let ch = match chars.next() {
-                    Some(ch) => ch,
-                    None => break,
+                let Some(ch) = chars.next() else {
+                    break;
                 };
                 html_escape(html, ch);
                 pos.column += 1;

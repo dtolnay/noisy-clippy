@@ -76,9 +76,8 @@ impl<'ast, 'a> Visit<'ast> for AttrVisitor<'a> {
         } else {
             return;
         };
-        let lints = match parser.parse2(attr.tokens.clone()) {
-            Ok(lints) => lints,
-            Err(_) => return,
+        let Ok(lints) = parser.parse2(attr.tokens.clone()) else {
+            return;
         };
         if lints.is_empty() {
             return;
@@ -248,13 +247,11 @@ fn main() -> Result<()> {
     }
 
     for () in iter::once(()) {
-        let repo = match Repository::discover(".") {
-            Ok(repo) => repo,
-            Err(_) => break,
+        let Ok(repo) = Repository::discover(".") else {
+            break;
         };
-        let origin = match repo.find_remote("origin") {
-            Ok(origin) => origin,
-            Err(_) => break,
+        let Ok(origin) = repo.find_remote("origin") else {
+            break;
         };
         if origin.url_bytes() != b"gh:dtolnay/noisy-clippy" {
             break;
@@ -346,9 +343,8 @@ fn parse_contents(
         if entry.read_to_string(&mut contents).is_err() {
             break;
         }
-        let syn = match syn::parse_file(&contents) {
-            Ok(syn) => syn,
-            Err(_) => continue,
+        let Ok(syn) = syn::parse_file(&contents) else {
+            continue;
         };
         source_file.relative_path = path.iter().skip(1).collect();
         let mut visitor = AttrVisitor {
