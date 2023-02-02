@@ -1,6 +1,7 @@
 #![allow(
     clippy::cast_possible_wrap,
     clippy::derive_partial_eq_without_eq,
+    clippy::items_after_statements,
     clippy::match_same_arms,
     clippy::similar_names,
     clippy::too_many_lines,
@@ -181,8 +182,28 @@ fn main() -> Result<()> {
             }
         });
 
+    // Limit rendered occurrences per file and per crate.
+    const MAX_PER_FILE: usize = 5;
+    const MAX_PER_CRATE: usize = 10;
+    let mut findings = findings.into_inner();
+    for findings in findings.values_mut() {
+        let mut count_by_crate = Map::new();
+        for (source_file, locations) in findings {
+            locations.global.truncate(MAX_PER_FILE);
+            locations
+                .local
+                .truncate(MAX_PER_FILE - locations.global.len());
+            let n = count_by_crate.entry(&source_file.krate).or_insert(0);
+            let remaining_for_crate = MAX_PER_CRATE - *n;
+            locations.global.truncate(remaining_for_crate);
+            locations
+                .local
+                .truncate(remaining_for_crate - locations.global.len());
+            *n += locations.global.len() + locations.local.len();
+        }
+    }
+
     // Sort lints by how many times ignored.
-    let findings = findings.into_inner();
     let mut findings = Vec::from_iter(&findings);
     findings.sort_by_cached_key(|(_lint_id, findings)| {
         let sum: usize = findings
