@@ -27,7 +27,7 @@ use std::collections::btree_map::{BTreeMap as Map, Entry};
 use std::env;
 use std::ffi::OsStr;
 use std::fmt::{self, Display};
-use std::fs::{self, File};
+use std::fs::File;
 use std::io::{self, BufReader, Read, Write};
 use std::iter::{self, FromIterator};
 use std::path::{Path, PathBuf};
@@ -36,6 +36,7 @@ use syn::parse::Parser;
 use syn::visit::Visit;
 use syn::{AttrStyle, Attribute};
 use tar::Archive;
+use walkdir::WalkDir;
 
 struct AttrVisitor<'a> {
     source_file: &'a SourceFile,
@@ -139,20 +140,18 @@ impl Display for LintGroup {
 }
 
 fn main() -> Result<()> {
-    // Argument is path to a directory containing *.crate files. See these links
-    // for how to bulk download crate sources without violating crawlers policy:
-    // https://twitter.com/m_ou_se/status/1433085053056262144
-    // https://www.pietroalbini.org/blog/downloading-crates-io/
+    // Argument is path to a directory containing *.crate files.
+    // https://github.com/dtolnay/get-all-crates
     let mut args = env::args_os();
     ensure!(args.len() == 2);
     let _arg0 = args.next().unwrap();
-    let crates_dir = args.next().unwrap();
+    let crates_dir = PathBuf::from(args.next().unwrap());
 
     // Find the most recent version among .crate files with the same crate name.
     let mut crate_max_versions = Map::new();
-    for entry in fs::read_dir(&crates_dir)? {
+    for entry in WalkDir::new(&crates_dir) {
         let entry = entry?;
-        if let Some((krate, version)) = parse_filename(&entry.file_name()) {
+        if let Some((krate, version)) = parse_crate_file_path(&crates_dir, entry.path()) {
             match crate_max_versions.entry(krate) {
                 Entry::Vacant(entry) => {
                     entry.insert(version);
@@ -176,8 +175,7 @@ fn main() -> Result<()> {
     crate_max_versions
         .into_par_iter()
         .for_each(|(krate, version)| {
-            let filename = format!("{}-{}.crate", krate, version);
-            let path = Path::new(&crates_dir).join(filename);
+            let path = reconstruct_crate_file_path(&crates_dir, &krate, &version);
             if let Err(err) = parse_contents(krate, version, &path, &findings) {
                 eprintln!("{}: {}", path.display(), err);
             }
@@ -299,18 +297,41 @@ fn main() -> Result<()> {
     Ok(())
 }
 
-fn parse_filename(file: &OsStr) -> Option<(Crate, Version)> {
-    let extension = Path::new(file).extension()?;
+fn parse_crate_file_path(crates_dir: &Path, path: &Path) -> Option<(Crate, Version)> {
+    let extension = path.extension()?;
     if extension != "crate" {
         return None;
     }
 
-    let file = file.to_str()?;
+    let file = path.file_name()?.to_str()?;
     let first_dot = file.find('.')?;
     let separator = file[..first_dot].rfind('-')?;
     let crate_name = Crate::new(file[..separator].to_owned());
     let version = Version::parse(&file[1 + separator..file.len() - ".crate".len()]).ok()?;
-    Some((crate_name, version))
+
+    if reconstruct_crate_file_path(crates_dir, &crate_name, &version) == path {
+        Some((crate_name, version))
+    } else {
+        None
+    }
+}
+
+fn reconstruct_crate_file_path(
+    crates_dir: &Path,
+    crate_name: &Crate,
+    version: &Version,
+) -> PathBuf {
+    let mut path = crates_dir.to_owned();
+    let name_lower = crate_name.to_ascii_lowercase();
+    match name_lower.len() {
+        1 => path.push("1"),
+        2 => path.push("2"),
+        3 => path.extend(["3", &name_lower[..1]]),
+        _ => path.extend([&name_lower[0..2], &name_lower[2..4]]),
+    }
+    path.push(name_lower);
+    path.push(format!("{}-{}.crate", crate_name, version));
+    path
 }
 
 fn parse_contents(
