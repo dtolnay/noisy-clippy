@@ -8,6 +8,10 @@ impl Crate {
     pub(crate) fn new(string: String) -> Self {
         Crate(string)
     }
+
+    pub(crate) fn to_ascii_lowercase(&self) -> String {
+        self.0.to_ascii_lowercase()
+    }
 }
 
 impl Display for Crate {
