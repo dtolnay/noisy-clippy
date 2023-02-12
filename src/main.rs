@@ -12,6 +12,9 @@ mod name;
 mod parse;
 mod render;
 
+#[cfg(test)]
+mod tests;
+
 use crate::name::Crate;
 use crate::render::render;
 use anyhow::{ensure, Result};
