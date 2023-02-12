@@ -74,9 +74,10 @@ struct Span {
 // allowed.
 impl<'ast, 'a> Visit<'ast> for AttrVisitor<'a> {
     fn visit_attribute(&mut self, attr: &'ast Attribute) {
-        let parser = if attr.path.is_ident("allow") {
+        let attr_path = attr.path();
+        let parser = if attr_path.is_ident("allow") {
             parse::allow
-        } else if attr.path.is_ident("cfg_attr") {
+        } else if attr_path.is_ident("cfg_attr") {
             parse::cfg_attr
         } else {
             return;
