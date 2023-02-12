@@ -10,10 +10,7 @@ mod kw {
 
 // #[allow(clippy::lint_id...)]
 pub(crate) fn allow(input: ParseStream) -> Result<Vec<(String, Span)>> {
-    let content;
-    parenthesized!(content in input);
-
-    let paths = Punctuated::<syn::Path, Token![,]>::parse_terminated(&content)?;
+    let paths = Punctuated::<syn::Path, Token![,]>::parse_terminated(input)?;
 
     let mut lints = Vec::new();
     for path in paths {
@@ -33,22 +30,19 @@ pub(crate) fn allow(input: ParseStream) -> Result<Vec<(String, Span)>> {
 
 // #[cfg_attr(feature = "cargo-clippy", allow(lint_id...))]
 pub(crate) fn cfg_attr(input: ParseStream) -> Result<Vec<(String, Span)>> {
-    let content;
-    parenthesized!(content in input);
-
-    content.parse::<kw::feature>()?;
-    content.parse::<Token![=]>()?;
-    let feature = content.parse::<LitStr>()?;
+    input.parse::<kw::feature>()?;
+    input.parse::<Token![=]>()?;
+    let feature = input.parse::<LitStr>()?;
     if feature.value() != "cargo-clippy" {
         let msg = "expected feature = \"cargo-clippy\"";
         return Err(Error::new(feature.span(), msg));
     }
-    content.parse::<Token![,]>()?;
-    content.parse::<kw::allow>()?;
+    input.parse::<Token![,]>()?;
+    input.parse::<kw::allow>()?;
 
     let list;
-    parenthesized!(list in content);
-    content.parse::<Option<Token![,]>>()?;
+    parenthesized!(list in input);
+    input.parse::<Option<Token![,]>>()?;
 
     let paths = Punctuated::<syn::Path, Token![,]>::parse_terminated(&list)?;
 

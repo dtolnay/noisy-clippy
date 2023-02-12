@@ -36,7 +36,6 @@ use std::io::{self, BufReader, Read, Write};
 use std::iter::{self, FromIterator};
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
-use syn::parse::Parser;
 use syn::visit::Visit;
 use syn::{AttrStyle, Attribute};
 use tar::Archive;
@@ -80,7 +79,7 @@ impl<'ast, 'a> Visit<'ast> for AttrVisitor<'a> {
         } else {
             return;
         };
-        let Ok(lints) = parser.parse2(attr.tokens.clone()) else {
+        let Ok(lints) = attr.parse_args_with(parser) else {
             return;
         };
         if lints.is_empty() {
