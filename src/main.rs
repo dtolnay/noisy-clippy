@@ -2,6 +2,7 @@
     clippy::cast_possible_wrap,
     clippy::derive_partial_eq_without_eq,
     clippy::items_after_statements,
+    clippy::let_underscore_untyped,
     clippy::match_same_arms,
     clippy::similar_names,
     clippy::too_many_lines,
