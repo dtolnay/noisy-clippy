@@ -223,8 +223,8 @@ fn main() -> Result<()> {
     // Print markdown table of results.
     let stdout = io::stdout();
     let mut stdout = stdout.lock();
-    _ = writeln!(stdout, "local | global | lint name | category");
-    _ = writeln!(stdout, "--- | --- | --- | ---");
+    let _ = writeln!(stdout, "local | global | lint name | category");
+    let _ = writeln!(stdout, "--- | --- | --- | ---");
     let site = "https://dtolnay.github.io/noisy-clippy";
     for (lint_id, findings) in &findings {
         let (group, level) = match lints.get(lint_id.as_str()) {
@@ -232,38 +232,38 @@ fn main() -> Result<()> {
             None => (LintGroup::Unknown, LintLevel::None),
         };
         let allowed = level == LintLevel::Allow;
-        _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
+        let _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
         let local: usize = findings.values().map(|loc| loc.local.len()).sum();
-        _ = if local == 0 {
+        let _ = if local == 0 {
             write!(stdout, "{}", local)
         } else {
             write!(stdout, "[{}]({}/{}.html#local)", local, site, lint_id)
         };
-        _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
-        _ = write!(stdout, " | ");
-        _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
+        let _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
+        let _ = write!(stdout, " | ");
+        let _ = write!(stdout, "{}", if allowed { "~*" } else { "" });
         let global: usize = findings.values().map(|loc| loc.global.len()).sum();
-        _ = if global == 0 {
+        let _ = if global == 0 {
             write!(stdout, "{}", global)
         } else {
             write!(stdout, "[{}]({}/{}.html#global)", global, site, lint_id)
         };
-        _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
-        _ = write!(stdout, " | ");
-        _ = write!(stdout, "{}", if allowed { "~*" } else { "**" });
+        let _ = write!(stdout, "{}", if allowed { "*~" } else { "" });
+        let _ = write!(stdout, " | ");
+        let _ = write!(stdout, "{}", if allowed { "~*" } else { "**" });
         let clippy_index_html = "https://rust-lang.github.io/rust-clippy/master/index.html";
-        _ = write!(stdout, "[{1}]({0}#{1})", clippy_index_html, lint_id);
-        _ = write!(stdout, "{}", if allowed { "*~" } else { "**" });
-        _ = write!(stdout, " | ");
+        let _ = write!(stdout, "[{1}]({0}#{1})", clippy_index_html, lint_id);
+        let _ = write!(stdout, "{}", if allowed { "*~" } else { "**" });
+        let _ = write!(stdout, " | ");
         let mut former_group = former_lint_group(lint_id);
         if former_group == Some(group) {
             former_group = None;
         }
         if let Some(former_group) = former_group {
-            _ = write!(stdout, "~*{}*~ ", former_group);
+            let _ = write!(stdout, "~*{}*~ ", former_group);
         }
-        _ = write!(stdout, "{}", group);
-        _ = writeln!(stdout);
+        let _ = write!(stdout, "{}", group);
+        let _ = writeln!(stdout);
     }
 
     for () in iter::once(()) {
