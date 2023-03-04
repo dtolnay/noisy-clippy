@@ -46,6 +46,7 @@ struct AttrVisitor<'a> {
     source_file: &'a SourceFile,
     contents: Arc<String>,
     findings: &'a Mutex<Findings>,
+    lints: &'a Map<&'a str, &'a Lint>,
 }
 
 type Findings = Map<String, Map<SourceFile, Locations>>;
@@ -87,7 +88,11 @@ impl<'ast, 'a> Visit<'ast> for AttrVisitor<'a> {
             return;
         }
         let mut findings = self.findings.lock();
-        for (lint_id, span) in lints {
+        for (mut lint_id, span) in lints {
+            lint_id = match self.lints.get(lint_id.as_str()) {
+                Some(renamed_lint) => renamed_lint.id.clone(),
+                None => lint_id,
+            };
             let locations = findings
                 .entry(lint_id)
                 .or_insert_with(Map::new)
@@ -116,6 +121,16 @@ struct Opt {
 
 fn main() -> Result<()> {
     let opt = Opt::parse();
+
+    // Download clippy lints.json to get group and level for every lint.
+    let lints_vec = lints::download_lint_list()?;
+    let mut lints = Map::<&str, &Lint>::new();
+    for lint in &lints_vec {
+        lints.insert(&lint.id, lint);
+        for former_id in &lint.former_ids {
+            lints.insert(former_id, lint);
+        }
+    }
 
     // Find the most recent version among .crate files with the same crate name.
     let mut crate_max_versions = Map::new();
@@ -146,7 +161,7 @@ fn main() -> Result<()> {
         .into_par_iter()
         .for_each(|(krate, version)| {
             let path = reconstruct_crate_file_path(&opt.crates_dir, &krate, &version);
-            if let Err(err) = parse_contents(krate, version, &path, &findings) {
+            if let Err(err) = parse_contents(krate, version, &path, &findings, &lints) {
                 eprintln!("{}: {}", path.display(), err);
             }
         });
@@ -181,10 +196,6 @@ fn main() -> Result<()> {
             .sum();
         Reverse(sum)
     });
-
-    // Download clippy lints.json to get group and level for every lint.
-    let lints = lints::download_lint_list()?;
-    let lints: Map<&str, &Lint> = lints.iter().map(|lint| (lint.id.as_str(), lint)).collect();
 
     // Print markdown table of results.
     let stdout = io::stdout();
@@ -328,6 +339,7 @@ fn parse_contents(
     version: Version,
     path: &Path,
     findings: &Mutex<Findings>,
+    lints: &Map<&str, &Lint>,
 ) -> Result<()> {
     let file = File::open(path)?;
     let reader = BufReader::new(file);
@@ -360,6 +372,7 @@ fn parse_contents(
             source_file: &source_file,
             contents: Arc::new(contents),
             findings,
+            lints,
         };
         visitor.visit_file(&syn);
     }
