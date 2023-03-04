@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ap-relay&nbsp;0.3.81</span><a href="https://docs.rs/crate/ap-relay/0.3.81/source/src/routes/statics.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/src/<wbr>routes/<wbr></span><span class="result-file-name">statics.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ap-relay/0.3.81/source/src/routes/statics.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[tracing::instrument(name = "Statics")]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-trait&nbsp;0.1.64</span><a href="https://docs.rs/crate/async-trait/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-trait/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1573</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1574</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn impl_future_fn() -&gt; impl Future&lt;Output = Ready&lt;()&gt;&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-trait-fn&nbsp;0.1.64</span><a href="https://docs.rs/crate/async-trait-fn/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-trait-fn/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2038</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2039</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn impl_future_fn() -&gt; impl Future&lt;Output = Ready&lt;()&gt;&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fishrock_lambda_runtime&nbsp;0.3.0-patched.1</span><a href="https://docs.rs/crate/fishrock_lambda_runtime/0.3.0-patched.1/source/src/lib.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fishrock_lambda_runtime/0.3.0-patched.1/source/src/lib.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">165</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let request_id = &amp;ctx.request_id.clone();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">166</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">167</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let task = tokio::spawn(async move { handler.call(body, ctx) });</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">goxidize&nbsp;0.1.1</span><a href="https://docs.rs/crate/goxidize/0.1.1/source/src/routes/api_v1.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/src/<wbr>routes/<wbr></span><span class="result-file-name">api_v1.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/goxidize/0.1.1/source/src/routes/api_v1.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>async fn new_link(link: web::Json&lt;LinkFormData&gt;, pg: web::Data&lt;PgPool&gt;) -&gt; impl Responder {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[instrument(skip(pg))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>async fn get_links(pg: web::Data&lt;PgPool&gt;) -&gt; impl Responder {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">45</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">46</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>async fn delete_link(pg: web::Data&lt;PgPool&gt;, params: web::Path&lt;(String,)&gt;) -&gt; impl Responder {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">kitsune_p2p&nbsp;0.1.0</span><a href="https://docs.rs/crate/kitsune_p2p/0.1.0/source/src/test_util/mock_network.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/src/<wbr>test_util/<wbr></span><span class="result-file-name">mock_network.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/kitsune_p2p/0.1.0/source/src/test_util/mock_network.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">244</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        let once: InChan = Box::new(m);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">245</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        #[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">246</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        let once =</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">299</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let network = network.clone();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">300</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">301</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        async move {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pict-rs-proxy&nbsp;0.4.0-beta.1</span><a href="https://docs.rs/crate/pict-rs-proxy/0.4.0-beta.1/source/src/main.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pict-rs-proxy/0.4.0-beta.1/source/src/main.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">717</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">718</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[tracing::instrument(name = "Static files")]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">quake&nbsp;0.5.0</span><a href="https://docs.rs/crate/quake/0.5.0/source/src/main.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/quake/0.5.0/source/src/main.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    } else {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">163</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">164</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = block_on(async { quake_rocket().launch() }).await;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ractor&nbsp;0.6.1</span><a href="https://docs.rs/crate/ractor/0.6.1/source/benches/actor.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/benches/<wbr></span><span class="result-file-name">actor.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ractor/0.6.1/source/benches/actor.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">141</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">142</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn process_messages(c: &amp;mut Criterion) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xh&nbsp;0.17.0</span><a href="https://docs.rs/crate/xh/0.17.0/source/tests/server/mod.rs#:~:text=clippy%3a%3aasync_yields_async"><span class="result-file-directory">/tests/<wbr>server/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xh/0.17.0/source/tests/server/mod.rs#:~:text=clippy%3a%3aasync_yields_async','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">95</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let total_hits = total_hits.clone();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">96</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::async_yields_async</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">97</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            rt.block_on(async move {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

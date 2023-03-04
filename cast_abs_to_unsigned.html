@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tract-core&nbsp;0.19.2</span><a href="https://docs.rs/crate/tract-core/0.19.2/source/src/ops/array/range.rs#:~:text=clippy%3a%3acast_abs_to_unsigned"><span class="result-file-directory">/src/<wbr>ops/<wbr>array/<wbr></span><span class="result-file-name">range.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tract-core/0.19.2/source/src/ops/array/range.rs#:~:text=clippy%3a%3acast_abs_to_unsigned','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">84</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let step = self.step.to_scalar::&lt;TDim&gt;()?.eval(values).to_i64()?;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">85</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::cast_abs_to_unsigned</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">86</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let len = ((end - start).abs() as usize).divceil(step.abs() as usize);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

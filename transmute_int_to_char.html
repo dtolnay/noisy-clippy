@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">const-str&nbsp;0.5.3</span><a href="https://docs.rs/crate/const-str/0.5.3/source/src/str.rs#:~:text=clippy%3a%3atransmute_int_to_char"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">str.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/const-str/0.5.3/source/src/str.rs#:~:text=clippy%3a%3atransmute_int_to_char','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg(not(feature = "unstable"))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::transmute_int_to_char</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">encoding-next&nbsp;0.3.0</span><a href="https://docs.rs/crate/encoding-next/0.3.0/source/src/util.rs#:~:text=clippy%3a%3atransmute_int_to_char"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">util.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/encoding-next/0.3.0/source/src/util.rs#:~:text=clippy%3a%3atransmute_int_to_char','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Unchecked conversion to `char`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::transmute_int_to_char</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn as_char(ch: u32) -&gt; char {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">113</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">114</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::transmute_int_to_char</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">115</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn emit(&amp;mut self, c: u32) -&gt; St {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">decancer&nbsp;1.5.3</span><a href="https://docs.rs/crate/decancer/1.5.3/source/src/lib.rs#:~:text=clippy%3a%3atransmute_int_to_char"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/decancer/1.5.3/source/src/lib.rs#:~:text=clippy%3a%3atransmute_int_to_char','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">377</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">378</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  <mark>clippy::transmute_int_to_char</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">379</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::or_fun_call,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

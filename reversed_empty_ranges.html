@@ -1,0 +1,4048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-rdma&nbsp;0.4.0</span><a href="https://docs.rs/crate/async-rdma/0.4.0/source/tests/mr_slice.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">mr_slice.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-rdma/0.4.0/source/tests/mr_slice.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            assert_eq!(lmr.length(), LEN);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">56</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let _s1 = lmr.get(2..0).unwrap();</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">161</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            assert_eq!(rmr.length(), LEN);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">163</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let _s1 = rmr.get(2..0).unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bevy_hecs&nbsp;0.3.0</span><a href="https://docs.rs/crate/bevy_hecs/0.3.0/source/src/entities.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">entities.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bevy_hecs/0.3.0/source/src/entities.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">245</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Allocate space for and enumerate pending entities</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">246</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">247</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn flush(&amp;mut self) -&gt; impl Iterator&lt;Item = u32&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">binary-layout&nbsp;3.1.3</span><a href="https://docs.rs/crate/binary-layout/3.1.3/source/src/utils/data.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>utils/<wbr></span><span class="result-file-name">data.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/binary-layout/3.1.3/source/src/utils/data.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">375</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let data: Data&lt;_&gt; = data_region(1024, 0).into();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">376</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">377</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let data = data.into_subregion(5000..400);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bztree&nbsp;0.2.0</span><a href="https://docs.rs/crate/bztree/0.2.0/source/src/node/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>node/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bztree/0.2.0/source/src/node/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1467</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1468</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1469</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn scan_on_unsorted_node() {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1526</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1527</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1528</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn scan_on_sorted_node() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-deny&nbsp;0.13.7</span><a href="https://docs.rs/crate/cargo-deny/0.13.7/source/src/advisories/cfg.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>advisories/<wbr></span><span class="result-file-name">cfg.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-deny/0.13.7/source/src/advisories/cfg.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">10</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn yanked() -&gt; Spanned&lt;LintLevel&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-deny&nbsp;0.13.7</span><a href="https://docs.rs/crate/cargo-deny/0.13.7/source/src/cfg.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">cfg.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-deny/0.13.7/source/src/cfg.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fake(self) -&gt; Spanned&lt;T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        Spanned {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-spellcheck&nbsp;0.12.3</span><a href="https://docs.rs/crate/cargo-spellcheck/0.12.3/source/src/reflow/iter.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>reflow/<wbr></span><span class="result-file-name">iter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-spellcheck/0.12.3/source/src/reflow/iter.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">198</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // default to an empty range</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">199</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut char_range = usize::MAX..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">casper-types&nbsp;1.5.0</span><a href="https://docs.rs/crate/casper-types/1.5.0/source/src/uint.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">uint.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/casper-types/1.5.0/source/src/uint.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::transmute_ptr_to_ptr,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::reversed_empty_ranges</mark></pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cbe-sdk&nbsp;1.15.0</span><a href="https://docs.rs/crate/cbe-sdk/1.15.0/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">packet.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cbe-sdk/1.15.0/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">250</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        );</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">251</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">252</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let reversed_empty_range = 4..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ckb-cli&nbsp;1.4.0</span><a href="https://docs.rs/crate/ckb-cli/1.4.0/source/src/subcommands/util.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>subcommands/<wbr></span><span class="result-file-name">util.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ckb-cli/1.4.0/source/src/subcommands/util.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">409</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                if !no_magic_bytes {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">410</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">411</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    binary.splice(0..0, SIGN_MAGIC_BYTES.iter().cloned());</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">decimal-wad&nbsp;0.1.8</span><a href="https://docs.rs/crate/decimal-wad/0.1.8/source/src/common.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">common.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/decimal-wad/0.1.8/source/src/common.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">detached-str&nbsp;0.1.0</span><a href="https://docs.rs/crate/detached-str/0.1.0/source/src/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/detached-str/0.1.0/source/src/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let s: Str = "Hello, world!".into();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    s.get(3..1);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">116</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let s: Str = "Hello, world!".into();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">117</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    s.get(3..=1);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">elrond-codec&nbsp;0.16.0</span><a href="https://docs.rs/crate/elrond-codec/0.16.0/source/src/impl_for_types/impl_array.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>impl_for_types/<wbr></span><span class="result-file-name">impl_array.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/elrond-codec/0.16.0/source/src/impl_for_types/impl_array.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;T: NestedDecode, const N: usize&gt; NestedDecode for [T; N] {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn dep_decode_or_handle_err&lt;I, H&gt;(input: &amp;mut I, h: H) -&gt; Result&lt;Self, H::HandledErr&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fastfield_codecs&nbsp;0.3.1</span><a href="https://docs.rs/crate/fastfield_codecs/0.3.1/source/src/monotonic_mapping.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">monotonic_mapping.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fastfield_codecs/0.3.1/source/src/monotonic_mapping.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">172</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">173</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">174</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn mapping_coerce(&amp;self, inp: RangeInclusive&lt;External&gt;) -&gt; RangeInclusive&lt;u64&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">211</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">212</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">213</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn mapping_coerce(&amp;self, inp: RangeInclusive&lt;External&gt;) -&gt; RangeInclusive&lt;u64&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">frugalos_mds&nbsp;1.2.0</span><a href="https://docs.rs/crate/frugalos_mds/1.2.0/source/src/node/snapshot.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>node/<wbr></span><span class="result-file-name">snapshot.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/frugalos_mds/1.2.0/source/src/node/snapshot.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">102</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">103</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">104</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn it_works_with_minimum_range() -&gt; TestResult {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">115</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">116</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">117</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn it_works_with_long_seed() -&gt; TestResult {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">128</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">129</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">130</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn it_rejects_invalid_range() -&gt; TestResult {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">frugalos_raft&nbsp;1.2.0</span><a href="https://docs.rs/crate/frugalos_raft/1.2.0/source/src/storage/log_prefix/load.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>storage/<wbr>log_prefix/<wbr></span><span class="result-file-name">load.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/frugalos_raft/1.2.0/source/src/storage/log_prefix/load.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl LoadLogPrefix {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn new(storage: &amp;Storage) -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">frugalos_raft&nbsp;1.2.0</span><a href="https://docs.rs/crate/frugalos_raft/1.2.0/source/src/storage/log_prefix/save.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>storage/<wbr>log_prefix/<wbr></span><span class="result-file-name">save.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/frugalos_raft/1.2.0/source/src/storage/log_prefix/save.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">43</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl SaveLogPrefix {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">45</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub(crate) fn new(storage: &amp;mut Storage, prefix: LogPrefix) -&gt; Self {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn poll(&amp;mut self) -&gt; Poll&lt;Self::Item, Self::Error&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        while let Async::Ready(phase) = self.phase.poll()? {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fuel-core-relayer&nbsp;0.16.1</span><a href="https://docs.rs/crate/fuel-core-relayer/0.16.1/source/src/service/syncing/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>service/<wbr>syncing/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fuel-core-relayer/0.16.1/source/src/service/syncing/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">84</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test_case(status(0..=0, 0) =&gt; "from 0 to 0 currently at 0. 100% Done.")]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fuel-relayer&nbsp;0.15.3</span><a href="https://docs.rs/crate/fuel-relayer/0.15.3/source/src/relayer/syncing/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>relayer/<wbr>syncing/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fuel-relayer/0.15.3/source/src/relayer/syncing/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test_case(status(0..=0, 0) =&gt; "from 0 to 0 currently at 0. 100% Done.")]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gapbuf&nbsp;0.1.4</span><a href="https://docs.rs/crate/gapbuf/0.1.4/source/tests/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gapbuf/0.1.4/source/tests/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">773</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[should_panic]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">774</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">775</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn range_bad() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gemachain-ledger&nbsp;1.8.0</span><a href="https://docs.rs/crate/gemachain-ledger/1.8.0/source/src/leader_schedule.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">leader_schedule.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gemachain-ledger/1.8.0/source/src/leader_schedule.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let size = index.len();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let range = if index.is_empty() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gimli-permutation&nbsp;0.2.0</span><a href="https://docs.rs/crate/gimli-permutation/0.2.0/source/src/portable.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">portable.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gimli-permutation/0.2.0/source/src/portable.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn gimli(state: &amp;mut [u32; SIZE]) {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    for round in R(24..0) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hls_m3u8&nbsp;0.4.1</span><a href="https://docs.rs/crate/hls_m3u8/0.4.1/source/src/types/byte_range.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>types/<wbr></span><span class="result-file-name">byte_range.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hls_m3u8/0.4.1/source/src/types/byte_range.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">449</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[should_panic = "the range start (6) must be smaller than the end (0)"]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">450</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">451</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_from_range_panic() { let _ = ByteRange::from(6..0); }</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">454</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[should_panic = "the range start (6) must be smaller than the end (0+1)"]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">455</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">456</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_from_range_inclusive_panic() { let _ = ByteRange::from(6..=0); }</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">icrate&nbsp;0.0.1</span><a href="https://docs.rs/crate/icrate/0.0.1/source/src/Foundation/additions/range.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>Foundation/<wbr>additions/<wbr></span><span class="result-file-name">range.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/icrate/0.0.1/source/src/Foundation/additions/range.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[should_panic = "Range end &lt; start"]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">153</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_from_range_inverted() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">id3&nbsp;1.6.0</span><a href="https://docs.rs/crate/id3/1.6.0/source/src/stream/tag.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>stream/<wbr></span><span class="result-file-name">tag.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/id3/1.6.0/source/src/stream/tag.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">423</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn encode_to_file(&amp;self, tag: &amp;Tag, mut file: &amp;mut fs::File) -&gt; crate::Result&lt;()&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">424</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">425</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let location = locate_id3v2(&amp;mut file)?.unwrap_or(0..0); // Create a new tag if none could be located.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">id3&nbsp;1.6.0</span><a href="https://docs.rs/crate/id3/1.6.0/source/src/tag.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">tag.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/id3/1.6.0/source/src/tag.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">208</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut file = fs::OpenOptions::new().read(true).write(true).open(path)?;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">209</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">210</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let location = stream::tag::locate_id3v2(&amp;mut file)?.unwrap_or(0..0); // Create a new tag if none could be located.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">kanal&nbsp;0.1.0-pre8</span><a href="https://docs.rs/crate/kanal/0.1.0-pre8/source/src/backoff.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">backoff.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/kanal/0.1.0-pre8/source/src/backoff.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">84</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(dead_code)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">85</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">86</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lol_html&nbsp;0.3.2</span><a href="https://docs.rs/crate/lol_html/0.3.2/source/src/selectors_vm/stack.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>selectors_vm/<wbr></span><span class="result-file-name">stack.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lol_html/0.3.2/source/src/selectors_vm/stack.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">346</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">347</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">348</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn hereditary_jumps_flag() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">map-macro&nbsp;0.2.5</span><a href="https://docs.rs/crate/map-macro/0.2.5/source/tests/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/map-macro/0.2.5/source/tests/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">176</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">177</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">178</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn vec_no_clone_empty() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mdbook&nbsp;0.4.25</span><a href="https://docs.rs/crate/mdbook/0.4.25/source/src/utils/string.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>utils/<wbr></span><span class="result-file-name">string.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mdbook/0.4.25/source/src/utils/string.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">125</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">126</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)] // Intentionally checking that those are correctly handled</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn take_lines_test() {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">167</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">168</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)] // Intentionally checking that those are correctly handled</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">169</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn take_rustdoc_include_lines_test() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">monero-rpc&nbsp;0.3.2</span><a href="https://docs.rs/crate/monero-rpc/0.3.2/source/tests/clients_tests/empty_blockchain.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/tests/<wbr>clients_tests/<wbr></span><span class="result-file-name">empty_blockchain.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/monero-rpc/0.3.2/source/tests/clients_tests/empty_blockchain.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">114</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // `end_height` params, and the RPC should then return an error.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">115</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">116</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    helpers::regtest::get_block_headers_range_error(&amp;regtest, 4..=0).await;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mp4parse&nbsp;0.12.0</span><a href="https://docs.rs/crate/mp4parse/0.12.0/source/src/unstable.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">unstable.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mp4parse/0.12.0/source/src/unstable.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">137</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// raw sample data from the file.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">138</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">139</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn create_sample_table(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">296</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">297</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn next(&amp;mut self) -&gt; Option&lt;i64&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">353</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">354</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn next(&amp;mut self) -&gt; Option&lt;u32&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">436</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a&gt; SampleToChunkIterator&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">437</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">438</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn locate(&amp;mut self) -&gt; std::ops::Range&lt;u32&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">multiversx-sc-codec&nbsp;0.17.1</span><a href="https://docs.rs/crate/multiversx-sc-codec/0.17.1/source/src/impl_for_types/impl_array.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>impl_for_types/<wbr></span><span class="result-file-name">impl_array.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/multiversx-sc-codec/0.17.1/source/src/impl_for_types/impl_array.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;T: NestedDecode, const N: usize&gt; NestedDecode for [T; N] {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn dep_decode_or_handle_err&lt;I, H&gt;(input: &amp;mut I, h: H) -&gt; Result&lt;Self, H::HandledErr&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">nanorand&nbsp;0.7.0</span><a href="https://docs.rs/crate/nanorand/0.7.0/source/src/gen.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">gen.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/nanorand/0.7.0/source/src/gen.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">184</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		let mut rng = WyRand::new();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">185</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">186</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		rng.generate_range(10..=5);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">objc2-foundation&nbsp;0.2.0-alpha.6</span><a href="https://docs.rs/crate/objc2-foundation/0.2.0-alpha.6/source/src/range.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">range.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/objc2-foundation/0.2.0-alpha.6/source/src/range.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[should_panic = "Range end &lt; start"]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">153</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">154</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_from_range_inverted() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">petal-neighbors&nbsp;0.8.0</span><a href="https://docs.rs/crate/petal-neighbors/0.8.0/source/src/ball_tree.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ball_tree.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/petal-neighbors/0.8.0/source/src/ball_tree.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">493</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">494</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)] // An empty range is valid because `centroid` is empty.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">495</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn default() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">probe-rs-target&nbsp;0.16.0</span><a href="https://docs.rs/crate/probe-rs-target/0.16.0/source/src/flash_properties.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">flash_properties.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/probe-rs-target/0.16.0/source/src/flash_properties.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Default for FlashProperties {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn default() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pyin&nbsp;1.0.2</span><a href="https://docs.rs/crate/pyin/1.0.2/source/src/util.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">util.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pyin/1.0.2/source/src/util.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    assert!(frames.shape()[0] &gt; 2);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let parabola_a = (&amp;frames.slice(s![..-2, ..]) + &amp;frames.slice(s![2.., ..])</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pyke-diffusers&nbsp;0.2.0</span><a href="https://docs.rs/crate/pyke-diffusers/0.2.0/source/src/pipelines/stable_diffusion/lpw.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>pipelines/<wbr>stable_diffusion/<wbr></span><span class="result-file-name">lpw.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pyke-diffusers/0.2.0/source/src/pipelines/stable_diffusion/lpw.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">188</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>			#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">189</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>			let view = if no_boseos_middle {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pyo3&nbsp;0.18.0</span><a href="https://docs.rs/crate/pyo3/0.18.0/source/src/types/list.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>types/<wbr></span><span class="result-file-name">list.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pyo3/0.18.0/source/src/types/list.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">663</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let list = PyList::new(py, &amp;[2, 3, 5]);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">664</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">665</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            list[2..1].extract::&lt;Vec&lt;i32&gt;&gt;().unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pyo3&nbsp;0.18.0</span><a href="https://docs.rs/crate/pyo3/0.18.0/source/src/types/sequence.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>types/<wbr></span><span class="result-file-name">sequence.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pyo3/0.18.0/source/src/types/sequence.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">559</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let seq = ob.downcast::&lt;PySequence&gt;(py).unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">560</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">561</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            seq[2..1].extract::&lt;Vec&lt;i32&gt;&gt;().unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pyo3&nbsp;0.18.0</span><a href="https://docs.rs/crate/pyo3/0.18.0/source/src/types/tuple.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>types/<wbr></span><span class="result-file-name">tuple.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pyo3/0.18.0/source/src/types/tuple.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">701</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let tuple: &amp;PyTuple = ob.downcast(py).unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">702</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">703</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            tuple[2..1].extract::&lt;Vec&lt;i32&gt;&gt;().unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">qcheck&nbsp;1.0.0</span><a href="https://docs.rs/crate/qcheck/1.0.0/source/src/arbitrary.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arbitrary.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/qcheck/1.0.0/source/src/arbitrary.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1652</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1653</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1654</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn ranges() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">quickcheck2&nbsp;2.0.0</span><a href="https://docs.rs/crate/quickcheck2/2.0.0/source/src/arbitrary.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arbitrary.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/quickcheck2/2.0.0/source/src/arbitrary.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1652</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1653</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1654</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn ranges() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3_core&nbsp;0.1.4</span><a href="https://docs.rs/crate/r3_core/0.1.4/source/src/kernel/raw.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>kernel/<wbr></span><span class="result-file-name">raw.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3_core/0.1.4/source/src/kernel/raw.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">731</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// [managed]: crate#interrupt-handling-framework</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">732</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)] // on purpose</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">733</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const RAW_MANAGED_INTERRUPT_PRIORITY_RANGE: Range&lt;InterruptPriority&gt; = 0..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3_kernel&nbsp;0.1.4</span><a href="https://docs.rs/crate/r3_kernel/0.1.4/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3_kernel/0.1.4/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">538</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// [managed]: crate#interrupt-handling-framework</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">539</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)] // on purpose</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">540</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const MANAGED_INTERRUPT_PRIORITY_RANGE: Range&lt;raw::InterruptPriority&gt; = 0..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3_port_riscv&nbsp;0.3.1</span><a href="https://docs.rs/crate/r3_port_riscv/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3_port_riscv/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">160</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// [managed]: r3_core#interrupt-handling-framework</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">161</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)] // on purpose</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const MANAGED_INTERRUPT_PRIORITY_RANGE: Range&lt;InterruptPriority&gt; = 0..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">range_ranger&nbsp;0.1.1</span><a href="https://docs.rs/crate/range_ranger/0.1.1/source/src/continuous_tests.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">continuous_tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/range_ranger/0.1.1/source/src/continuous_tests.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod test_from_stdlib {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">range_ranger&nbsp;0.1.1</span><a href="https://docs.rs/crate/range_ranger/0.1.1/source/src/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/range_ranger/0.1.1/source/src/tests.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod test_fmt_debug {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod test_contains {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">269</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">270</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod test_is_empty {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">364</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">365</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod test_is_full {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">roaring&nbsp;0.10.1</span><a href="https://docs.rs/crate/roaring/0.10.1/source/src/bitmap/store/array_store/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>bitmap/<wbr>store/<wbr>array_store/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/roaring/0.10.1/source/src/bitmap/store/array_store/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">414</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">415</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">416</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_array_insert_invalid_range() {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">480</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">481</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">482</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_bitmap_insert_invalid_range() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">roaring&nbsp;0.10.1</span><a href="https://docs.rs/crate/roaring/0.10.1/source/src/bitmap/util.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>bitmap/<wbr></span><span class="result-file-name">util.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/roaring/0.10.1/source/src/bitmap/util.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">67</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">68</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">69</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_convert_range_to_inclusive() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ropey&nbsp;1.5.1</span><a href="https://docs.rs/crate/ropey/1.5.1/source/src/rope.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rope.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ropey/1.5.1/source/src/rope.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2362</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut r = Rope::from_str(TEXT);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2363</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2364</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        r.remove(56..55); // Wrong ordering of start/end on purpose.</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3148</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let r = Rope::from_str(TEXT);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3149</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        r.slice(53..52); // Wrong ordering on purpose.</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3199</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let r = Rope::from_str(TEXT);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3201</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        r.byte_slice(53..52); // Wrong ordering on purpose.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ropey&nbsp;1.5.1</span><a href="https://docs.rs/crate/ropey/1.5.1/source/src/slice.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">slice.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ropey/1.5.1/source/src/slice.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2896</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2897</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        s.slice(21..20); // Wrong ordering on purpose.</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2966</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2967</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        s.byte_slice(21..20); // Wrong ordering on purpose.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ruint&nbsp;1.7.0</span><a href="https://docs.rs/crate/ruint/1.7.0/source/src/root.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">root.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ruint/1.7.0/source/src/root.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">117</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::absurd_extreme_comparisons)] // From macro.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)] // From macro.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_root_large() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">s2n-quic-core&nbsp;0.16.0</span><a href="https://docs.rs/crate/s2n-quic-core/0.16.0/source/src/interval_set/insert.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>interval_set/<wbr></span><span class="result-file-name">insert.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/s2n-quic-core/0.16.0/source/src/interval_set/insert.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // valid if the `scan` method finds a match</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let replace_range = core::usize::MAX..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">s2n-quic-core&nbsp;0.16.0</span><a href="https://docs.rs/crate/s2n-quic-core/0.16.0/source/src/interval_set/remove.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>interval_set/<wbr></span><span class="result-file-name">remove.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/s2n-quic-core/0.16.0/source/src/interval_set/remove.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // valid if the `scan` method finds a match</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let replace_range = core::usize::MAX..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">safecoin-ledger&nbsp;1.6.16</span><a href="https://docs.rs/crate/safecoin-ledger/1.6.16/source/src/leader_schedule.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">leader_schedule.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/safecoin-ledger/1.6.16/source/src/leader_schedule.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let size = index.len();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let range = if index.is_empty() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">safecoin-sdk&nbsp;1.14.3</span><a href="https://docs.rs/crate/safecoin-sdk/1.14.3/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">packet.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/safecoin-sdk/1.14.3/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">232</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        );</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">233</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">234</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let reversed_empty_range = 4..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">screen-13&nbsp;0.8.0</span><a href="https://docs.rs/crate/screen-13/0.8.0/source/src/driver/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>driver/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/screen-13/0.8.0/source/src/driver/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">220</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">221</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub(super) fn buffer_copy_subresources(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">240</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">241</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub(super) fn buffer_image_copy_subresource(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">serde_taml&nbsp;0.0.3</span><a href="https://docs.rs/crate/serde_taml/0.0.3/source/tests/reporting.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">reporting.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/serde_taml/0.0.3/source/tests/reporting.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">315</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">316</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">317</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn missing_fields() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">skia-safe&nbsp;0.58.0</span><a href="https://docs.rs/crate/skia-safe/0.58.0/source/src/modules/paragraph/dart_types.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>modules/<wbr>paragraph/<wbr></span><span class="result-file-name">dart_types.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/skia-safe/0.58.0/source/src/modules/paragraph/dart_types.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub const EMPTY_RANGE: Range&lt;usize&gt; = Range {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">skia-safe&nbsp;0.58.0</span><a href="https://docs.rs/crate/skia-safe/0.58.0/source/src/modules/paragraph/text_style.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>modules/<wbr>paragraph/<wbr></span><span class="result-file-name">text_style.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/skia-safe/0.58.0/source/src/modules/paragraph/text_style.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">517</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn default() -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">518</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">519</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">solana-ledger&nbsp;1.14.13</span><a href="https://docs.rs/crate/solana-ledger/1.14.13/source/src/leader_schedule.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">leader_schedule.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/solana-ledger/1.14.13/source/src/leader_schedule.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let size = index.len();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let range = if index.is_empty() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">solana-sdk&nbsp;1.14.13</span><a href="https://docs.rs/crate/solana-sdk/1.14.13/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">packet.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/solana-sdk/1.14.13/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">233</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        );</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">234</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">235</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let reversed_empty_range = 4..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">submillisecond-live-view&nbsp;0.4.0</span><a href="https://docs.rs/crate/submillisecond-live-view/0.4.0/source/src/rendered/builder.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>rendered/<wbr></span><span class="result-file-name">builder.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/submillisecond-live-view/0.4.0/source/src/rendered/builder.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">632</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn for_loop_empty() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">633</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">634</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let rendered = html! {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">742</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn for_loop_multiple() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">743</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">744</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let rendered = html! {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">summavy_fastfield_codecs&nbsp;0.3.1</span><a href="https://docs.rs/crate/summavy_fastfield_codecs/0.3.1/source/src/monotonic_mapping.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">monotonic_mapping.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/summavy_fastfield_codecs/0.3.1/source/src/monotonic_mapping.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">180</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">181</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">182</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn mapping_coerce(&amp;self, inp: RangeInclusive&lt;External&gt;) -&gt; RangeInclusive&lt;u64&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">220</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">221</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">222</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn mapping_coerce(&amp;self, inp: RangeInclusive&lt;External&gt;) -&gt; RangeInclusive&lt;u64&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vimwiki-core&nbsp;0.1.0</span><a href="https://docs.rs/crate/vimwiki-core/0.1.0/source/src/lang/elements/utils/region.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>lang/<wbr>elements/<wbr>utils/<wbr></span><span class="result-file-name">region.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vimwiki-core/0.1.0/source/src/lang/elements/utils/region.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">159</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">160</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let region = Region::from(4..3);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">172</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">173</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let region = Region::from(4..=3);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">waffles-solana-sdk&nbsp;1.15.0</span><a href="https://docs.rs/crate/waffles-solana-sdk/1.15.0/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">packet.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/waffles-solana-sdk/1.15.0/source/src/packet.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">250</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        );</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">251</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">252</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let reversed_empty_range = 4..0;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zincati&nbsp;0.0.25</span><a href="https://docs.rs/crate/zincati/0.0.25/source/src/weekly/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>weekly/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zincati/0.0.25/source/src/weekly/mod.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">160</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// in order to avoid double-counting.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">161</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn length_minutes(&amp;self) -&gt; u64 {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zvariant&nbsp;3.10.0</span><a href="https://docs.rs/crate/zvariant/3.10.0/source/src/type.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">type.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zvariant/3.10.0/source/src/type.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">274</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">275</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">276</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn signature() -&gt; Signature&lt;'static&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">feos-core&nbsp;0.4.0</span><a href="https://docs.rs/crate/feos-core/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/feos-core/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![warn(clippy::all)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::many_single_char_names)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">futures&nbsp;0.3.26</span><a href="https://docs.rs/crate/futures/0.3.26/source/tests/io_window.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">io_window.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/futures/0.3.26/source/tests/io_window.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)] // This is intentional.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fyrox-ui&nbsp;0.20.0</span><a href="https://docs.rs/crate/fyrox-ui/0.20.0/source/src/wrap_panel.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">wrap_panel.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fyrox-ui/0.20.0/source/src/wrap_panel.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gridsim&nbsp;0.6.1</span><a href="https://docs.rs/crate/gridsim/0.6.1/source/src/square_grid.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">square_grid.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gridsim/0.6.1/source/src/square_grid.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">matterdb&nbsp;1.2.0</span><a href="https://docs.rs/crate/matterdb/1.2.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/matterdb/1.2.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">106</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Seems should be fixed in `thiserror` crate.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">107</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::reversed_empty_ranges</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">108</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">metaldb&nbsp;1.0.0</span><a href="https://docs.rs/crate/metaldb/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/metaldb/1.0.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">105</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Seems should be fixed in `thiserror` crate.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">106</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::reversed_empty_ranges</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">107</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">minivec&nbsp;0.4.0</span><a href="https://docs.rs/crate/minivec/0.4.0/source/tests/vec.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">vec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/minivec/0.4.0/source/tests/vec.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::verbose_bit_mask,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  <mark>clippy::reversed_empty_ranges</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::vtable_address_comparisons,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">nalgebra&nbsp;0.32.1</span><a href="https://docs.rs/crate/nalgebra/0.32.1/source/src/base/indexing.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>base/<wbr></span><span class="result-file-name">indexing.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/nalgebra/0.32.1/source/src/base/indexing.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>//! Indexing</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">port-finance-lending&nbsp;0.1.0</span><a href="https://docs.rs/crate/port-finance-lending/0.1.0/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/port-finance-lending/0.1.0/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">port-finance-staking&nbsp;0.2.1</span><a href="https://docs.rs/crate/port-finance-staking/0.2.1/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/port-finance-staking/0.2.1/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">port-finance-staking-instructions&nbsp;0.1.0</span><a href="https://docs.rs/crate/port-finance-staking-instructions/0.1.0/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/port-finance-staking-instructions/0.1.0/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">port-finance-variable-rate-lending&nbsp;0.1.2</span><a href="https://docs.rs/crate/port-finance-variable-rate-lending/0.1.2/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/port-finance-variable-rate-lending/0.1.2/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">port-variable-rate-lending&nbsp;0.2.3</span><a href="https://docs.rs/crate/port-variable-rate-lending/0.2.3/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/port-variable-rate-lending/0.2.3/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rand&nbsp;0.8.5</span><a href="https://docs.rs/crate/rand/0.8.5/source/src/rng.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rng.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rand/0.8.5/source/src/rng.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">534</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_gen_range_panic_int() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">535</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">536</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut r = rng(102);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">542</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_gen_range_panic_usize() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">543</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">544</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut r = rng(103);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rg3d-ui&nbsp;0.15.0</span><a href="https://docs.rs/crate/rg3d-ui/0.15.0/source/src/wrap_panel.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">wrap_panel.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rg3d-ui/0.15.0/source/src/wrap_panel.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sierra&nbsp;0.6.0</span><a href="https://docs.rs/crate/sierra/0.6.0/source/src/repr/array.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>repr/<wbr></span><span class="result-file-name">array.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sierra/0.6.0/source/src/repr/array.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">62</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn copy_to_repr(&amp;self, repr: &amp;mut [Padded&lt;T::Type, T::ArrayPadding&gt;; N]) {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">63</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn copy_to_repr(&amp;self, repr: &amp;mut [Padded&lt;T::Type, T::ArrayPadding&gt;; N]) {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">solana-maths&nbsp;0.1.2</span><a href="https://docs.rs/crate/solana-maths/0.1.2/source/src/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/solana-maths/0.1.2/source/src/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">solend-token-lending&nbsp;0.1.1</span><a href="https://docs.rs/crate/solend-token-lending/0.1.1/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/solend-token-lending/0.1.1/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">spl-token-bonding&nbsp;3.2.5</span><a href="https://docs.rs/crate/spl-token-bonding/3.2.5/source/src/uint.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">uint.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/spl-token-bonding/3.2.5/source/src/uint.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">spl-token-lending&nbsp;0.2.0</span><a href="https://docs.rs/crate/spl-token-lending/0.2.0/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/spl-token-lending/0.2.0/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">surf_n_term&nbsp;0.7.3</span><a href="https://docs.rs/crate/surf_n_term/0.7.3/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/surf_n_term/0.7.3/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::type_complexity)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::excessive_precision)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">thin-vec&nbsp;0.2.10</span><a href="https://docs.rs/crate/thin-vec/0.2.10/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/thin-vec/0.2.10/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2988</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod std_tests {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2989</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tline&nbsp;0.1.0</span><a href="https://docs.rs/crate/tline/0.1.0/source/src/simulation.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">simulation.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tline/0.1.0/source/src/simulation.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tophat&nbsp;0.3.0</span><a href="https://docs.rs/crate/tophat/0.3.0/source/src/chunked/decoder.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>chunked/<wbr></span><span class="result-file-name">decoder.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tophat/0.3.0/source/src/chunked/decoder.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::len_zero)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tulipv2-sdk-common&nbsp;0.9.22</span><a href="https://docs.rs/crate/tulipv2-sdk-common/0.9.22/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>math/<wbr></span><span class="result-file-name">rate.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tulipv2-sdk-common/0.9.22/source/src/math/rate.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::manual_range_contains)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">u128&nbsp;0.1.0</span><a href="https://docs.rs/crate/u128/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/u128/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::ptr_offset_with_cast)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">wgpu-core&nbsp;0.15.0</span><a href="https://docs.rs/crate/wgpu-core/0.15.0/source/src/command/bundle.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr>command/<wbr></span><span class="result-file-name">bundle.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/wgpu-core/0.15.0/source/src/command/bundle.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zee&nbsp;0.3.2</span><a href="https://docs.rs/crate/zee/0.3.2/source/src/main.rs#:~:text=clippy%3a%3areversed_empty_ranges"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zee/0.3.2/source/src/main.rs#:~:text=clippy%3a%3areversed_empty_ranges','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::reversed_empty_ranges</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

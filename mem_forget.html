@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">allocative&nbsp;0.2.0</span><a href="https://docs.rs/crate/allocative/0.2.0/source/src/measure.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">measure.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/allocative/0.2.0/source/src/measure.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">157</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">158</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn exit(self) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-rdma&nbsp;0.4.0</span><a href="https://docs.rs/crate/async-rdma/0.4.0/source/src/agent.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">agent.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-rdma/0.4.0/source/src/agent.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">163</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // it's safe because the space taken by the variable `mr` will be reclaimed after forget.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">164</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">165</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(mr);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-rdma&nbsp;0.4.0</span><a href="https://docs.rs/crate/async-rdma/0.4.0/source/src/lock_utilities.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lock_utilities.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-rdma/0.4.0/source/src/lock_utilities.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let data = unsafe { mem::transmute_copy(&amp;s.data) };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)] // forget parent guard to avoid double unlock</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(s);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let raw = unsafe { RwLockReadGuard::rwlock(&amp;s).raw() };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)] // forget parent guard to avoid double unlock</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">61</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(s);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let data = unsafe { mem::transmute_copy(&amp;s.data) };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)] // forget parent guard to avoid double unlock</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">113</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(s);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">122</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let raw = unsafe { RwLockWriteGuard::rwlock(&amp;s).raw() };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">123</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)] // forget parent guard to avoid double unlock</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">124</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(s);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">correspondent&nbsp;0.3.1</span><a href="https://docs.rs/crate/correspondent/0.3.1/source/src/nsd/windows/browse.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>nsd/<wbr>windows/<wbr></span><span class="result-file-name">browse.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/correspondent/0.3.1/source/src/nsd/windows/browse.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        );</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        std::mem::forget(cancel_token);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gazebo&nbsp;0.8.1</span><a href="https://docs.rs/crate/gazebo/0.8.1/source/src/cell.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">cell.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gazebo/0.8.1/source/src/cell.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">125</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // the borrow flag.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">126</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(orig);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">160</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                // the borrow flag.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">161</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                mem::forget(orig);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">physx&nbsp;0.16.0</span><a href="https://docs.rs/crate/physx/0.16.0/source/src/owner.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">owner.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/physx/0.16.0/source/src/owner.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Consumes the Owner without calling Drop and returns the raw pointer it was wrapping.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn into_ptr&lt;S&gt;(mut self) -&gt; *mut S</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">presser&nbsp;0.3.1</span><a href="https://docs.rs/crate/presser/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/presser/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">400</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">401</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    core::mem::forget(guard);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">seaslug&nbsp;0.0.0</span><a href="https://docs.rs/crate/seaslug/0.0.0/source/src/ebr/atomic.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>ebr/<wbr></span><span class="result-file-name">atomic.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/seaslug/0.0.0/source/src/ebr/atomic.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">470</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let data = owned.data;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">471</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">472</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(owned);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">531</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let data = self.data;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">532</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">533</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(self);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sled&nbsp;0.34.7</span><a href="https://docs.rs/crate/sled/0.34.7/source/src/arc.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arc.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sled/0.34.7/source/src/arc.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">86</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let ptr = unsafe { &amp;(*arc.ptr).inner };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">87</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">88</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(arc);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sled&nbsp;0.34.7</span><a href="https://docs.rs/crate/sled/0.34.7/source/src/pagecache/iobuf.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>pagecache/<wbr></span><span class="result-file-name">iobuf.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sled/0.34.7/source/src/pagecache/iobuf.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">849</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let arc = unsafe { Arc::from_raw(self.iobuf.load(Acquire)) };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">850</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">851</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        std::mem::forget(arc.clone());</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">slice-deque&nbsp;0.3.0</span><a href="https://docs.rs/crate/slice-deque/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/slice-deque/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2521</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            debug_assert_eq!(self.len(), it.size_hint().0);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2522</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2523</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            mem::forget(self);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2671</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                );</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2672</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2673</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                mem::forget(iterator);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">slice-ring-buffer&nbsp;0.3.2</span><a href="https://docs.rs/crate/slice-ring-buffer/0.3.2/source/src/lib.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/slice-ring-buffer/0.3.2/source/src/lib.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2521</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            debug_assert_eq!(self.len(), it.size_hint().0);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2522</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2523</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            mem::forget(self);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2673</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                );</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2674</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2675</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                mem::forget(iterator);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vsdbsled&nbsp;0.34.7-patched</span><a href="https://docs.rs/crate/vsdbsled/0.34.7-patched/source/src/arc.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arc.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vsdbsled/0.34.7-patched/source/src/arc.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">86</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let ptr = unsafe { &amp;(*arc.ptr).inner };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">87</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">88</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        mem::forget(arc);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vsdbsled&nbsp;0.34.7-patched</span><a href="https://docs.rs/crate/vsdbsled/0.34.7-patched/source/src/pagecache/iobuf.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>pagecache/<wbr></span><span class="result-file-name">iobuf.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vsdbsled/0.34.7-patched/source/src/pagecache/iobuf.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">849</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let arc = unsafe { Arc::from_raw(self.iobuf.load(Acquire)) };</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">850</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_forget</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">851</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        std::mem::forget(arc.clone());</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bve-native&nbsp;0.0.1</span><a href="https://docs.rs/crate/bve-native/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bve-native/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::match_bool)] // prettier</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::mem_forget</mark>)] // Useful for FFI</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::missing_docs_in_private_items)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cl-aux&nbsp;2.0.0</span><a href="https://docs.rs/crate/cl-aux/2.0.0/source/src/structures/array_wrapper.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>structures/<wbr></span><span class="result-file-name">array_wrapper.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cl-aux/2.0.0/source/src/structures/array_wrapper.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod here_be_dragons {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #![allow(clippy::as_conversions, <mark>clippy::mem_forget</mark>, trivial_casts, unsafe_code)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cl-traits&nbsp;7.0.0</span><a href="https://docs.rs/crate/cl-traits/7.0.0/source/src/structures/array_wrapper.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>structures/<wbr></span><span class="result-file-name">array_wrapper.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cl-traits/7.0.0/source/src/structures/array_wrapper.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">124</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod here_be_dragons {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">125</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #![allow(clippy::as_conversions, <mark>clippy::mem_forget</mark>, trivial_casts, unsafe_code)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">minidumper&nbsp;0.7.0</span><a href="https://docs.rs/crate/minidumper/0.7.0/source/src/ipc/mac.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>ipc/<wbr></span><span class="result-file-name">mac.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/minidumper/0.7.0/source/src/ipc/mac.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::mem_forget</mark>, unsafe_code)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">minidumper&nbsp;0.7.0</span><a href="https://docs.rs/crate/minidumper/0.7.0/source/src/ipc/windows.rs#:~:text=clippy%3a%3amem_forget"><span class="result-file-directory">/src/<wbr>ipc/<wbr></span><span class="result-file-name">windows.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/minidumper/0.7.0/source/src/ipc/windows.rs#:~:text=clippy%3a%3amem_forget','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::mem_forget</mark>, unsafe_code)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

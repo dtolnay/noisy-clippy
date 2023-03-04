@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fuel-vm&nbsp;0.25.2</span><a href="https://docs.rs/crate/fuel-vm/0.25.2/source/tests/metadata.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">metadata.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fuel-vm/0.25.2/source/tests/metadata.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">149</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::iter_cloned_collect</mark>)] // collection is also perfomring a type conversion</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let script = script.iter().copied().collect::&lt;Vec&lt;u8&gt;&gt;();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fuels-contract&nbsp;0.33.0</span><a href="https://docs.rs/crate/fuels-contract/0.33.0/source/src/contract_calls_utils.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">contract_calls_utils.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fuels-contract/0.33.0/source/src/contract_calls_utils.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">158</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::iter_cloned_collect</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">159</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    instructions.iter().copied().collect::&lt;Vec&lt;u8&gt;&gt;()</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fuels-programs&nbsp;0.34.0</span><a href="https://docs.rs/crate/fuels-programs/0.34.0/source/src/call_utils.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">call_utils.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fuels-programs/0.34.0/source/src/call_utils.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">153</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::iter_cloned_collect</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">154</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    instructions.iter().copied().collect::&lt;Vec&lt;u8&gt;&gt;()</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mownstr&nbsp;0.1.3</span><a href="https://docs.rs/crate/mownstr/0.1.3/source/benches/bench1.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/benches/<wbr></span><span class="result-file-name">bench1.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mownstr/0.1.3/source/benches/bench1.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            b.iter(|| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::iter_cloned_collect</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                // strangely, replacing .iter().cloned().collect() by to_vec(),</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ntex-bytes&nbsp;0.1.19</span><a href="https://docs.rs/crate/ntex-bytes/0.1.19/source/tests/test_bytes.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test_bytes.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ntex-bytes/0.1.19/source/tests/test_bytes.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">449</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::redundant_slicing,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">450</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::iter_cloned_collect</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">451</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_borrow</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">503</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">504</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::iter_cloned_collect</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">505</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::redundant_slicing,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">taffy&nbsp;0.3.0-alpha1</span><a href="https://docs.rs/crate/taffy/0.3.0-alpha1/source/src/node.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">node.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/taffy/0.3.0-alpha1/source/src/node.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">123</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::iter_cloned_collect</mark>)] // due to no-std support, we need to use `iter_cloned` instead of `collect`</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">124</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Taffy {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fuel-asm&nbsp;0.25.2</span><a href="https://docs.rs/crate/fuel-asm/0.25.2/source/tests/encoding.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">encoding.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fuel-asm/0.25.2/source/tests/encoding.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::iter_cloned_collect</mark>)] // https://github.com/rust-lang/rust-clippy/issues/9119</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">thiserror&nbsp;1.0.38</span><a href="https://docs.rs/crate/thiserror/1.0.38/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test_expr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/thiserror/1.0.38/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::iter_cloned_collect</mark>, clippy::option_if_let_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">thiserror-core&nbsp;1.0.37</span><a href="https://docs.rs/crate/thiserror-core/1.0.37/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test_expr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/thiserror-core/1.0.37/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::iter_cloned_collect</mark>, clippy::option_if_let_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">thiserror_core2&nbsp;2.0.1</span><a href="https://docs.rs/crate/thiserror_core2/2.0.1/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test_expr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/thiserror_core2/2.0.1/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![deny(clippy::all, clippy::pedantic)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::iter_cloned_collect</mark>, clippy::option_if_let_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">thiserror-no-std&nbsp;2.0.2</span><a href="https://docs.rs/crate/thiserror-no-std/2.0.2/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test_expr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/thiserror-no-std/2.0.2/source/tests/test_expr.rs#:~:text=clippy%3a%3aiter_cloned_collect','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::iter_cloned_collect</mark>, clippy::option_if_let_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

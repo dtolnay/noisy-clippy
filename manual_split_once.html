@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">git-checks&nbsp;4.2.1</span><a href="https://docs.rs/crate/git-checks/4.2.1/source/src/valid_name.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">valid_name.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/git-checks/4.2.1/source/src/valid_name.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">198</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn check_email(&amp;self, email: &amp;str) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">199</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // XXX(rust-1.52): use `email.split_once('@').map(|t| t.1)`</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">git-smash&nbsp;0.1.0</span><a href="https://docs.rs/crate/git-smash/0.1.0/source/src/main.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/git-smash/0.1.0/source/src/main.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">348</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// TODO: remove once stabilized</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">349</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(unknown_lints, <mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">350</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn select_target(line: &amp;[u8]) -&gt; Result&lt;String&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ntex-prost-build&nbsp;0.11.5</span><a href="https://docs.rs/crate/ntex-prost-build/0.11.5/source/src/path.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">path.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ntex-prost-build/0.11.5/source/src/path.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">124</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    std::iter::successors(Some(fq_path), |path| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">125</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(unknown_lints, <mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">126</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        path.rsplitn(2, '.').nth(1).filter(|path| !path.is_empty())</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">136</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    std::iter::successors(Some(fq_path), |path| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">137</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(unknown_lints, <mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">138</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        path.splitn(2, '.').nth(1).filter(|path| !path.is_empty())</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">prost-build&nbsp;0.11.6</span><a href="https://docs.rs/crate/prost-build/0.11.6/source/src/path.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">path.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/prost-build/0.11.6/source/src/path.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    std::iter::successors(Some(fq_path), |path| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">121</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(unknown_lints, <mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">122</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        path.rsplitn(2, '.').nth(1).filter(|path| !path.is_empty())</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    std::iter::successors(Some(fq_path), |path| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(unknown_lints, <mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        path.splitn(2, '.').nth(1).filter(|path| !path.is_empty())</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">prost-msg-build&nbsp;0.1.6</span><a href="https://docs.rs/crate/prost-msg-build/0.1.6/source/src/path.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">path.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/prost-msg-build/0.1.6/source/src/path.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    std::iter::successors(Some(fq_path), |path| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">121</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(unknown_lints, <mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">122</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        path.rsplitn(2, '.').nth(1).filter(|path| !path.is_empty())</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    std::iter::successors(Some(fq_path), |path| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(unknown_lints, <mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        path.splitn(2, '.').nth(1).filter(|path| !path.is_empty())</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">prs-lib&nbsp;0.5.0</span><a href="https://docs.rs/crate/prs-lib/0.5.0/source/src/util/git.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr>util/<wbr></span><span class="result-file-name">git.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/prs-lib/0.5.0/source/src/util/git.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// reliable.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::manual_split_once</mark>, clippy::needless_splitn)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">121</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn ssh_uri_host(mut uri: &amp;str) -&gt; Option&lt;&amp;str&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sys-locale&nbsp;0.2.3</span><a href="https://docs.rs/crate/sys-locale/0.2.3/source/src/unix.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">unix.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sys-locale/0.2.3/source/src/unix.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // TODO: Once we bump MSRV &gt;= 1.52, remove this allow and clean up</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::needless_splitn)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tectonic&nbsp;0.12.0</span><a href="https://docs.rs/crate/tectonic/0.12.0/source/src/driver.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">driver.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tectonic/0.12.0/source/src/driver.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1700</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Use the TeX engine to generate a format file.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1701</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::manual_split_once</mark>)] // requires Rust 1.52 (note that we don't actually define our MSRV)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1702</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn make_format_pass(&amp;mut self, status: &amp;mut dyn StatusBackend) -&gt; Result&lt;i32&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tectonic&nbsp;0.12.0</span><a href="https://docs.rs/crate/tectonic/0.12.0/source/src/io/format_cache.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr>io/<wbr></span><span class="result-file-name">format_cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tectonic/0.12.0/source/src/io/format_cache.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// produces a path that may or may not exist.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">43</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::manual_split_once</mark>)] // requires Rust 1.52 (note that we don't actually define our MSRV)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn path_for_format(&amp;mut self, name: &amp;str) -&gt; Result&lt;PathBuf&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zeptohttpc&nbsp;0.5.1</span><a href="https://docs.rs/crate/zeptohttpc/0.5.1/source/src/body_reader.rs#:~:text=clippy%3a%3amanual_split_once"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">body_reader.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zeptohttpc/0.5.1/source/src/body_reader.rs#:~:text=clippy%3a%3amanual_split_once','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if let Some(type_) = headers.get(CONTENT_TYPE) {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::manual_split_once</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if let Some(charset) = type_.to_str()?.splitn(2, "charset=").nth(1) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

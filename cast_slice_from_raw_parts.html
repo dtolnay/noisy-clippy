@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">glib&nbsp;0.16.7</span><a href="https://docs.rs/crate/glib/0.16.7/source/src/variant_type.rs#:~:text=clippy%3a%3acast_slice_from_raw_parts"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">variant_type.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/glib/0.16.7/source/src/variant_type.rs#:~:text=clippy%3a%3acast_slice_from_raw_parts','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">139</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_slice_from_raw_parts</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">140</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn deref(&amp;self) -&gt; &amp;VariantTy {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">453</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[doc(hidden)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">454</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::cast_slice_from_raw_parts</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">455</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub unsafe fn from_ptr&lt;'a&gt;(ptr: *const ffi::GVariantType) -&gt; &amp;'a VariantTy {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">glommio&nbsp;0.8.0</span><a href="https://docs.rs/crate/glommio/0.8.0/source/src/channels/spsc_queue.rs#:~:text=clippy%3a%3acast_slice_from_raw_parts"><span class="result-file-directory">/src/<wbr>channels/<wbr></span><span class="result-file-name">spsc_queue.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/glommio/0.8.0/source/src/channels/spsc_queue.rs#:~:text=clippy%3a%3acast_slice_from_raw_parts','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">228</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            // Nightly clippy warns about this but ptr::from_raw_parts_mut isn't stable yet.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">229</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::cast_slice_from_raw_parts</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">230</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let ptr = from_raw_parts_mut(self.buffer_storage, self.capacity) as *mut [Slot&lt;T&gt;];</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

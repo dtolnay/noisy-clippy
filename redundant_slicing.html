@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">actyxos_sdk&nbsp;0.6.0</span><a href="https://docs.rs/crate/actyxos_sdk/0.6.0/source/src/event/scalars.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr>event/<wbr></span><span class="result-file-name">scalars.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/actyxos_sdk/0.6.0/source/src/event/scalars.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">357</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        buf[MAX_SOURCEID_LENGTH] = bytes.len() as u8;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">358</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">359</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        buf[..bytes.len()].clone_from_slice(&amp;bytes[..]);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ascii&nbsp;1.1.0</span><a href="https://docs.rs/crate/ascii/1.1.0/source/src/ascii_str.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ascii_str.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ascii/1.1.0/source/src/ascii_str.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1378</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1379</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1380</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn index() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ascii&nbsp;1.1.0</span><a href="https://docs.rs/crate/ascii/1.1.0/source/tests.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/</span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ascii/1.1.0/source/tests.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">96</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">97</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">98</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn compare_ascii_str_slice() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">automerge&nbsp;0.3.0</span><a href="https://docs.rs/crate/automerge/0.3.0/source/src/columnar/column_range/value.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr>columnar/<wbr>column_range/<wbr></span><span class="result-file-name">value.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/automerge/0.3.0/source/src/columnar/column_range/value.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">214</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let val_meta = ValueMeta::from(next);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">215</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">216</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                match val_meta.type_code() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">busrt&nbsp;0.3.6</span><a href="https://docs.rs/crate/busrt/0.3.6/source/src/cli.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">cli.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/busrt/0.3.6/source/src/cli.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">228</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    } else {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">229</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">230</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        (&amp;payload[..], "")</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">chore&nbsp;0.1.0</span><a href="https://docs.rs/crate/chore/0.1.0/source/src/print.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">print.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/chore/0.1.0/source/src/print.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">186</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // and unavailable for the from_utf8_unchecked() access</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">187</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">188</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let mut cursor = std::io::Cursor::new(&amp;mut buf[..]);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">elbus&nbsp;0.2.21</span><a href="https://docs.rs/crate/elbus/0.2.21/source/src/cli.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">cli.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/elbus/0.2.21/source/src/cli.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">228</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    } else {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">229</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">230</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        (&amp;payload[..], "")</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">git-pack&nbsp;0.30.1</span><a href="https://docs.rs/crate/git-pack/0.30.1/source/src/data/entry/decode.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr>data/<wbr>entry/<wbr></span><span class="result-file-name">decode.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/git-pack/0.30.1/source/src/data/entry/decode.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">69</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                r.read_exact(hash)?;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">70</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">71</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let delta = RefDelta {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">glommio&nbsp;0.8.0</span><a href="https://docs.rs/crate/glommio/0.8.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/glommio/0.8.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">286</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">287</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(dead_code)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">malachite-nz&nbsp;0.3.2</span><a href="https://docs.rs/crate/malachite-nz/0.3.2/source/src/natural/arithmetic/mod_pow.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr>natural/<wbr>arithmetic/<wbr></span><span class="result-file-name">mod_pow.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/malachite-nz/0.3.2/source/src/natural/arithmetic/mod_pow.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This is equivalent to `mpn_redc_1` from `mpn/generic/redc_1.c`, GMP 6.2.1.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn limbs_redc_limb_raw(out: &amp;mut [Limb], xs: &amp;mut [Limb], ms: &amp;[Limb], m_inv: Limb) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ntex-bytes&nbsp;0.1.19</span><a href="https://docs.rs/crate/ntex-bytes/0.1.19/source/tests/test_bytes.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test_bytes.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ntex-bytes/0.1.19/source/tests/test_bytes.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">448</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cmp_owned,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">449</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::redundant_slicing</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">450</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::iter_cloned_collect,</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">504</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::iter_cloned_collect,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">505</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::redundant_slicing</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">506</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_borrow</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">568</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">569</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">570</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn fns_defined_for_bytes_vec() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">psrt&nbsp;0.1.30</span><a href="https://docs.rs/crate/psrt/0.1.30/source/src/server.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">server.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/psrt/0.1.30/source/src/server.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">342</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                if let Ok(topic) = psrt::pubsub::prepare_topic(std::str::from_utf8(&amp;buf)?) {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">343</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">344</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    if topic.contains(TOPIC_INVALID_SYMBOLS) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">969</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let topic = psrt::pubsub::prepare_topic(topic).map_err(|e| (e, need_ack))?;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">970</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">971</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if topic.contains(TOPIC_INVALID_SYMBOLS) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">wtf8-rs&nbsp;1.1.0</span><a href="https://docs.rs/crate/wtf8-rs/1.1.0/source/src/wtf8buf/mod.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr>wtf8buf/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/wtf8-rs/1.1.0/source/src/wtf8buf/mod.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">305</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let len = len_utf8(code);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">306</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">307</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            match (len, &amp;mut dst[..]) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">arcstr&nbsp;1.1.5</span><a href="https://docs.rs/crate/arcstr/1.1.5/source/src/arc_str.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arc_str.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/arcstr/1.1.5/source/src/arc_str.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// For macros</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::redundant_slicing</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">arcstr&nbsp;1.1.5</span><a href="https://docs.rs/crate/arcstr/1.1.5/source/src/substr.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">substr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/arcstr/1.1.5/source/src/substr.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // For macros</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::redundant_slicing</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">arcstr&nbsp;1.1.5</span><a href="https://docs.rs/crate/arcstr/1.1.5/source/tests/substr.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">substr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/arcstr/1.1.5/source/tests/substr.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Deliberate</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::redundant_slicing</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cess-sp-core&nbsp;0.1.2</span><a href="https://docs.rs/crate/cess-sp-core/0.1.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cess-sp-core/0.1.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::upper_case_acronyms)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::unnecessary_wraps)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hdf5-types&nbsp;0.8.1</span><a href="https://docs.rs/crate/hdf5-types/0.8.1/source/src/string.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">string.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hdf5-types/0.8.1/source/src/string.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>use std::borrow::{Borrow, Cow};</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">minivec&nbsp;0.4.0</span><a href="https://docs.rs/crate/minivec/0.4.0/source/tests/vec.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">vec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/minivec/0.4.0/source/tests/vec.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::eq_op,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  <mark>clippy::redundant_slicing</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::iter_count,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sprs&nbsp;0.11.0</span><a href="https://docs.rs/crate/sprs/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sprs/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>*/</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">storage-proofs-core&nbsp;12.0.0</span><a href="https://docs.rs/crate/storage-proofs-core/12.0.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/storage-proofs-core/12.0.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_slicing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::upper_case_acronyms)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_slicing</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::unnecessary_wraps)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

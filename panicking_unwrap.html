@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">dos-cp&nbsp;0.4.0</span><a href="https://docs.rs/crate/dos-cp/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3apanicking_unwrap"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/dos-cp/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3apanicking_unwrap','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">282</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if r.is_err() &amp;&amp; !panicking() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">283</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::panicking_unwrap</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">284</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            r.unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tuifw-screen-dos&nbsp;0.21.1</span><a href="https://docs.rs/crate/tuifw-screen-dos/0.21.1/source/src/lib.rs#:~:text=clippy%3a%3apanicking_unwrap"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tuifw-screen-dos/0.21.1/source/src/lib.rs#:~:text=clippy%3a%3apanicking_unwrap','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">71</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Drop for Screen {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">72</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::panicking_unwrap</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn drop(&amp;mut self) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tuifw-screen-winapi&nbsp;0.21.1</span><a href="https://docs.rs/crate/tuifw-screen-winapi/0.21.1/source/src/lib.rs#:~:text=clippy%3a%3apanicking_unwrap"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tuifw-screen-winapi/0.21.1/source/src/lib.rs#:~:text=clippy%3a%3apanicking_unwrap','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">424</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Allocator&gt; Drop for Screen&lt;A&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">425</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::panicking_unwrap</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">426</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn drop(&amp;mut self) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tuifw-screen-ncurses&nbsp;0.21.1</span><a href="https://docs.rs/crate/tuifw-screen-ncurses/0.21.1/source/src/non_unicode.rs#:~:text=clippy%3a%3apanicking_unwrap"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">non_unicode.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tuifw-screen-ncurses/0.21.1/source/src/non_unicode.rs#:~:text=clippy%3a%3apanicking_unwrap','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">168</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Allocator&gt; Drop for Screen&lt;A&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">169</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #![allow(<mark>clippy::panicking_unwrap</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">170</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn drop(&amp;mut self) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tuifw-screen-ncurses&nbsp;0.21.1</span><a href="https://docs.rs/crate/tuifw-screen-ncurses/0.21.1/source/src/unicode.rs#:~:text=clippy%3a%3apanicking_unwrap"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">unicode.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tuifw-screen-ncurses/0.21.1/source/src/unicode.rs#:~:text=clippy%3a%3apanicking_unwrap','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">177</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Allocator&gt; Drop for Screen&lt;A&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">178</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #![allow(<mark>clippy::panicking_unwrap</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">179</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn drop(&amp;mut self) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

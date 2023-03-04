@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cairo-lang-lowering&nbsp;1.0.0-alpha.2</span><a href="https://docs.rs/crate/cairo-lang-lowering/1.0.0-alpha.2/source/src/borrow_check/demand.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr"><span class="result-file-directory">/src/<wbr>borrow_check/<wbr></span><span class="result-file-name">demand.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cairo-lang-lowering/1.0.0-alpha.2/source/src/borrow_check/demand.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let var = &amp;borrow_checker.lowered.variables[*var];</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::overly_complex_bool_expr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                if !var.droppable {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cairo-lang-lowering&nbsp;1.0.0-alpha.2</span><a href="https://docs.rs/crate/cairo-lang-lowering/1.0.0-alpha.2/source/src/borrow_check/mod.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr"><span class="result-file-directory">/src/<wbr>borrow_check/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cairo-lang-lowering/1.0.0-alpha.2/source/src/borrow_check/mod.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">174</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let var = &amp;self.lowered.variables[*var];</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">175</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::overly_complex_bool_expr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">176</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    if false &amp;&amp; !var.droppable {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ep-miniaudio-sys&nbsp;2.4.0</span><a href="https://docs.rs/crate/ep-miniaudio-sys/2.4.0/source/build.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr"><span class="result-file-directory">/</span><span class="result-file-name">build.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ep-miniaudio-sys/2.4.0/source/build.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">175</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Enables SIMD flags for CC based on enabled Rust features.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">176</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::logic_bug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">177</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn apply_flags(b: &amp;mut cc::Build) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">195</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Emits features that map to miniaudio platform feature macros.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">196</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::logic_bug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">197</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn emit_supported_features() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">om-fork-ep-miniaudio-sys&nbsp;2.6.0</span><a href="https://docs.rs/crate/om-fork-ep-miniaudio-sys/2.6.0/source/build.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr"><span class="result-file-directory">/</span><span class="result-file-name">build.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/om-fork-ep-miniaudio-sys/2.6.0/source/build.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">235</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Enables SIMD flags for CC based on enabled Rust features.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">236</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::logic_bug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">237</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn apply_flags(b: &amp;mut cc::Build) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">255</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Emits features that map to miniaudio platform feature macros.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">256</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::logic_bug</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">257</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn emit_supported_features() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ra_ap_syntax&nbsp;0.0.149</span><a href="https://docs.rs/crate/ra_ap_syntax/0.0.149/source/src/syntax_node.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">syntax_node.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ra_ap_syntax/0.0.149/source/src/syntax_node.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // Disable block validation, see https://github.com/rust-lang/rust-analyzer/pull/10357</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::overly_complex_bool_expr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if cfg!(debug_assertions) &amp;&amp; false {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">anyhow&nbsp;1.0.68</span><a href="https://docs.rs/crate/anyhow/1.0.68/source/tests/test_ensure.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test_ensure.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/anyhow/1.0.68/source/tests/test_ensure.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::never_loop,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">10</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::overly_complex_bool_expr</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::redundant_closure_call,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_ecma_minifier&nbsp;0.166.10</span><a href="https://docs.rs/crate/swc_ecma_minifier/0.166.10/source/src/lib.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_ecma_minifier/0.166.10/source/src/lib.rs#:~:text=clippy%3a%3aoverly_complex_bool_expr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::vec_box)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::overly_complex_bool_expr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::only_used_in_recursion)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

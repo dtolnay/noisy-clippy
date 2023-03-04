@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">didyoumean&nbsp;1.1.4</span><a href="https://docs.rs/crate/didyoumean/1.1.4/source/src/lib.rs#:~:text=clippy%3a%3aiter_count"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/didyoumean/1.1.4/source/src/lib.rs#:~:text=clippy%3a%3aiter_count','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">109</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// ```</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">110</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::iter_count</mark>, clippy::needless_range_loop)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn edit_distance(search_chars: &amp;[char], known_term: &amp;str) -&gt; usize {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">h3ron&nbsp;0.17.0</span><a href="https://docs.rs/crate/h3ron/0.17.0/source/benches/cell_boundary.rs#:~:text=clippy%3a%3aiter_count"><span class="result-file-directory">/benches/<wbr></span><span class="result-file-name">cell_boundary.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/h3ron/0.17.0/source/benches/cell_boundary.rs#:~:text=clippy%3a%3aiter_count','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        bencher.iter(|| {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::iter_count</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let _cnt = cell.to_polygon().unwrap().exterior().0.iter().count();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">raft-engine&nbsp;0.3.0</span><a href="https://docs.rs/crate/raft-engine/0.3.0/source/src/swappy_allocator.rs#:~:text=clippy%3a%3aiter_count"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">swappy_allocator.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/raft-engine/0.3.0/source/src/swappy_allocator.rs#:~:text=clippy%3a%3aiter_count','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    assert_eq!(tester.len(), len);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1128</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::iter_count</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1129</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let iter_len = tester.iter().count();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">minivec&nbsp;0.4.0</span><a href="https://docs.rs/crate/minivec/0.4.0/source/tests/vec.rs#:~:text=clippy%3a%3aiter_count"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">vec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/minivec/0.4.0/source/tests/vec.rs#:~:text=clippy%3a%3aiter_count','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::redundant_slicing,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  <mark>clippy::iter_count</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::assign_op_pattern,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

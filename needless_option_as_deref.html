@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">git-index&nbsp;0.12.2</span><a href="https://docs.rs/crate/git-index/0.12.2/source/src/extension/tree/verify.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>extension/<wbr>tree/<wbr></span><span class="result-file-name">verify.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/git-index/0.12.2/source/src/extension/tree/verify.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">100</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                // This is actually needed here as it's a mut ref, which isn't copy. We do a re-borrow here.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">101</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">102</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let actual_num_entries = verify_recursive(child.id, &amp;child.children, find_buf.as_deref_mut(), find)?;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">git-odb&nbsp;0.40.1</span><a href="https://docs.rs/crate/git-odb/0.40.1/source/src/store_impls/dynamic/prefix.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>store_impls/<wbr>dynamic/<wbr></span><span class="result-file-name">prefix.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/git-odb/0.40.1/source/src/store_impls/dynamic/prefix.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            for index in snapshot.indices.iter() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::needless_option_as_deref</mark>)] // needed as it's the equivalent of a reborrow.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let lookup_result = index.lookup_prefix(prefix, candidates.as_deref_mut());</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">158</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            for lodb in snapshot.loose_dbs.iter() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">159</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::needless_option_as_deref</mark>)] // needed as it's the equivalent of a reborrow.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">160</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let lookup_result = lodb.lookup_prefix(prefix, candidates.as_deref_mut())?;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer&nbsp;0.19.7</span><a href="https://docs.rs/crate/gstreamer/0.19.7/source/src/pad.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">pad.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer/0.19.7/source/src/pad.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1398</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1399</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>unsafe extern "C" fn trampoline_getrange_function&lt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer-base&nbsp;0.19.3</span><a href="https://docs.rs/crate/gstreamer-base/0.19.3/source/src/subclass/base_src.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>subclass/<wbr></span><span class="result-file-name">base_src.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer-base/0.19.3/source/src/subclass/base_src.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">771</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">772</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>unsafe extern "C" fn base_src_create&lt;T: BaseSrcImpl&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gstreamer-base&nbsp;0.19.3</span><a href="https://docs.rs/crate/gstreamer-base/0.19.3/source/src/subclass/push_src.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>subclass/<wbr></span><span class="result-file-name">push_src.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gstreamer-base/0.19.3/source/src/subclass/push_src.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">238</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">239</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>unsafe extern "C" fn push_src_create&lt;T: PushSrcImpl&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ipfs-sqlite-block-store&nbsp;0.13.0</span><a href="https://docs.rs/crate/ipfs-sqlite-block-store/0.13.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ipfs-sqlite-block-store/0.13.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">667</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        for block in blocks {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">668</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">669</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            txn.put_block(block, pin.as_deref_mut())?;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">memflow&nbsp;0.2.0-beta9</span><a href="https://docs.rs/crate/memflow/0.2.0-beta9/source/src/connector/fileio.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>connector/<wbr></span><span class="result-file-name">fileio.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/memflow/0.2.0-beta9/source/src/connector/fileio.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">131</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::collapsible_if)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">memflow&nbsp;0.2.0-beta9</span><a href="https://docs.rs/crate/memflow/0.2.0-beta9/source/src/connector/mmap.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>connector/<wbr></span><span class="result-file-name">mmap.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/memflow/0.2.0-beta9/source/src/connector/mmap.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">93</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">94</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a, F: AsRef&lt;MemoryMap&lt;&amp;'a mut [u8]&gt;&gt; + Send&gt; PhysicalMemory</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">141</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">142</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a, F: AsRef&lt;MemoryMap&lt;&amp;'a [u8]&gt;&gt; + Send&gt; PhysicalMemory</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">memflow&nbsp;0.2.0-beta9</span><a href="https://docs.rs/crate/memflow/0.2.0-beta9/source/src/mem/mem_map.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>mem/<wbr></span><span class="result-file-name">mem_map.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/memflow/0.2.0-beta9/source/src/mem/mem_map.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">404</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">405</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">memflow&nbsp;0.2.0-beta9</span><a href="https://docs.rs/crate/memflow/0.2.0-beta9/source/src/mem/phys_mem/cache/page_cache.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>mem/<wbr>phys_mem/<wbr>cache/<wbr></span><span class="result-file-name">page_cache.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/memflow/0.2.0-beta9/source/src/mem/phys_mem/cache/page_cache.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">43</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a, T: CacheValidator&gt; PageCache&lt;'a, T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">memflow&nbsp;0.2.0-beta9</span><a href="https://docs.rs/crate/memflow/0.2.0-beta9/source/src/mem/virt_mem/virtual_dma.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>mem/<wbr>virt_mem/<wbr></span><span class="result-file-name">virtual_dma.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/memflow/0.2.0-beta9/source/src/mem/virt_mem/virtual_dma.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">201</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;T: PhysicalMemory, V: VirtualTranslate2, D: VirtualTranslate3&gt; MemoryView</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mio&nbsp;0.8.5</span><a href="https://docs.rs/crate/mio/0.8.5/source/src/sys/windows/named_pipe.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>sys/<wbr>windows/<wbr></span><span class="result-file-name">named_pipe.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mio/0.8.5/source/src/sys/windows/named_pipe.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">796</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut io = me.io.lock().unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">797</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">798</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if Inner::schedule_read(me, &amp;mut io, events.as_deref_mut()) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mio_wasi&nbsp;0.8.4</span><a href="https://docs.rs/crate/mio_wasi/0.8.4/source/src/sys/windows/named_pipe.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>sys/<wbr>windows/<wbr></span><span class="result-file-name">named_pipe.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mio_wasi/0.8.4/source/src/sys/windows/named_pipe.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">796</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut io = me.io.lock().unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">797</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">798</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if Inner::schedule_read(me, &amp;mut io, events.as_deref_mut()) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mongodb&nbsp;2.4.0-beta.1</span><a href="https://docs.rs/crate/mongodb/2.4.0-beta.1/source/src/coll/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>coll/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mongodb/2.4.0-beta.1/source/src/coll/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">220</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">221</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    async fn drop_common(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">256</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg(feature = "in-use-encryption-unstable")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">257</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">258</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    async fn drop_aux_collections(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1172</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1173</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1174</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    async fn insert_many_common(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mongodb&nbsp;2.4.0-beta.1</span><a href="https://docs.rs/crate/mongodb/2.4.0-beta.1/source/src/db/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>db/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mongodb/2.4.0-beta.1/source/src/db/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">291</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">292</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    async fn create_collection_common(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">366</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg(feature = "in-use-encryption-unstable")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">367</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">368</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    async fn create_aux_collections(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">python-oxidized-importer&nbsp;0.9.0</span><a href="https://docs.rs/crate/python-oxidized-importer/0.9.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/python-oxidized-importer/0.9.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod conversion;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod importer;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod package_metadata;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod path_entry_finder;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod pkg_resources;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod python_resource_collector;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg(feature = "zipimport")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod zip_import;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">teloxide-core&nbsp;0.9.0</span><a href="https://docs.rs/crate/teloxide-core/0.9.0/source/src/adaptors/throttle/worker.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>adaptors/<wbr>throttle/<wbr></span><span class="result-file-name">worker.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/teloxide-core/0.9.0/source/src/adaptors/throttle/worker.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">307</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // moved-out error.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">308</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">309</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if let Some(slow_mode) = slow_mode.as_deref_mut() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tender&nbsp;0.1.1</span><a href="https://docs.rs/crate/tender/0.1.1/source/src/core/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>core/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tender/0.1.1/source/src/core/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">412</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                }</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">413</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">414</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                self.set_state(State::Follower, set_prev_state.as_deref_mut());</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">wgpu-core&nbsp;0.15.0</span><a href="https://docs.rs/crate/wgpu-core/0.15.0/source/src/track/texture.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>track/<wbr></span><span class="result-file-name">texture.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/wgpu-core/0.15.0/source/src/track/texture.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1398</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_option_as_deref</mark>)] // we use this for reborrowing Option&lt;&amp;mut T&gt;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1399</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xh&nbsp;0.17.0</span><a href="https://docs.rs/crate/xh/0.17.0/source/src/middleware.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">middleware.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xh/0.17.0/source/src/middleware.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            [ref mut head, tail @ ..] =&gt; head.handle(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                Context::new(self.client, self.printer.as_deref_mut(), tail),</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">diamond-types&nbsp;1.0.0</span><a href="https://docs.rs/crate/diamond-types/1.0.0/source/src/list/merge/merge.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>list/<wbr>merge/<wbr></span><span class="result-file-name">merge.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/diamond-types/1.0.0/source/src/list/merge/merge.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// checker.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">facto&nbsp;0.3.1</span><a href="https://docs.rs/crate/facto/0.3.1/source/src/optimized_factoring/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref"><span class="result-file-directory">/src/<wbr>optimized_factoring/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/facto/0.3.1/source/src/optimized_factoring/mod.rs#:~:text=clippy%3a%3aneedless_option_as_deref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// I don't know how else to pass an Option&lt;&amp;mut T&gt; as an argument multiple times, other than Option&lt;&amp;mut T&gt;::as_deref_mut()</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_option_as_deref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

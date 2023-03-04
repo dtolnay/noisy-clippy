@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">loader-rs&nbsp;0.7.0</span><a href="https://docs.rs/crate/loader-rs/0.7.0/source/src/testing_helpers.rs#:~:text=clippy%3a%3ainefficient_to_string"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">testing_helpers.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/loader-rs/0.7.0/source/src/testing_helpers.rs#:~:text=clippy%3a%3ainefficient_to_string','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">56</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl MockLoaderRequest {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">57</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::inefficient_to_string</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">58</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn build_mock_request(&amp;self) -&gt; mockito::Mock {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">starlark&nbsp;0.8.0</span><a href="https://docs.rs/crate/starlark/0.8.0/source/src/syntax/mod.rs#:~:text=clippy%3a%3ainefficient_to_string"><span class="result-file-directory">/src/<wbr>syntax/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/starlark/0.8.0/source/src/syntax/mod.rs#:~:text=clippy%3a%3ainefficient_to_string','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// Things we explicitly turn on need to be explicitly turned off</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::inefficient_to_string</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::trivially_copy_pass_by_ref)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vkcargo&nbsp;0.45.1</span><a href="https://docs.rs/crate/vkcargo/0.45.1/source/src/cargo/lib.rs#:~:text=clippy%3a%3ainefficient_to_string"><span class="result-file-directory">/src/<wbr>cargo/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vkcargo/0.45.1/source/src/cargo/lib.rs#:~:text=clippy%3a%3ainefficient_to_string','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::write_with_newline)] // too pedantic</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::inefficient_to_string</mark>)] // this causes suggestions that result in `(*s).to_string()`</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![warn(clippy::needless_borrow)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vkcargo&nbsp;0.45.1</span><a href="https://docs.rs/crate/vkcargo/0.45.1/source/tests/testsuite/main.rs#:~:text=clippy%3a%3ainefficient_to_string"><span class="result-file-directory">/tests/<wbr>testsuite/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vkcargo/0.45.1/source/tests/testsuite/main.rs#:~:text=clippy%3a%3ainefficient_to_string','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::block_in_if_condition_stmt)] // clippy doesn't agree with rustfmt 😂</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::inefficient_to_string</mark>)] // this causes suggestions that result in `(*s).to_string()`</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![warn(clippy::needless_borrow)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

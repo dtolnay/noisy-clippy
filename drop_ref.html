@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bus&nbsp;2.3.0</span><a href="https://docs.rs/crate/bus/2.3.0/source/src/lib.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bus/2.3.0/source/src/lib.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">223</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            // state is no longer safe to access.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">224</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">225</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            drop(state);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cl-generic-vec&nbsp;0.4.0</span><a href="https://docs.rs/crate/cl-generic-vec/0.4.0/source/src/iter.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">iter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cl-generic-vec/0.4.0/source/src/iter.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = self.try_reserve(iter.size_hint().0);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        iter.for_each(|item| drop(self.push(item)));</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cstree&nbsp;0.11.1</span><a href="https://docs.rs/crate/cstree/0.11.1/source/tests/it/sendsync.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/tests/<wbr>it/<wbr></span><span class="result-file-name">sendsync.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cstree/0.11.1/source/tests/it/sendsync.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">135</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg_attr(miri, ignore)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">136</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">137</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn drop_sync() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">derive-into-owned&nbsp;0.2.0</span><a href="https://docs.rs/crate/derive-into-owned/0.2.0/source/tests/borrowed.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">borrowed.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/derive-into-owned/0.2.0/source/tests/borrowed.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    drop(lives_less);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    drop(lives_longer);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">dhall&nbsp;0.12.0</span><a href="https://docs.rs/crate/dhall/0.12.0/source/src/error/builder.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr>error/<wbr></span><span class="result-file-name">builder.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/dhall/0.12.0/source/src/error/builder.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">117</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // TODO: handle multiple files</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn format(&amp;mut self) -&gt; String {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">filter_ast&nbsp;0.2.1</span><a href="https://docs.rs/crate/filter_ast/0.2.1/source/src/visit.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">visit.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/filter_ast/0.2.1/source/src/visit.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">10</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // and the compiler is happy.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        std::mem::drop(clause);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">genawaiter&nbsp;0.99.1</span><a href="https://docs.rs/crate/genawaiter/0.99.1/source/src/stack/mod.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr>stack/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/genawaiter/0.99.1/source/src/stack/mod.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">466</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            // cannot be dropped early.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">467</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">468</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            drop(gen);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">generic-vec&nbsp;0.1.2</span><a href="https://docs.rs/crate/generic-vec/0.1.2/source/src/iter.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">iter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/generic-vec/0.1.2/source/src/iter.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = self.try_reserve(iter.size_hint().0);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        iter.for_each(|item| drop(self.push(item)));</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = self.try_reserve(iter.size_hint().0);</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        iter.cloned().for_each(|item| drop(self.push(item)));</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">informalsystems-tonic&nbsp;0.5.2</span><a href="https://docs.rs/crate/informalsystems-tonic/0.5.2/source/src/codec/prost.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr>codec/<wbr></span><span class="result-file-name">prost.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/informalsystems-tonic/0.5.2/source/src/codec/prost.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">227</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">228</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn poll_trailers(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">neptune&nbsp;8.1.0</span><a href="https://docs.rs/crate/neptune/8.1.0/source/src/tree_builder.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">tree_builder.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/neptune/8.1.0/source/src/tree_builder.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">146</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">147</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        drop(preimages); // make sure we don't reference tree_data anymore</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tonic&nbsp;0.8.3</span><a href="https://docs.rs/crate/tonic/0.8.3/source/src/codec/prost.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr>codec/<wbr></span><span class="result-file-name">prost.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tonic/0.8.3/source/src/codec/prost.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">260</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">261</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn poll_trailers(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tonic-arcanyx-fork&nbsp;0.8.1-alpha.0</span><a href="https://docs.rs/crate/tonic-arcanyx-fork/0.8.1-alpha.0/source/src/codec/prost.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr>codec/<wbr></span><span class="result-file-name">prost.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tonic-arcanyx-fork/0.8.1-alpha.0/source/src/codec/prost.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">227</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">228</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn poll_trailers(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">wgpu-hal&nbsp;0.15.1</span><a href="https://docs.rs/crate/wgpu-hal/0.15.1/source/src/gles/adapter.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr>gles/<wbr></span><span class="result-file-name">adapter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/wgpu-hal/0.15.1/source/src/gles/adapter.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">572</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // dropping the ref )</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">573</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">574</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        drop(gl);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">av1an-core&nbsp;0.4.0</span><a href="https://docs.rs/crate/av1an-core/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/av1an-core/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::wildcard_imports)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::unsafe_derive_deserialize)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ptr-union&nbsp;2.2.2</span><a href="https://docs.rs/crate/ptr-union/2.2.2/source/tests/smoke.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">smoke.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ptr-union/2.2.2/source/tests/smoke.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::borrowed_box, <mark>clippy::drop_ref</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ux-dx&nbsp;0.2.1</span><a href="https://docs.rs/crate/ux-dx/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3adrop_ref"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ux-dx/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3adrop_ref','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">45</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::redundant_clone,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">46</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::drop_ref</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::should_implement_trait,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

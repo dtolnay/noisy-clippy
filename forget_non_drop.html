@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ergo-lib-c-core&nbsp;0.22.0</span><a href="https://docs.rs/crate/ergo-lib-c-core/0.22.0/source/src/rest/api/callback.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/src/<wbr>rest/<wbr>api/<wbr></span><span class="result-file-name">callback.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ergo-lib-c-core/0.22.0/source/src/rest/api/callback.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // free without running the destructor</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        std::mem::forget(self)</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // free without running the destructor</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        std::mem::forget(self)</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xt&nbsp;0.15.1</span><a href="https://docs.rs/crate/xt/0.15.1/source/src/input.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">input.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xt/0.15.1/source/src/input.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">408</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		// breaks this expectation.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">409</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		#[allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">410</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		std::mem::forget(input_ref);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">awak&nbsp;0.2.22</span><a href="https://docs.rs/crate/awak/0.2.22/source/src/waker_fn.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">waker_fn.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/awak/0.2.22/source/src/waker_fn.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>use std::mem::{self, ManuallyDrop};</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bevy_arcade_car_controller&nbsp;0.1.0</span><a href="https://docs.rs/crate/bevy_arcade_car_controller/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bevy_arcade_car_controller/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This is a workaround for issue: https://github.com/bevyengine/bevy/issues/4601</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bevy_prototype_lyon&nbsp;0.7.2</span><a href="https://docs.rs/crate/bevy_prototype_lyon/0.7.2/source/src/lib.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bevy_prototype_lyon/0.7.2/source/src/lib.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::needless_pass_by_value)] // False positives with `SystemParam`s.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::missing_const_for_fn)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/bools.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">bools.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/bools.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/comments.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">comments.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/comments.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/idents.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">idents.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/idents.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/keywords.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">keywords.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/keywords.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/null.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">null.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/null.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/numbers.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">numbers.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/numbers.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/puncts.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">puncts.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/puncts.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/regexes.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">regexes.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/regexes.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/strings.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">strings.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/strings.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ress&nbsp;0.11.5</span><a href="https://docs.rs/crate/ress/0.11.5/source/examples/instruments/templates.rs#:~:text=clippy%3a%3aforget_non_drop"><span class="result-file-directory">/examples/<wbr>instruments/<wbr></span><span class="result-file-name">templates.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ress/0.11.5/source/examples/instruments/templates.rs#:~:text=clippy%3a%3aforget_non_drop','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::forget_non_drop</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This example exists to allow for profiling</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

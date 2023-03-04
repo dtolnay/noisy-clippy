@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">array-bytes&nbsp;6.0.0</span><a href="https://docs.rs/crate/array-bytes/6.0.0/source/src/lib.rs#:~:text=clippy%3a%3atransmute_bytes_to_str"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/array-bytes/6.0.0/source/src/lib.rs#:~:text=clippy%3a%3atransmute_bytes_to_str','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">249</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		// Validated in previous step, never fails here; qed.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">250</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		#[allow(<mark>clippy::transmute_bytes_to_str</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">251</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		mem::transmute(bytes)</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">269</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub unsafe fn hex_bytes2hex_str_unchecked(bytes: &amp;[u8]) -&gt; &amp;str {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">270</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::transmute_bytes_to_str</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">271</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	mem::transmute(bytes)</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">owo-colors&nbsp;3.6.0</span><a href="https://docs.rs/crate/owo-colors/3.6.0/source/src/colors/custom.rs#:~:text=clippy%3a%3atransmute_bytes_to_str"><span class="result-file-directory">/src/<wbr>colors/<wbr></span><span class="result-file-name">custom.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/owo-colors/3.6.0/source/src/colors/custom.rs#:~:text=clippy%3a%3atransmute_bytes_to_str','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">323</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::transmute_bytes_to_str</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">324</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;const R: u8, const G: u8, const B: u8&gt; Color for CustomColor&lt;R, G, B&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

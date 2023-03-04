@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bolero&nbsp;0.8.0</span><a href="https://docs.rs/crate/bolero/0.8.0/source/src/test/mod.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/src/<wbr>test/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bolero/0.8.0/source/src/test/mod.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">104</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // miri doesn't capture explicit writes to stderr</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">105</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">106</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = write!(stderr(), ".");</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-test-fuzz&nbsp;3.0.5</span><a href="https://docs.rs/crate/cargo-test-fuzz/3.0.5/source/tests/third_party.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">third_party.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-test-fuzz/3.0.5/source/tests/third_party.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let (_, module) = module_path.split_once("::").unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">84</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    writeln!(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">necessist-core&nbsp;0.1.0-beta.6</span><a href="https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/ci_is/disabled.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/tests/<wbr>ci_is/<wbr></span><span class="result-file-name">disabled.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/ci_is/disabled.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn ci_is_disabled() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    writeln!(stderr(), "Warning: feature `ci` is disabled").unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">necessist-core&nbsp;0.1.0-beta.6</span><a href="https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/ci_is/enabled.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/tests/<wbr>ci_is/<wbr></span><span class="result-file-name">enabled.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/ci_is/enabled.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">160</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if dirty() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">161</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        writeln!(stderr(), "Skipping as repository is dirty").unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">necessist-core&nbsp;0.1.0-beta.6</span><a href="https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/ci_nightly_is/disabled.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/tests/<wbr>ci_nightly_is/<wbr></span><span class="result-file-name">disabled.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/ci_nightly_is/disabled.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn ci_nightly_is_disabled() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    writeln!(stderr(), "Warning: feature `ci_nightly` is disabled").unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">necessist-core&nbsp;0.1.0-beta.6</span><a href="https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/dogfood.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">dogfood.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/dogfood.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        writeln!(stderr(), "Skipping as repository is dirty").unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">necessist-core&nbsp;0.1.0-beta.6</span><a href="https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/sqlite_urls.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">sqlite_urls.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/necessist-core/0.1.0-beta.6/source/tests/sqlite_urls.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        writeln!(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rustfmt_if_chain&nbsp;0.1.4</span><a href="https://docs.rs/crate/rustfmt_if_chain/0.1.4/source/tests/dogfood.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">dogfood.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rustfmt_if_chain/0.1.4/source/tests/dogfood.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        writeln!(stderr(), "Skipping as repository is dirty").unwrap();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">etty&nbsp;0.0.0</span><a href="https://docs.rs/crate/etty/0.0.0/source/src/csi.rs#:~:text=clippy%3a%3aexplicit_write"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">csi.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/etty/0.0.0/source/src/csi.rs#:~:text=clippy%3a%3aexplicit_write','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::explicit_write</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">abi_stable&nbsp;0.11.1</span><a href="https://docs.rs/crate/abi_stable/0.11.1/source/src/std_types/arc/test.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>std_types/<wbr>arc/<wbr></span><span class="result-file-name">test.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/abi_stable/0.11.1/source/src/std_types/arc/test.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn _covariant_arc&lt;'a: 'b, 'b, T&gt;(foo: Arc&lt;&amp;'a T&gt;) -&gt; Arc&lt;&amp;'b T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">abi_stable&nbsp;0.11.1</span><a href="https://docs.rs/crate/abi_stable/0.11.1/source/src/std_types/boxed/test.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>std_types/<wbr>boxed/<wbr></span><span class="result-file-name">test.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/abi_stable/0.11.1/source/src/std_types/boxed/test.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn _covariant_box&lt;'a: 'b, 'b, T&gt;(foo: Box&lt;&amp;'a T&gt;) -&gt; Box&lt;&amp;'b T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">av-decoder&nbsp;0.1.1</span><a href="https://docs.rs/crate/av-decoder/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/av-decoder/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct AvContext&lt;T: ?Sized&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">56</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">57</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    _stream: Box&lt;Box&lt;T&gt;&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cbe-metrics&nbsp;1.15.0</span><a href="https://docs.rs/crate/cbe-metrics/1.15.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cbe-metrics/1.15.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A helper that sends the count of created tokens as a datapoint.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct TokenCounter(Arc&lt;&amp;'static str&gt;);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A token for `TokenCounter`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct CounterToken(Arc&lt;&amp;'static str&gt;);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">engineio-rs&nbsp;0.1.5</span><a href="https://docs.rs/crate/engineio-rs/0.1.5/source/src/transports/mod.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>transports/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/engineio-rs/0.1.5/source/src/transports/mod.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_pin_box(&amp;mut self) -&gt; std::pin::Pin&lt;Box&lt;&amp;mut (dyn Transport + Send)&gt;&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ferrisetw&nbsp;1.0.0</span><a href="https://docs.rs/crate/ferrisetw/1.0.0/source/src/trace.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">trace.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ferrisetw/1.0.0/source/src/trace.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">166</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Debug)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">167</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)] // see https://github.com/n4r1b/ferrisetw/issues/72</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">168</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct UserTrace {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">181</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Debug)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">182</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)] // see https://github.com/n4r1b/ferrisetw/issues/72</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">183</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct KernelTrace {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">259</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        const TRACE_KIND: TraceKind;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">260</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::redundant_allocation</mark>)] // Being Boxed is really important, let's keep the Box&lt;...&gt; in the function signature to make the intent clearer (see https://github.com/n4r1b/ferrisetw/issues/72)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">261</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        fn build(properties: EventTraceProperties, control_handle: ControlHandle, trace_handle: TraceHandle, callback_data: Box&lt;Arc&lt;CallbackData&gt;&gt;) -&gt; Self;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fvm&nbsp;3.0.0-alpha.21</span><a href="https://docs.rs/crate/fvm/3.0.0-alpha.21/source/src/kernel/blocks.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>kernel/<wbr></span><span class="result-file-name">blocks.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fvm/3.0.0-alpha.21/source/src/kernel/blocks.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // copy the bytes. So we accept some indirection for reliable performance.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    data: Rc&lt;Box&lt;[u8]&gt;&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gemachain-metrics&nbsp;1.8.2</span><a href="https://docs.rs/crate/gemachain-metrics/1.8.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gemachain-metrics/1.8.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A helper that sends the count of created tokens as a datapoint.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">10</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct TokenCounter(Arc&lt;&amp;'static str&gt;);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A token for `TokenCounter`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct CounterToken(Arc&lt;&amp;'static str&gt;);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">holochain_types&nbsp;0.1.0</span><a href="https://docs.rs/crate/holochain_types/0.1.0/source/src/dna/wasm.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>dna/<wbr></span><span class="result-file-name">wasm.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/holochain_types/0.1.0/source/src/dna/wasm.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// the wasm bytes from a .wasm file</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub code: Arc&lt;Box&lt;[u8]&gt;&gt;,</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// get a new Arc to the `Vec&lt;u8&gt;` bytes for the wasm</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn code(&amp;self) -&gt; Arc&lt;Box&lt;[u8]&gt;&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">icu_provider&nbsp;1.1.0</span><a href="https://docs.rs/crate/icu_provider/1.1.0/source/src/response.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">response.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/icu_provider/1.1.0/source/src/response.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Clone)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)] // false positive, it's cheaper to wrap an existing Box in an Rc than to reallocate a huge Rc</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">84</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct Cart(SelectedRc&lt;Box&lt;[u8]&gt;&gt;);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ioc&nbsp;0.12.0</span><a href="https://docs.rs/crate/ioc/0.12.0/source/src/async.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">async.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ioc/0.12.0/source/src/async.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">146</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    creation_fn: CreationFn&lt;T&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">147</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">148</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    instance: futures::lock::Mutex&lt;Option&lt;Arc&lt;Box&lt;T&gt;&gt;&gt;&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ioc&nbsp;0.12.0</span><a href="https://docs.rs/crate/ioc/0.12.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ioc/0.12.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    creation_fn: CreationFn&lt;T&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">153</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    instance: OnceCell&lt;Arc&lt;Box&lt;T&gt;&gt;&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">microvmi&nbsp;0.3.11</span><a href="https://docs.rs/crate/microvmi/0.3.11/source/src/capi/mod.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>capi/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/microvmi/0.3.11/source/src/capi/mod.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">199</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>unsafe fn get_driver_box(context: *mut c_void) -&gt; Box&lt;Box&lt;dyn Introspectable&gt;&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ouroboros_examples&nbsp;0.15.5</span><a href="https://docs.rs/crate/ouroboros_examples/0.15.5/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ouroboros_examples/0.15.5/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[self_referencing()]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A chain of references, where c references b which references a.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pen-ffi&nbsp;0.10.8</span><a href="https://docs.rs/crate/pen-ffi/0.10.8/source/src/any.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">any.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pen-ffi/0.10.8/source/src/any.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">153</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[pen_ffi_macro::any(crate = "crate")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">154</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">155</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[derive(Clone)]</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">199</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[pen_ffi_macro::any(crate = "crate")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">201</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[derive(Clone)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">photondb&nbsp;0.0.4</span><a href="https://docs.rs/crate/photondb/0.0.4/source/src/page_store/version.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>page_store/<wbr></span><span class="result-file-name">version.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/photondb/0.0.4/source/src/page_store/version.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Panic if there has already exists a version.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">113</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn switch_version(&amp;self, next: Box&lt;Arc&lt;Version&gt;&gt;, guard: Guard) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">quad-compat-rhai&nbsp;1.4.0</span><a href="https://docs.rs/crate/quad-compat-rhai/1.4.0/source/src/types/dynamic.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>types/<wbr></span><span class="result-file-name">dynamic.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/quad-compat-rhai/1.4.0/source/src/types/dynamic.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">195</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Any type as a trait object.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">196</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">197</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    Variant(Box&lt;Box&lt;dyn Variant&gt;&gt;, Tag, AccessMode),</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">range-lock&nbsp;0.2.3</span><a href="https://docs.rs/crate/range-lock/0.2.3/source/src/rangelock.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rangelock.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/range-lock/0.2.3/source/src/rangelock.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">199</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// The &amp;mut suppresses Sync and the Rc suppresses Send.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">200</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">201</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    _p: PhantomData&lt;Rc&lt;&amp;'a mut T&gt;&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">range-lock&nbsp;0.2.3</span><a href="https://docs.rs/crate/range-lock/0.2.3/source/src/reprangelock.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">reprangelock.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/range-lock/0.2.3/source/src/reprangelock.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">269</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// The &amp;mut suppresses Sync and the Rc suppresses Send.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">270</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">271</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    _p: PhantomData&lt;Rc&lt;&amp;'a mut T&gt;&gt;,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">safecoin-metrics&nbsp;1.14.3</span><a href="https://docs.rs/crate/safecoin-metrics/1.14.3/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/safecoin-metrics/1.14.3/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A helper that sends the count of created tokens as a datapoint.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct TokenCounter(Arc&lt;&amp;'static str&gt;);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A token for `TokenCounter`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct CounterToken(Arc&lt;&amp;'static str&gt;);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sea-orm&nbsp;0.10.7</span><a href="https://docs.rs/crate/sea-orm/0.10.7/source/src/entity/column.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>entity/<wbr></span><span class="result-file-name">column.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sea-orm/0.10.7/source/src/entity/column.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">458</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn from(column_type: sea_query::ColumnType) -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">459</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">460</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        fn convert_column_type(column_type: &amp;sea_query::ColumnType) -&gt; ColumnType {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">solana-metrics&nbsp;1.14.13</span><a href="https://docs.rs/crate/solana-metrics/1.14.13/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/solana-metrics/1.14.13/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A helper that sends the count of created tokens as a datapoint.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct TokenCounter(Arc&lt;&amp;'static str&gt;);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A token for `TokenCounter`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct CounterToken(Arc&lt;&amp;'static str&gt;);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sycamore-core&nbsp;0.8.2</span><a href="https://docs.rs/crate/sycamore-core/0.8.2/source/src/view.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">view.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sycamore-core/0.8.2/source/src/view.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// A fragment (aka. list) of [`View`]s.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::redundant_allocation</mark>)] // Cannot create a `Rc&lt;[T]&gt;` directly.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">22</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    Fragment(Rc&lt;Box&lt;[View&lt;G&gt;]&gt;&gt;),</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tarantool&nbsp;0.6.4</span><a href="https://docs.rs/crate/tarantool/0.6.4/source/src/net_box/inner.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>net_box/<wbr></span><span class="result-file-name">inner.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tarantool/0.6.4/source/src/net_box/inner.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">395</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>, clippy::boxed_local)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">396</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn send_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">425</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>, clippy::boxed_local)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">426</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn recv_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tarantool&nbsp;0.6.4</span><a href="https://docs.rs/crate/tarantool/0.6.4/source/src/network/client/inner.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>network/<wbr>client/<wbr></span><span class="result-file-name">inner.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tarantool/0.6.4/source/src/network/client/inner.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">367</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>, clippy::boxed_local)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">368</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn send_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">397</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>, clippy::boxed_local)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">398</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn recv_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tmkms&nbsp;0.12.2</span><a href="https://docs.rs/crate/tmkms/0.12.2/source/src/keyring/ecdsa.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>keyring/<wbr></span><span class="result-file-name">ecdsa.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tmkms/0.12.2/source/src/keyring/ecdsa.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tmkms&nbsp;0.12.2</span><a href="https://docs.rs/crate/tmkms/0.12.2/source/src/keyring/ed25519.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>keyring/<wbr></span><span class="result-file-name">ed25519.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tmkms/0.12.2/source/src/keyring/ed25519.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">waffles-solana-metrics&nbsp;1.15.0</span><a href="https://docs.rs/crate/waffles-solana-metrics/1.15.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/waffles-solana-metrics/1.15.0/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A helper that sends the count of created tokens as a datapoint.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct TokenCounter(Arc&lt;&amp;'static str&gt;);</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// A token for `TokenCounter`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct CounterToken(Arc&lt;&amp;'static str&gt;);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">intermodal-rs&nbsp;0.0.4</span><a href="https://docs.rs/crate/intermodal-rs/0.0.4/source/src/image/docker/transport.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>image/<wbr>docker/<wbr></span><span class="result-file-name">transport.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/intermodal-rs/0.0.4/source/src/image/docker/transport.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">log-reroute&nbsp;0.1.8</span><a href="https://docs.rs/crate/log-reroute/0.1.8/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/log-reroute/0.1.8/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// Arc&lt;S: Sized&gt;, so we don't have much choice in that matter.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pravega-client&nbsp;0.3.2</span><a href="https://docs.rs/crate/pravega-client/0.3.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pravega-client/0.3.2/source/src/lib.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![recursion_limit = "1024"]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ruma&nbsp;0.7.4</span><a href="https://docs.rs/crate/ruma/0.7.4/source/tests/outgoing.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">outgoing.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ruma/0.7.4/source/tests/outgoing.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::exhaustive_structs, <mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_ecma_transforms_react&nbsp;0.160.8</span><a href="https://docs.rs/crate/swc_ecma_transforms_react/0.160.8/source/src/jsx/mod.rs#:~:text=clippy%3a%3aredundant_allocation"><span class="result-file-directory">/src/<wbr>jsx/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_ecma_transforms_react/0.160.8/source/src/jsx/mod.rs#:~:text=clippy%3a%3aredundant_allocation','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::redundant_allocation</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

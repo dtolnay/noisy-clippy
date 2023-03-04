@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">actix-http-test&nbsp;3.1.0</span><a href="https://docs.rs/crate/actix-http-test/3.1.0/source/src/lib.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/actix-http-test/3.1.0/source/src/lib.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">90</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // all thread managed resources should be dropped at this point</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">91</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">92</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = thread_stop_tx.send(());</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">298</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // signal server to stop</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">299</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">300</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = self.server.stop(true);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">actix-web&nbsp;4.3.0</span><a href="https://docs.rs/crate/actix-web/4.3.0/source/src/app.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">app.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/actix-web/4.3.0/source/src/app.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">715</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">716</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = init_service(my_app());</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">actix-web-lab&nbsp;0.18.9</span><a href="https://docs.rs/crate/actix-web-lab/0.18.9/source/examples/body_async_write.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">body_async_write.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/actix-web-lab/0.18.9/source/examples/body_async_write.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">72</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // allow response to be started while this is processing</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let _ = tokio::spawn(async move {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">100</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // allow response to be started while this is processing</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">101</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">102</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let _ = tokio::spawn(async move {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">actix-web-lab&nbsp;0.18.9</span><a href="https://docs.rs/crate/actix-web-lab/0.18.9/source/examples/body_channel.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">body_channel.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/actix-web-lab/0.18.9/source/examples/body_channel.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // do not wait for this task to finish before sending response</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let _ = web::block(move || {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-trait&nbsp;0.1.64</span><a href="https://docs.rs/crate/async-trait/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-trait/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">917</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(path_statements, <mark>clippy::let_underscore_future</mark>, clippy::no_effect)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">918</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        async fn associated2(&amp;self) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">940</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(path_statements, <mark>clippy::let_underscore_future</mark>, clippy::no_effect)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">941</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        async fn associated2(&amp;self) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-trait-fn&nbsp;0.1.64</span><a href="https://docs.rs/crate/async-trait-fn/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">test.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-trait-fn/0.1.64/source/tests/test.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1382</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(path_statements, <mark>clippy::let_underscore_future</mark>, clippy::no_effect)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1383</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        async fn associated2(&amp;self) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1405</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(path_statements, <mark>clippy::let_underscore_future</mark>, clippy::no_effect)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1406</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        async fn associated2(&amp;self) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">awc&nbsp;3.1.0</span><a href="https://docs.rs/crate/awc/3.1.0/source/src/request.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">request.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/awc/3.1.0/source/src/request.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">570</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">571</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = req.send_body("");</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">awc&nbsp;3.1.0</span><a href="https://docs.rs/crate/awc/3.1.0/source/src/ws.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ws.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/awc/3.1.0/source/src/ws.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">512</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">513</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = req.connect();</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">futures&nbsp;0.3.26</span><a href="https://docs.rs/crate/futures/0.3.26/source/tests/async_await_macros.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">async_await_macros.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/futures/0.3.26/source/tests/async_await_macros.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">383</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">384</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">389</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">390</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">futures-async-stream&nbsp;0.2.6</span><a href="https://docs.rs/crate/futures-async-stream/0.2.6/source/tests/stream.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">stream.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/futures-async-stream/0.2.6/source/tests/stream.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[stream(item = i32)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">futures-util&nbsp;0.3.26</span><a href="https://docs.rs/crate/futures-util/0.3.26/source/src/future/select_all.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/src/<wbr>future/<wbr></span><span class="result-file-name">select_all.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/futures-util/0.3.26/source/src/future/select_all.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            Some((idx, res)) =&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">61</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">62</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let _ = self.inner.swap_remove(idx);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ractor&nbsp;0.6.1</span><a href="https://docs.rs/crate/ractor/0.6.1/source/examples/philosophers.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">philosophers.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ractor/0.6.1/source/examples/philosophers.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">255</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let metrics_count = state.metrics.state_change_count;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">256</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">257</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = myself.send_after(self.time_slice, move || {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">281</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let metrics_count = state.metrics.state_change_count;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">282</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">283</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let _ = myself.send_after(self.time_slice, move || {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ractor_cluster&nbsp;0.6.1</span><a href="https://docs.rs/crate/ractor_cluster/0.6.1/source/src/node/node_session/mod.rs#:~:text=clippy%3a%3alet_underscore_future"><span class="result-file-directory">/src/<wbr>node/<wbr>node_session/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ractor_cluster/0.6.1/source/src/node/node_session/mod.rs#:~:text=clippy%3a%3alet_underscore_future','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">369</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        // kick off a background task to reply to the channel request, threading the tag and who to reply to</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">370</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">371</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                        let _ = ractor::concurrency::spawn(async move {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">686</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if let Some(tcp) = &amp;self.tcp {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">687</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::let_underscore_future</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">688</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let _ = tcp.send_after(Self::get_send_delay(), || {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

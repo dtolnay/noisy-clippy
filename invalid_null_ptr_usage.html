@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cityhash-sys&nbsp;1.0.2</span><a href="https://docs.rs/crate/cityhash-sys/1.0.2/source/tests/hash_128.rs#:~:text=clippy%3a%3ainvalid_null_ptr_usage"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">hash_128.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cityhash-sys/1.0.2/source/tests/hash_128.rs#:~:text=clippy%3a%3ainvalid_null_ptr_usage','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">521</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">522</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::invalid_null_ptr_usage</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">523</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn hash_128_from_null_ptr() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3_core&nbsp;0.1.4</span><a href="https://docs.rs/crate/r3_core/0.1.4/source/src/hunk.rs#:~:text=clippy%3a%3ainvalid_null_ptr_usage"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">hunk.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3_core/0.1.4/source/src/hunk.rs#:~:text=clippy%3a%3ainvalid_null_ptr_usage','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">217</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Safety: This is safe because it points to nothing</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">218</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::invalid_null_ptr_usage</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">219</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    const INIT: Self = Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

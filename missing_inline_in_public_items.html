@@ -1,0 +1,4164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">atomic-maybe-uninit&nbsp;0.2.15</span><a href="https://docs.rs/crate/atomic-maybe-uninit/0.2.15/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/atomic-maybe-uninit/0.2.15/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;T: Primitive&gt; fmt::Debug for AtomicMaybeUninit&lt;T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">153</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)] // fmt is not hot path</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">154</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">building_blocks_core&nbsp;0.7.1</span><a href="https://docs.rs/crate/building_blocks_core/0.7.1/source/src/extent.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">extent.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/building_blocks_core/0.7.1/source/src/extent.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // XXX: For some inconceivable reason, inlining this method hurts the performance of ChunkMap::get</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn eq(&amp;self, other: &amp;Self) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">coqui-stt&nbsp;1.0.2</span><a href="https://docs.rs/crate/coqui-stt/1.0.2/source/src/errors.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">errors.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/coqui-stt/1.0.2/source/src/errors.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">103</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Display for Error {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">104</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">105</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut Formatter&lt;'_&gt;) -&gt; std::fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">coqui-stt&nbsp;1.0.2</span><a href="https://docs.rs/crate/coqui-stt/1.0.2/source/src/model.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">model.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/coqui-stt/1.0.2/source/src/model.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">251</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Additionally, if the returned string is not valid UTF-8, this function returns an error.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">252</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">253</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn speech_to_text(&amp;mut self, buffer: &amp;[i16]) -&gt; crate::Result&lt;String&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">313</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Passes through any errors from the C library. See enum [`Error`](crate::Error).</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">314</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">315</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_streaming(&amp;mut self) -&gt; crate::Result&lt;Stream&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">coqui-stt&nbsp;1.0.2</span><a href="https://docs.rs/crate/coqui-stt/1.0.2/source/src/stream.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">stream.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/coqui-stt/1.0.2/source/src/stream.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Passes through any errors from the C library. See enum [`Error`](crate::Error).</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn from_model(model: &amp;'a mut Model) -&gt; crate::Result&lt;Stream&lt;'a&gt;&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Passes through any errors from the C library. See enum [`Error`](crate::Error).</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn intermediate_decode(&amp;mut self) -&gt; crate::Result&lt;String&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">183</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Passes through any errors from the C library. See enum [`Error`](crate::Error).</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">184</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">185</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn intermediate_decode_with_buffer_flush(&amp;mut self) -&gt; crate::Result&lt;String&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">241</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Passes through any errors from the C library. See enum [`Error`](crate::Error).</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">242</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">243</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn finish_stream(mut self) -&gt; crate::Result&lt;String&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">coqui-stt&nbsp;1.0.2</span><a href="https://docs.rs/crate/coqui-stt/1.0.2/source/src/token_metadata.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">token_metadata.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/coqui-stt/1.0.2/source/src/token_metadata.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">61</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Debug for TokenMetadata {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">62</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">63</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut Formatter&lt;'_&gt;) -&gt; std::fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">core_arch&nbsp;0.1.5</span><a href="https://docs.rs/crate/core_arch/0.1.5/source/src/x86/cpuid.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr>x86/<wbr></span><span class="result-file-name">cpuid.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/core_arch/0.1.5/source/src/x86/cpuid.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Result of the `cpuid` instruction.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// ^^ the derived impl of Debug for CpuidResult is not #[inline] and that's OK.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cortex-m&nbsp;0.7.7</span><a href="https://docs.rs/crate/cortex-m/0.7.7/source/src/delay.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">delay.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cortex-m/0.7.7/source/src/delay.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Delay using the Cortex-M systick for a certain duration, in µs.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn delay_us(&amp;mut self, us: u32) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cortex-m&nbsp;0.7.7</span><a href="https://docs.rs/crate/cortex-m/0.7.7/source/src/itm.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">itm.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cortex-m/0.7.7/source/src/itm.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Writes `buffer` to an ITM port.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn write_all(port: &amp;mut Stim, buffer: &amp;[u8]) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">140</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// ```</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">141</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">142</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn write_aligned(port: &amp;mut Stim, buffer: &amp;Aligned&lt;[u8]&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">eosio_cdt&nbsp;0.3.1</span><a href="https://docs.rs/crate/eosio_cdt/0.3.1/source/src/table_primary.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">table_primary.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/eosio_cdt/0.3.1/source/src/table_primary.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Cursor for a primary table index</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Copy, Clone, Debug)]</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">202</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Iterator for a `PrimaryTableIndex`</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">203</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">204</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Copy, Clone, Debug)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">eosio_cdt&nbsp;0.3.1</span><a href="https://docs.rs/crate/eosio_cdt/0.3.1/source/src/table_secondary.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">table_secondary.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/eosio_cdt/0.3.1/source/src/table_secondary.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">585</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Cursor for a `SecondaryTableIndex`</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">586</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">587</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Debug, Copy, Clone)]</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">695</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Iterate over a secondary table index</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">696</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">697</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Copy, Clone, Debug)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fnmatch-regex&nbsp;0.2.0</span><a href="https://docs.rs/crate/fnmatch-regex/0.2.0/source/src/glob.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">glob.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fnmatch-regex/0.2.0/source/src/glob.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">598</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// the specified glob pattern.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">599</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">600</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn glob_to_regex(pattern: &amp;str) -&gt; Result&lt;Regex, FError&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iced-x86&nbsp;1.18.0</span><a href="https://docs.rs/crate/iced-x86/1.18.0/source/src/code.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">code.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iced-x86/1.18.0/source/src/code.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">44638</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44639</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44640</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn condition_code(self) -&gt; ConditionCode {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44779</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44780</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44781</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn negate_condition_code(self) -&gt; Self {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44855</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44856</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44857</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn as_short_branch(self) -&gt; Self {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44894</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44895</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">44896</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn as_near_branch(self) -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iced-x86&nbsp;1.18.0</span><a href="https://docs.rs/crate/iced-x86/1.18.0/source/src/code_asm/code_asm_methods.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr>code_asm/<wbr></span><span class="result-file-name">code_asm_methods.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iced-x86/1.18.0/source/src/code_asm/code_asm_methods.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">389</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	/// ```</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">390</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">391</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn set_label(&amp;mut self, label: &amp;mut CodeLabel) -&gt; Result&lt;(), IcedError&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">440</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	/// ```</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">441</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">442</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn anonymous_label(&amp;mut self) -&gt; Result&lt;(), IcedError&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">519</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	/// ```</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">520</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">521</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn db(&amp;mut self, data: &amp;[u8]) -&gt; Result&lt;(), IcedError&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">554</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	/// ```</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">555</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">556</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn db_i(&amp;mut self, data: &amp;[i8]) -&gt; Result&lt;(), IcedError&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">593</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	/// ```</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">594</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">595</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	pub fn dw(&amp;mut self, data: &amp;[u16]) -&gt; Result&lt;(), IcedError&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">io-extras&nbsp;0.17.1</span><a href="https://docs.rs/crate/io-extras/0.17.1/source/src/borrowed.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">borrowed.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/io-extras/0.17.1/source/src/borrowed.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">260</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a&gt; fmt::Debug for BorrowedReadable&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">261</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">262</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">271</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a&gt; fmt::Debug for BorrowedReadable&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">272</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">273</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">282</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a&gt; fmt::Debug for BorrowedWriteable&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">283</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">284</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">293</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;'a&gt; fmt::Debug for BorrowedWriteable&lt;'a&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">294</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">295</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">io-extras&nbsp;0.17.1</span><a href="https://docs.rs/crate/io-extras/0.17.1/source/src/os/windows/types.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr>os/<wbr>windows/<wbr></span><span class="result-file-name">types.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/io-extras/0.17.1/source/src/os/windows/types.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">207</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for BorrowedHandleOrSocket&lt;'_&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">208</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">209</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">219</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for OwnedHandleOrSocket {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">220</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">221</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">io-extras&nbsp;0.17.1</span><a href="https://docs.rs/crate/io-extras/0.17.1/source/src/owned.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">owned.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/io-extras/0.17.1/source/src/owned.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">356</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for OwnedReadable {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">357</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">358</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">367</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for OwnedReadable {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">368</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">369</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">378</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for OwnedWriteable {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">379</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">380</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">389</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for OwnedWriteable {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">390</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">391</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">io-lifetimes&nbsp;1.0.4</span><a href="https://docs.rs/crate/io-lifetimes/1.0.4/source/src/types.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">types.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/io-lifetimes/1.0.4/source/src/types.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">807</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for BorrowedFd&lt;'_&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">808</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">809</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">815</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for BorrowedHandle&lt;'_&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">816</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">817</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">825</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for BorrowedSocket&lt;'_&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">826</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">827</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">835</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for OwnedFd {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">836</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">837</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">843</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for OwnedHandle {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">844</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">845</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">io-lifetimes&nbsp;1.0.4</span><a href="https://docs.rs/crate/io-lifetimes/1.0.4/source/src/views.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">views.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/io-lifetimes/1.0.4/source/src/views.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">192</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;Target: FilelikeViewType&gt; fmt::Debug for FilelikeView&lt;'_, Target&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">193</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">194</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">201</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;Target: SocketlikeViewType&gt; fmt::Debug for SocketlikeView&lt;'_, Target&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">202</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">203</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">packed_simd_2&nbsp;0.3.8</span><a href="https://docs.rs/crate/packed_simd_2/0.3.8/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/packed_simd_2/0.3.8/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">302</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Copy, Clone, Debug)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">303</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">304</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct LexicographicallyOrdered&lt;T&gt;(T);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">portable-atomic&nbsp;1.0.1</span><a href="https://docs.rs/crate/portable-atomic/1.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/portable-atomic/1.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">473</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl fmt::Debug for AtomicBool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">474</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)] // fmt is not hot path</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">475</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1458</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;T&gt; fmt::Debug for AtomicPtr&lt;T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1459</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)] // fmt is not hot path</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1460</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1466</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;T&gt; fmt::Pointer for AtomicPtr&lt;T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1467</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)] // fmt is not hot path</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1468</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ranges&nbsp;0.3.3</span><a href="https://docs.rs/crate/ranges/0.3.3/source/src/generic_range/relation.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr>generic_range/<wbr></span><span class="result-file-name">relation.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ranges/0.3.3/source/src/generic_range/relation.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// Allow clippy lint because `Debug` produces it.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>, clippy::exhaustive_enums)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Debug, PartialEq, Eq)]</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">178</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// Allow clippy lint because `Debug` produces it.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">179</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>, clippy::exhaustive_enums)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">180</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Copy, Clone, Debug, PartialEq, Eq)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ranges&nbsp;0.3.3</span><a href="https://docs.rs/crate/ranges/0.3.3/source/src/generic_range.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">generic_range.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ranges/0.3.3/source/src/generic_range.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">473</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Result of a unary or binary operation.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">474</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>, clippy::exhaustive_enums)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">475</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Debug, Clone, Copy, Eq, PartialEq)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ranges&nbsp;0.3.3</span><a href="https://docs.rs/crate/ranges/0.3.3/source/src/ranges.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ranges.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ranges/0.3.3/source/src/ranges.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>///</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Clone, Debug, Default, Hash, PartialEq, Eq)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">region&nbsp;3.0.0</span><a href="https://docs.rs/crate/region/3.0.0/source/src/protect.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">protect.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/region/3.0.0/source/src/protect.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">99</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// See [protect].</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">100</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">101</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub unsafe fn protect_with_handle&lt;T&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">region&nbsp;3.0.0</span><a href="https://docs.rs/crate/region/3.0.0/source/src/query.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">query.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/region/3.0.0/source/src/query.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  /// be the last item that is yielded before the iterator is fused).</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn next(&amp;mut self) -&gt; Option&lt;Self::Item&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">socketpair&nbsp;0.18.0</span><a href="https://docs.rs/crate/socketpair/0.18.0/source/src/rustix.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rustix.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/socketpair/0.18.0/source/src/rustix.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">237</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Debug for SocketpairStream {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">238</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">239</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">socketpair&nbsp;0.18.0</span><a href="https://docs.rs/crate/socketpair/0.18.0/source/src/unix_async_std.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">unix_async_std.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/socketpair/0.18.0/source/src/unix_async_std.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">161</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Debug for AsyncStdSocketpairStream {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">162</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">163</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">socketpair&nbsp;0.18.0</span><a href="https://docs.rs/crate/socketpair/0.18.0/source/src/unix_tokio.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">unix_tokio.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/socketpair/0.18.0/source/src/unix_tokio.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">121</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Debug for TokioSocketpairStream {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">122</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">123</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fmt(&amp;self, f: &amp;mut fmt::Formatter) -&gt; fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sp-variant&nbsp;3.0.0</span><a href="https://docs.rs/crate/sp-variant/3.0.0/source/rust/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/rust/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sp-variant/3.0.0/source/rust/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">231</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// - I/O errors from reading the distribution-specific version files (e.g. `/etc/redhat-release`)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">232</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">233</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn detect_from(variants: &amp;VariantDefTop) -&gt; Result&lt;&amp;Variant, VariantError&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sp-variant&nbsp;3.0.0</span><a href="https://docs.rs/crate/sp-variant/3.0.0/source/rust/yai.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/rust/<wbr></span><span class="result-file-name">yai.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sp-variant/3.0.0/source/rust/yai.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">156</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// - [`YAIError`] parse errors from examining the INI-file structure</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">157</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">158</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn parse&lt;P: AsRef&lt;Path&gt;&gt;(path: P) -&gt; Result&lt;HashMap&lt;String, String&gt;, YAIError&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tinyvec&nbsp;1.6.0</span><a href="https://docs.rs/crate/tinyvec/1.6.0/source/src/arrayvec.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arrayvec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tinyvec/1.6.0/source/src/arrayvec.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1424</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1425</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1426</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter&lt;'_&gt;) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1549</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1550</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1551</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1572</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1573</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1574</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1595</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1596</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1597</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1618</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1619</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1620</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tinyvec&nbsp;1.6.0</span><a href="https://docs.rs/crate/tinyvec/1.6.0/source/src/slicevec.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">slicevec.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tinyvec/1.6.0/source/src/slicevec.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">878</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">879</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">880</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">901</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">902</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">903</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">924</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">925</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">926</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">947</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">948</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">949</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">970</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">971</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">972</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  fn fmt(&amp;self, f: &amp;mut Formatter) -&gt; core::fmt::Result {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">uv_patch_packed_simd&nbsp;0.3.5</span><a href="https://docs.rs/crate/uv_patch_packed_simd/0.3.5/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/uv_patch_packed_simd/0.3.5/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">285</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[derive(Copy, Clone, Debug)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">286</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">287</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub struct LexicographicallyOrdered&lt;T&gt;(T);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">afetch&nbsp;0.0.1</span><a href="https://docs.rs/crate/afetch/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/afetch/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::separated_literal_suffix,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::non_ascii_literal,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">allochronic-util&nbsp;0.0.1-dev-1</span><a href="https://docs.rs/crate/allochronic-util/0.0.1-dev-1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/allochronic-util/0.0.1-dev-1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::non_ascii_literal,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">allochronic-util-macros&nbsp;0.0.1-dev-1</span><a href="https://docs.rs/crate/allochronic-util-macros/0.0.1-dev-1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/allochronic-util-macros/0.0.1-dev-1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::non_ascii_literal,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">Boa&nbsp;0.13.1</span><a href="https://docs.rs/crate/Boa/0.13.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/Boa/0.13.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cognitive_complexity,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">boa_cli&nbsp;0.16.0</span><a href="https://docs.rs/crate/boa_cli/0.16.0/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/boa_cli/0.16.0/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::unreadable_literal,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cognitive_complexity,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">boa_engine&nbsp;0.16.0</span><a href="https://docs.rs/crate/boa_engine/0.16.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/boa_engine/0.16.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">63</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::unreadable_literal,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">64</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cognitive_complexity,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">boa_interner&nbsp;0.16.0</span><a href="https://docs.rs/crate/boa_interner/0.16.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/boa_interner/0.16.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">63</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::unreadable_literal,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">64</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cognitive_complexity,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">boa_unicode&nbsp;0.16.0</span><a href="https://docs.rs/crate/boa_unicode/0.16.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/boa_unicode/0.16.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">60</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::unreadable_literal,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">61</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">62</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cognitive_complexity,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bve&nbsp;0.0.1</span><a href="https://docs.rs/crate/bve/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bve/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::missing_docs_in_private_items)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::module_name_repetitions)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bve-derive&nbsp;0.0.1</span><a href="https://docs.rs/crate/bve-derive/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bve-derive/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::missing_docs_in_private_items)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::module_name_repetitions)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bve-native&nbsp;0.0.1</span><a href="https://docs.rs/crate/bve-native/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bve-native/0.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::missing_docs_in_private_items)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::module_name_repetitions)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">const-str&nbsp;0.5.3</span><a href="https://docs.rs/crate/const-str/0.5.3/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/const-str/0.5.3/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_docs_in_private_items,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">const-str-proc-macro&nbsp;0.5.3</span><a href="https://docs.rs/crate/const-str-proc-macro/0.5.3/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/const-str-proc-macro/0.5.3/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_docs_in_private_items,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">curst&nbsp;0.1.0</span><a href="https://docs.rs/crate/curst/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/curst/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">44</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">45</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>, // Flags methods in derived traits.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">46</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">eosio_cdt_sys&nbsp;0.3.0</span><a href="https://docs.rs/crate/eosio_cdt_sys/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/eosio_cdt_sys/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_docs_in_private_items,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_const_for_fn,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">eosio_core&nbsp;0.2.1</span><a href="https://docs.rs/crate/eosio_core/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/eosio_core/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::module_name_repetitions,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">eosio_macros_internal&nbsp;0.3.1</span><a href="https://docs.rs/crate/eosio_macros_internal/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/eosio_macros_internal/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::unimplemented,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_docs_in_private_items</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">eosio_numstr_macros_impl&nbsp;0.2.1</span><a href="https://docs.rs/crate/eosio_numstr_macros_impl/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/eosio_numstr_macros_impl/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::unimplemented)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::missing_docs_in_private_items)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fabruic&nbsp;0.0.1-dev-1</span><a href="https://docs.rs/crate/fabruic/0.0.1-dev-1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fabruic/0.0.1-dev-1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::non_ascii_literal,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fixed-map&nbsp;0.8.1</span><a href="https://docs.rs/crate/fixed-map/0.8.1/source/src/macro_support.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">macro_support.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fixed-map/0.8.1/source/src/macro_support.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iced-x86&nbsp;1.18.0</span><a href="https://docs.rs/crate/iced-x86/1.18.0/source/src/code_asm/fn_asm_impl.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr>code_asm/<wbr></span><span class="result-file-name">fn_asm_impl.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iced-x86/1.18.0/source/src/code_asm/fn_asm_impl.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">imdl&nbsp;0.1.12</span><a href="https://docs.rs/crate/imdl/0.1.12/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/imdl/0.1.12/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::missing_docs_in_private_items,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  clippy::needless_pass_by_value,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">kmp&nbsp;0.1.1</span><a href="https://docs.rs/crate/kmp/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/kmp/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">107</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">108</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark></pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">109</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">libpd-rs&nbsp;0.1.9</span><a href="https://docs.rs/crate/libpd-rs/0.1.9/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/libpd-rs/0.1.9/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Too restrictive for the current style</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">libzetta&nbsp;0.3.1</span><a href="https://docs.rs/crate/libzetta/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/libzetta/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_docs_in_private_items</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lmake_readme&nbsp;0.5.4</span><a href="https://docs.rs/crate/lmake_readme/0.5.4/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lmake_readme/0.5.4/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">171</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // methods where this might not make sense.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">172</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">173</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Why is this bad: This is only checked against overflow in debug builds. In some applications one wants explicitly checked, wrapping or saturating arithmetic.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lmake_semver&nbsp;0.1.12</span><a href="https://docs.rs/crate/lmake_semver/0.1.12/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lmake_semver/0.1.12/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">88</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // methods where this might not make sense.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">89</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">90</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Why is this bad: This is only checked against overflow in debug builds. In some applications one wants explicitly checked, wrapping or saturating arithmetic.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lmake_version_from_date&nbsp;0.3.41</span><a href="https://docs.rs/crate/lmake_version_from_date/0.3.41/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lmake_version_from_date/0.3.41/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">108</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    //methods where this might not make sense.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">109</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">110</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    //Why is this bad: This is only checked against overflow in debug builds. In some applications one wants explicitly checked, wrapping or saturating arithmetic.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mecs&nbsp;0.1.1</span><a href="https://docs.rs/crate/mecs/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mecs/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	// TODO: Check when we can remove this</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">memcached&nbsp;0.4.4</span><a href="https://docs.rs/crate/memcached/0.4.4/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/memcached/0.4.4/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_errors_doc,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">neodyn_xc&nbsp;0.4.0</span><a href="https://docs.rs/crate/neodyn_xc/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/neodyn_xc/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">72</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>         clippy::match_on_vec_items, clippy::missing_errors_doc,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>         <mark>clippy::missing_inline_in_public_items</mark>, clippy::modulo_arithmetic,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>         clippy::needless_pass_by_value, clippy::redundant_field_names,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">plow_cli&nbsp;0.4.8</span><a href="https://docs.rs/crate/plow_cli/0.4.8/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/plow_cli/0.4.8/source/src/main.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">34</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Too restrictive for the current style</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">plow_graphify&nbsp;0.2.2</span><a href="https://docs.rs/crate/plow_graphify/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/plow_graphify/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Too restrictive for the current style</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">plow_linter&nbsp;0.2.8</span><a href="https://docs.rs/crate/plow_linter/0.2.8/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/plow_linter/0.2.8/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Too restrictive for the current style</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">plow_ontology&nbsp;0.2.1</span><a href="https://docs.rs/crate/plow_ontology/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/plow_ontology/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">29</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Too restrictive for the current style</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">plow_package_management&nbsp;0.3.1</span><a href="https://docs.rs/crate/plow_package_management/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/plow_package_management/0.3.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // Too restrictive for the current style</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rec&nbsp;0.11.0</span><a href="https://docs.rs/crate/rec/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rec/0.11.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">95</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return, // Omitting the return keyword is idiomatic Rust code.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">96</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>, // There are issues with derived traits.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">97</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rec_derive&nbsp;0.1.0</span><a href="https://docs.rs/crate/rec_derive/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rec_derive/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return, // Omitting the return keyword is idiomatic Rust code.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>, // Generally not bad and there are issues with derived traits.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rtop_dev&nbsp;1.1.0</span><a href="https://docs.rs/crate/rtop_dev/1.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rtop_dev/1.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::separated_literal_suffix,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::non_ascii_literal,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rtop-rs&nbsp;1.1.1</span><a href="https://docs.rs/crate/rtop-rs/1.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rtop-rs/1.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::separated_literal_suffix,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::non_ascii_literal,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">run-down&nbsp;0.1.1</span><a href="https://docs.rs/crate/run-down/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/run-down/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">68</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::implicit_return)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">69</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">70</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::multiple_inherent_impl)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">s3-server&nbsp;0.2.0</span><a href="https://docs.rs/crate/s3-server/0.2.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/s3-server/0.2.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">101</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return, // actually omitting the return keyword is idiomatic Rust code</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">102</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>, // In general, it is not bad</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">103</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::module_name_repetitions, // Allowed by default</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sparkle-cache&nbsp;0.14.1</span><a href="https://docs.rs/crate/sparkle-cache/0.14.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sparkle-cache/0.14.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sparkle-cache-postgres&nbsp;0.14.1</span><a href="https://docs.rs/crate/sparkle-cache-postgres/0.14.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sparkle-cache-postgres/0.14.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sqm_parser&nbsp;1.0.1</span><a href="https://docs.rs/crate/sqm_parser/1.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sqm_parser/1.0.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>clippy::missing_docs_in_private_items,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre><mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">string-err&nbsp;0.1.1</span><a href="https://docs.rs/crate/string-err/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/string-err/0.1.1/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::wildcard_imports,               // We only use wildcards for example, when doing `super::*`, when separating implementations into modules.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::missing_inline_in_public_items</mark>, // Debated if this does anything</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">43</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::needless_doctest_main,          // We often need it when declaring 2 functions.</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">twilight-bucket&nbsp;0.2.2</span><a href="https://docs.rs/crate/twilight-bucket/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/twilight-bucket/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">64</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::blanket_clippy_restriction_lints,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">66</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">twilight-cache-any-backend&nbsp;0.13.0</span><a href="https://docs.rs/crate/twilight-cache-any-backend/0.13.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/twilight-cache-any-backend/0.13.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::exhaustive_structs,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">51</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">52</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">twilight-error&nbsp;0.12.0</span><a href="https://docs.rs/crate/twilight-error/0.12.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/twilight-error/0.12.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::single_char_lifetime_names,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">10</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">twitch-helix&nbsp;0.1.0</span><a href="https://docs.rs/crate/twitch-helix/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/twitch-helix/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// No need to mark EVERY public function as `inline`</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// We prefer implicit returns</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">up-rs&nbsp;0.13.3</span><a href="https://docs.rs/crate/up-rs/0.13.3/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/up-rs/0.13.3/source/src/lib.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::implicit_return,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::missing_inline_in_public_items</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::missing_docs_in_private_items,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">veneer&nbsp;0.1.1</span><a href="https://docs.rs/crate/veneer/0.1.1/source/src/allocator.rs#:~:text=clippy%3a%3amissing_inline_in_public_items"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">allocator.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/veneer/0.1.1/source/src/allocator.rs#:~:text=clippy%3a%3amissing_inline_in_public_items','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::missing_inline_in_public_items</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>use crate::{spinlock::SpinLock, syscalls};</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

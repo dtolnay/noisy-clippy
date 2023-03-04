@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ark-ff&nbsp;0.4.0</span><a href="https://docs.rs/crate/ark-ff/0.4.0/source/src/fields/models/fp/montgomery_backend.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/src/<wbr>fields/<wbr>models/<wbr>fp/<wbr></span><span class="result-file-name">montgomery_backend.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ark-ff/0.4.0/source/src/fields/models/fp/montgomery_backend.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">370</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[unroll_for_loops(12)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">371</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">372</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn into_bigint(a: Fp&lt;MontBackend&lt;Self, N&gt;, N&gt;) -&gt; BigInt&lt;N&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">673</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">674</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">675</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn into_bigint(a: Fp&lt;Self, N&gt;) -&gt; BigInt&lt;N&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bee-block&nbsp;1.0.1</span><a href="https://docs.rs/crate/bee-block/1.0.1/source/src/rand/address.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/src/<wbr>rand/<wbr></span><span class="result-file-name">address.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bee-block/1.0.1/source/src/rand/address.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn rand_address() -&gt; Address {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    match rand_number::&lt;u64&gt;() % 3 {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fawkes-crypto-powersoftau&nbsp;0.2.0</span><a href="https://docs.rs/crate/fawkes-crypto-powersoftau/0.2.0/source/src/bin/beacon_constrained.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/src/<wbr>bin/<wbr></span><span class="result-file-name">beacon_constrained.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fawkes-crypto-powersoftau/0.2.0/source/src/bin/beacon_constrained.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">21</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn main() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">fixed&nbsp;2.0.0-alpha.9</span><a href="https://docs.rs/crate/fixed/2.0.0-alpha.9/source/src/arith.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arith.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/fixed/2.0.0-alpha.9/source/src/arith.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1223</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1224</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1225</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn rem_int() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iota-ledger&nbsp;1.0.0-alpha.1</span><a href="https://docs.rs/crate/iota-ledger/1.0.0-alpha.1/source/examples/cli.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">cli.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iota-ledger/1.0.0-alpha.1/source/examples/cli.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">335</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">336</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let account = (rnd.next_u32() % MAX_ACCOUNT_RANGE) | HARDENED;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iota-ledger&nbsp;1.0.0-alpha.1</span><a href="https://docs.rs/crate/iota-ledger/1.0.0-alpha.1/source/examples/cli_stardust.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">cli_stardust.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iota-ledger/1.0.0-alpha.1/source/examples/cli_stardust.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">360</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">361</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let account = (rnd.next_u32() % MAX_ACCOUNT_RANGE) | HARDENED;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">534</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">535</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let account = (rnd.next_u32() % MAX_ACCOUNT_RANGE) | HARDENED;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iota-ledger-nano&nbsp;1.0.0-alpha.4</span><a href="https://docs.rs/crate/iota-ledger-nano/1.0.0-alpha.4/source/examples/cli.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">cli.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iota-ledger-nano/1.0.0-alpha.4/source/examples/cli.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">335</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">336</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let account = (rnd.next_u32() % MAX_ACCOUNT_RANGE) | HARDENED;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iota-ledger-nano&nbsp;1.0.0-alpha.4</span><a href="https://docs.rs/crate/iota-ledger-nano/1.0.0-alpha.4/source/examples/cli_stardust.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/examples/<wbr></span><span class="result-file-name">cli_stardust.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iota-ledger-nano/1.0.0-alpha.4/source/examples/cli_stardust.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">360</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">361</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let account = (rnd.next_u32() % MAX_ACCOUNT_RANGE) | HARDENED;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">534</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">535</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    let account = (rnd.next_u32() % MAX_ACCOUNT_RANGE) | HARDENED;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">iota-types&nbsp;1.0.0-rc.4</span><a href="https://docs.rs/crate/iota-types/1.0.0-rc.4/source/src/block/rand/address.rs#:~:text=clippy%3a%3amodulo_one"><span class="result-file-directory">/src/<wbr>block/<wbr>rand/<wbr></span><span class="result-file-name">address.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/iota-types/1.0.0-rc.4/source/src/block/rand/address.rs#:~:text=clippy%3a%3amodulo_one','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn rand_address() -&gt; Address {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">27</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::modulo_one</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">28</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    match rand_number::&lt;u64&gt;() % 3 {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

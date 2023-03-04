@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gdnative-core&nbsp;0.11.3</span><a href="https://docs.rs/crate/gdnative-core/0.11.3/source/src/core_types/pool_array.rs#:~:text=clippy%3a%3aiter_with_drain"><span class="result-file-directory">/src/<wbr>core_types/<wbr></span><span class="result-file-name">pool_array.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gdnative-core/0.11.3/source/src/core_types/pool_array.rs#:~:text=clippy%3a%3aiter_with_drain','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">135</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">136</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::iter_with_drain</mark>)] // "`drain(..)` used on a `Vec`"; suggests `into_iter()` but we don't have the vec by value</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">137</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn append_vec(&amp;mut self, src: &amp;mut Vec&lt;T&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">otter&nbsp;1.2.1</span><a href="https://docs.rs/crate/otter/1.2.1/source/src/global.rs#:~:text=clippy%3a%3aiter_with_drain"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">global.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/otter/1.2.1/source/src/global.rs#:~:text=clippy%3a%3aiter_with_drain','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">848</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>      // oof</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">849</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>      #[allow(<mark>clippy::iter_with_drain</mark>)] // don't eat undo, so we can drop it</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">850</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>      for u in undo.drain(..).rev() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">watchexec&nbsp;2.1.0</span><a href="https://docs.rs/crate/watchexec/2.1.0/source/src/action/worker.rs#:~:text=clippy%3a%3aiter_with_drain"><span class="result-file-directory">/src/<wbr>action/<wbr></span><span class="result-file-name">worker.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/watchexec/2.1.0/source/src/action/worker.rs#:~:text=clippy%3a%3aiter_with_drain','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">119</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		#[allow(<mark>clippy::iter_with_drain</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">120</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>		let events = Arc::from(set.drain(..).collect::&lt;Vec&lt;_&gt;&gt;().into_boxed_slice());</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ghost&nbsp;0.1.7</span><a href="https://docs.rs/crate/ghost/0.1.7/source/src/lib.rs#:~:text=clippy%3a%3aiter_with_drain"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ghost/0.1.7/source/src/lib.rs#:~:text=clippy%3a%3aiter_with_drain','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">170</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // https://github.com/rust-lang/rust-clippy/issues/8538</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">171</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::iter_with_drain</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">172</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_doctest_main,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">prusti-specs&nbsp;0.1.3</span><a href="https://docs.rs/crate/prusti-specs/0.1.3/source/src/lib.rs#:~:text=clippy%3a%3aiter_with_drain"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/prusti-specs/0.1.3/source/src/lib.rs#:~:text=clippy%3a%3aiter_with_drain','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// This Clippy chcek seems to be always wrong.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::iter_with_drain</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rustversion&nbsp;1.0.11</span><a href="https://docs.rs/crate/rustversion/1.0.11/source/src/lib.rs#:~:text=clippy%3a%3aiter_with_drain"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rustversion/1.0.11/source/src/lib.rs#:~:text=clippy%3a%3aiter_with_drain','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">155</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // https://github.com/rust-lang/rust-clippy/issues/8539</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">156</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::iter_with_drain</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">157</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::module_name_repetitions,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

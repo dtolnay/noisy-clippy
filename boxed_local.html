@@ -1,0 +1,2719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">actori&nbsp;0.9.0</span><a href="https://docs.rs/crate/actori/0.9.0/source/src/utils.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">utils.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/actori/0.9.0/source/src/utils.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Actor, F: FnOnce(&amp;mut A, &amp;mut A::Context) + 'static&gt; TimerFuncBox&lt;A&gt; for F {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">113</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call(self: Box&lt;Self&gt;, act: &amp;mut A, ctx: &amp;mut A::Context) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">204</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Actor, F: FnMut(&amp;mut A, &amp;mut A::Context) + 'static&gt; IntervalFuncBox&lt;A&gt; for F {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">205</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">206</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call(&amp;mut self, act: &amp;mut A, ctx: &amp;mut A::Context) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">actori-rt&nbsp;1.0.0</span><a href="https://docs.rs/crate/actori-rt/1.0.0/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arbiter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/actori-rt/1.0.0/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">406</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">407</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">408</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call_box(self: Box&lt;Self&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">aitch&nbsp;0.1.1</span><a href="https://docs.rs/crate/aitch/0.1.1/source/src/servers/hyper.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>servers/<wbr></span><span class="result-file-name">hyper.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/aitch/0.1.1/source/src/servers/hyper.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg_attr(feature = "cargo-clippy", allow(<mark>boxed_local</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call_box(self: Box&lt;Self&gt;) -&gt; Result&lt;()&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">conch-runtime-pshaw&nbsp;0.1.6</span><a href="https://docs.rs/crate/conch-runtime-pshaw/0.1.6/source/src/env/string_wrapper.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>env/<wbr></span><span class="result-file-name">string_wrapper.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/conch-runtime-pshaw/0.1.6/source/src/env/string_wrapper.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl StringWrapper for Box&lt;String&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn into_owned(self) -&gt; String {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">crayfish&nbsp;0.0.1</span><a href="https://docs.rs/crate/crayfish/0.0.1/source/src/runtime.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">runtime.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/crayfish/0.0.1/source/src/runtime.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">313</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)] // allow since TaskItem is going to be sent</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">314</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn send(&amp;mut self, item: Box&lt;TaskItem&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cxx-qt-gen&nbsp;0.4.1</span><a href="https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/invokables.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/test_outputs/<wbr></span><span class="result-file-name">invokables.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/invokables.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">273</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">274</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">275</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn func(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cxx-qt-gen&nbsp;0.4.1</span><a href="https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/passthrough_and_naming.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/test_outputs/<wbr></span><span class="result-file-name">passthrough_and_naming.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/passthrough_and_naming.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">312</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">313</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">314</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn func(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">409</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">410</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">411</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn func(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cxx-qt-gen&nbsp;0.4.1</span><a href="https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/properties.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/test_outputs/<wbr></span><span class="result-file-name">properties.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/properties.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">272</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">273</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">274</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn func(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cxx-qt-gen&nbsp;0.4.1</span><a href="https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/signals.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/test_outputs/<wbr></span><span class="result-file-name">signals.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cxx-qt-gen/0.4.1/source/test_outputs/signals.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">144</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">145</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">146</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn func(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">datachannel&nbsp;0.9.0</span><a href="https://docs.rs/crate/datachannel/0.9.0/source/src/peerconnection.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">peerconnection.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/datachannel/0.9.0/source/src/peerconnection.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">165</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(unused_variables)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">166</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">167</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub trait PeerConnectionHandler {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">datafusion-expr&nbsp;17.0.0</span><a href="https://docs.rs/crate/datafusion-expr/17.0.0/source/src/expr_rewriter.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">expr_rewriter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/datafusion-expr/17.0.0/source/src/expr_rewriter.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">304</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">305</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn rewrite_boxed&lt;R&gt;(boxed_expr: Box&lt;Expr&gt;, rewriter: &amp;mut R) -&gt; Result&lt;Box&lt;Expr&gt;&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">digest&nbsp;0.11.0-pre</span><a href="https://docs.rs/crate/digest/0.11.0-pre/source/src/digest.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">digest.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/digest/0.11.0-pre/source/src/digest.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">149</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg_attr(docsrs, doc(cfg(feature = "alloc")))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn finalize(mut self: Box&lt;Self&gt;) -&gt; Box&lt;[u8]&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ergo-lib-wasm&nbsp;0.22.0</span><a href="https://docs.rs/crate/ergo-lib-wasm/0.22.0/source/src/ast.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ast.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ergo-lib-wasm/0.22.0/source/src/ast.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">109</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Create `Coll[Int]` from integer array</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">110</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn from_i32_array(arr: Box&lt;[i32]&gt;) -&gt; Result&lt;Constant, JsValue&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">129</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Create `Coll[Long]` from string array</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">130</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">131</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn from_i64_str_array(arr: Box&lt;[JsValue]&gt;) -&gt; Result&lt;Constant, JsValue&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">155</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Extract `Coll[Long]` as string array</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">156</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">157</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn to_i64_str_array(&amp;self) -&gt; Result&lt;Box&lt;[JsValue]&gt;, JsValue&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ergo-lib-wasm&nbsp;0.22.0</span><a href="https://docs.rs/crate/ergo-lib-wasm/0.22.0/source/src/block_header.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">block_header.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ergo-lib-wasm/0.22.0/source/src/block_header.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// parse BlockHeader array from JSON (Node API)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">66</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>, clippy::or_fun_call)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">67</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn from_json(json_vals: Box&lt;[JsValue]&gt;) -&gt; Result&lt;BlockHeaders, JsValue&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ergo-lib-wasm&nbsp;0.22.0</span><a href="https://docs.rs/crate/ergo-lib-wasm/0.22.0/source/src/box_coll.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">box_coll.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ergo-lib-wasm/0.22.0/source/src/box_coll.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// parse ErgoBox array from json</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>, clippy::or_fun_call)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn from_boxes_json(json_vals: Box&lt;[JsValue]&gt;) -&gt; Result&lt;ErgoBoxes, JsValue&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">gphoto2&nbsp;3.1.0</span><a href="https://docs.rs/crate/gphoto2/3.1.0/source/src/filesys.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">filesys.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/gphoto2/3.1.0/source/src/filesys.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">334</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  /// Upload a file to the camera</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">335</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">336</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>  pub fn upload_file(&amp;self, folder: &amp;str, filename: &amp;str, data: Box&lt;[u8]&gt;) -&gt; Task&lt;Result&lt;()&gt;&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hakuban&nbsp;0.7.2</span><a href="https://docs.rs/crate/hakuban/0.7.2/source/src/wasm/object_state.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>wasm/<wbr></span><span class="result-file-name">object_state.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hakuban/0.7.2/source/src/wasm/object_state.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[wasm_bindgen]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">interactive-parse&nbsp;0.1.4</span><a href="https://docs.rs/crate/interactive-parse/0.1.4/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/interactive-parse/0.1.4/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">110</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::too_many_arguments)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn get_single_instance(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">investments&nbsp;4.16.1</span><a href="https://docs.rs/crate/investments/4.16.1/source/src/broker_statement/reader.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>broker_statement/<wbr></span><span class="result-file-name">reader.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/investments/4.16.1/source/src/broker_statement/reader.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn read(&amp;mut self, path: &amp;str, is_last: bool) -&gt; GenericResult&lt;PartialBrokerStatement&gt;;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">26</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn close(self: Box&lt;Self&gt;) -&gt; EmptyResult { Ok(()) }</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">jotty&nbsp;0.3.1</span><a href="https://docs.rs/crate/jotty/0.3.1/source/src/engine/job.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>engine/<wbr></span><span class="result-file-name">job.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/jotty/0.3.1/source/src/engine/job.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::mut_range_bound)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">135</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn eval_inner_job(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">krator&nbsp;0.6.0</span><a href="https://docs.rs/crate/krator/0.6.0/source/src/state.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">state.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/krator/0.6.0/source/src/state.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// enabled)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">42</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">43</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn next&lt;I: State&lt;S&gt;, O: State&lt;S&gt;&gt;(_i: Box&lt;I&gt;, o: O) -&gt; Transition&lt;S&gt;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">53</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// without encountering a "conflicting implementations" compiler error.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn next_unchecked&lt;I: State&lt;S&gt;, O: State&lt;S&gt;&gt;(_i: Box&lt;I&gt;, o: O) -&gt; Transition&lt;S&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lair_keystore_api&nbsp;0.2.3</span><a href="https://docs.rs/crate/lair_keystore_api/0.2.3/source/src/lair_client.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lair_client.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lair_keystore_api/0.2.3/source/src/lair_client.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">312</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // this *does* have to be Boxed...</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">313</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">314</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Derive a pre-existing key identified by given src_tag, with given</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">left-right&nbsp;0.11.5</span><a href="https://docs.rs/crate/left-right/0.11.5/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/left-right/0.11.5/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">242</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Defaults to calling `Self::drop`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">243</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">244</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn drop_first(self: Box&lt;Self&gt;) {}</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">248</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Defaults to calling `Self::drop`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">249</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">250</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn drop_second(self: Box&lt;Self&gt;) {}</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mesdoc&nbsp;0.2.1</span><a href="https://docs.rs/crate/mesdoc/0.2.1/source/src/interface/element.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>interface/<wbr></span><span class="result-file-name">element.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mesdoc/0.2.1/source/src/interface/element.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">298</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	// special for content tag, 'style','script','title','textarea'</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">299</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">300</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	fn into_text&lt;'b&gt;(self: Box&lt;Self&gt;) -&gt; Result&lt;BoxDynText&lt;'b&gt;, Box&lt;dyn Error&gt;&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">minutiae&nbsp;0.12.2</span><a href="https://docs.rs/crate/minutiae/0.12.2/source/src/emscripten/mod.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>emscripten/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/minutiae/0.12.2/source/src/emscripten/mod.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">33</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn set_main_loop_callback&lt;F&gt;(callback: Box&lt;F&gt;)</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ntex-rt&nbsp;0.4.7</span><a href="https://docs.rs/crate/ntex-rt/0.4.7/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arbiter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ntex-rt/0.4.7/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">342</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">343</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">344</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call_box(self: Box&lt;Self&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">odra-casper-types&nbsp;0.2.0</span><a href="https://docs.rs/crate/odra-casper-types/0.2.0/source/src/ty.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ty.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/odra-casper-types/0.2.0/source/src/ty.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn boxed_cl_type_to_boxed_type(ty: Box&lt;CLType&gt;) -&gt; Box&lt;Type&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">prefixset&nbsp;0.1.0-rc.2</span><a href="https://docs.rs/crate/prefixset/0.1.0-rc.2/source/src/node/tests.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>node/<wbr></span><span class="result-file-name">tests.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/prefixset/0.1.0-rc.2/source/src/node/tests.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn subtree_size&lt;P: IpPrefix&gt;(root: Box&lt;Node&lt;P&gt;&gt;) -&gt; usize {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">requiem&nbsp;0.9.0</span><a href="https://docs.rs/crate/requiem/0.9.0/source/src/utils.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">utils.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/requiem/0.9.0/source/src/utils.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Actor, F: FnOnce(&amp;mut A, &amp;mut A::Context) + 'static&gt; TimerFuncBox&lt;A&gt; for F {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">113</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call(self: Box&lt;Self&gt;, act: &amp;mut A, ctx: &amp;mut A::Context) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">204</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Actor, F: FnMut(&amp;mut A, &amp;mut A::Context) + 'static&gt; IntervalFuncBox&lt;A&gt; for F {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">205</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">206</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call(&amp;mut self, act: &amp;mut A, ctx: &amp;mut A::Context) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">requiem-rt&nbsp;1.0.0</span><a href="https://docs.rs/crate/requiem-rt/1.0.0/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arbiter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/requiem-rt/1.0.0/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">406</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">407</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">408</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call_box(self: Box&lt;Self&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rostrum&nbsp;8.0.0</span><a href="https://docs.rs/crate/rostrum/8.0.0/source/src/timeout.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">timeout.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rostrum/8.0.0/source/src/timeout.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre> */</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">80</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn par_timeout_collect_boxed&lt;'a, T: std::marker::Send&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rsget&nbsp;0.1.5</span><a href="https://docs.rs/crate/rsget/0.1.5/source/src/main.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">main.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rsget/0.1.5/source/src/main.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">98</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">99</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn stream_network&lt;S&gt;(stream: Box&lt;S&gt;) -&gt; Result&lt;u64, StreamError&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rust-http-server&nbsp;0.0.1</span><a href="https://docs.rs/crate/rust-http-server/0.0.1/source/src/threadpool.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">threadpool.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rust-http-server/0.0.1/source/src/threadpool.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">35</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;F: FnOnce()&gt; FnBox for F {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg_attr(feature = "cargo-clippy", allow(<mark>boxed_local</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call_box(self: Box&lt;F&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">saltwater&nbsp;0.11.0</span><a href="https://docs.rs/crate/saltwater/0.11.0/source/src/analyze/expr.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>analyze/<wbr></span><span class="result-file-name">expr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/saltwater/0.11.0/source/src/analyze/expr.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">189</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // TODO: these functions should have the locations of the parent expression, not the children</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">190</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">191</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn binary_helper&lt;F&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">scrappy-actor&nbsp;0.0.1</span><a href="https://docs.rs/crate/scrappy-actor/0.0.1/source/src/utils.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">utils.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/scrappy-actor/0.0.1/source/src/utils.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">111</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Actor, F: FnOnce(&amp;mut A, &amp;mut A::Context) + 'static&gt; TimerFuncBox&lt;A&gt; for F {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">112</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">113</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call(self: Box&lt;Self&gt;, act: &amp;mut A, ctx: &amp;mut A::Context) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">204</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl&lt;A: Actor, F: FnMut(&amp;mut A, &amp;mut A::Context) + 'static&gt; IntervalFuncBox&lt;A&gt; for F {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">205</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">206</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call(&amp;mut self, act: &amp;mut A, ctx: &amp;mut A::Context) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">scrappy-rt&nbsp;0.0.1</span><a href="https://docs.rs/crate/scrappy-rt/0.0.1/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">arbiter.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/scrappy-rt/0.0.1/source/src/arbiter.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">406</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>{</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">407</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">408</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn call_box(self: Box&lt;Self&gt;) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">sentry-contrib-native&nbsp;0.3.1</span><a href="https://docs.rs/crate/sentry-contrib-native/0.3.1/source/src/transport.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">transport.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/sentry-contrib-native/0.3.1/source/src/transport.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">171</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[must_use]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">172</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">173</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn shutdown(self: Box&lt;Self&gt;, timeout: Duration) -&gt; Shutdown {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">shred&nbsp;0.14.1</span><a href="https://docs.rs/crate/shred/0.14.1/source/src/system.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">system.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/shred/0.14.1/source/src/system.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// resources.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">128</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">129</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn dispose(self: Box&lt;Self&gt;, world: &amp;mut World) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">simd-json&nbsp;0.7.0</span><a href="https://docs.rs/crate/simd-json/0.7.0/source/src/serde/value/owned/de.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>serde/<wbr>value/<wbr>owned/<wbr></span><span class="result-file-name">de.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/simd-json/0.7.0/source/src/serde/value/owned/de.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">227</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl ObjectDeserializer {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">228</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>, clippy::needless_pass_by_value)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">229</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn new(map: Box&lt;Object&gt;) -&gt; Self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_ecma_transforms_module&nbsp;0.158.8</span><a href="https://docs.rs/crate/swc_ecma_transforms_module/0.158.8/source/src/system_js.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">system_js.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_ecma_transforms_module/0.158.8/source/src/system_js.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">408</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">409</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn hoist_var_decl(&amp;mut self, var_decl: Box&lt;VarDecl&gt;) -&gt; Option&lt;Expr&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_ecma_transforms_proposal&nbsp;0.149.7</span><a href="https://docs.rs/crate/swc_ecma_transforms_proposal/0.149.7/source/src/decorators/mod.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>decorators/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_ecma_transforms_proposal/0.149.7/source/src/decorators/mod.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">275</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>impl Decorators {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">276</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">277</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn fold_class_inner(&amp;mut self, ident: Ident, mut class: Box&lt;Class&gt;) -&gt; Expr {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_ecma_transforms_typescript&nbsp;0.164.9</span><a href="https://docs.rs/crate/swc_ecma_transforms_typescript/0.164.9/source/src/strip.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">strip.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_ecma_transforms_typescript/0.164.9/source/src/strip.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">496</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Returns `(var_decl, init)`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">497</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">498</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn handle_enum(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">827</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Returns `(var_decl, init)`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">828</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">829</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn handle_ts_module(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tarantool&nbsp;0.6.4</span><a href="https://docs.rs/crate/tarantool/0.6.4/source/src/net_box/inner.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>net_box/<wbr></span><span class="result-file-name">inner.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tarantool/0.6.4/source/src/net_box/inner.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">395</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::redundant_allocation, <mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">396</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn send_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">425</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::redundant_allocation, <mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">426</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn recv_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tarantool&nbsp;0.6.4</span><a href="https://docs.rs/crate/tarantool/0.6.4/source/src/network/client/inner.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>network/<wbr>client/<wbr></span><span class="result-file-name">inner.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tarantool/0.6.4/source/src/network/client/inner.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">367</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::redundant_allocation, <mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">368</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn send_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">397</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::redundant_allocation, <mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">398</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn recv_worker(conn: Box&lt;Weak&lt;ConnInner&gt;&gt;) -&gt; i32 {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tokio-unix-ipc&nbsp;0.3.0</span><a href="https://docs.rs/crate/tokio-unix-ipc/0.3.0/source/src/serde.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">serde.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tokio-unix-ipc/0.3.0/source/src/serde.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">154</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">155</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn bincode_to_io_error(err: bincode::Error) -&gt; io::Error {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">unix-ipc&nbsp;0.2.2</span><a href="https://docs.rs/crate/unix-ipc/0.2.2/source/src/serde.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">serde.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/unix-ipc/0.2.2/source/src/serde.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">138</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">139</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn bincode_to_io_error(err: bincode::Error) -&gt; io::Error {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">unrest_tmp_syn&nbsp;0.1.0</span><a href="https://docs.rs/crate/unrest_tmp_syn/0.1.0/source/src/fold.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">fold.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/unrest_tmp_syn/0.1.0/source/src/fold.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // https://github.com/Manishearth/rust-clippy/issues/1478</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg_attr(feature = "cargo-clippy", allow(<mark>boxed_local</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn lift&lt;F&gt;(self, f: F) -&gt; Box&lt;U&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vapoursynth&nbsp;0.4.0</span><a href="https://docs.rs/crate/vapoursynth/0.4.0/source/src/node/mod.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>node/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vapoursynth/0.4.0/source/src/node/mod.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">187</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">188</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">189</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            fn call(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">vimwiki-wasm&nbsp;0.1.0</span><a href="https://docs.rs/crate/vimwiki-wasm/0.1.0/source/src/elements.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">elements.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/vimwiki-wasm/0.1.0/source/src/elements.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1514</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Creates a new tag set instance using the given list of strings</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1515</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1516</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[wasm_bindgen(constructor)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">visdom&nbsp;0.5.9</span><a href="https://docs.rs/crate/visdom/0.5.9/source/src/mesdoc/interface/element.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>mesdoc/<wbr>interface/<wbr></span><span class="result-file-name">element.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/visdom/0.5.9/source/src/mesdoc/interface/element.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">338</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	// special for content tag, 'style','script','title','textarea'</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">339</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">340</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	fn into_text&lt;'b&gt;(self: Box&lt;Self&gt;) -&gt; Result&lt;BoxDynText&lt;'b&gt;, BoxDynError&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ydb&nbsp;0.5.2</span><a href="https://docs.rs/crate/ydb/0.5.2/source/src/types.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">types.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ydb/0.5.2/source/src/types.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">399</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">400</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn to_typed_value_list(ydb_list: ValueList) -&gt; YdbResult&lt;ydb_proto::TypedValue&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zcash_script&nbsp;0.1.8</span><a href="https://docs.rs/crate/zcash_script/0.1.8/source/depend/zcash/src/rust/src/sapling.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/depend/<wbr>zcash/<wbr>src/<wbr>rust/<wbr>src/<wbr></span><span class="result-file-name">sapling.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zcash_script/0.1.8/source/depend/zcash/src/rust/src/sapling.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">238</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">239</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn finish_bundle_assembly(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">580</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// return `true`).</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">581</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">582</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn check_bundle(&amp;mut self, bundle: Box&lt;Bundle&gt;, sighash: [u8; 32]) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zellij-server&nbsp;0.34.4</span><a href="https://docs.rs/crate/zellij-server/0.34.4/source/src/screen.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">screen.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zellij-server/0.34.4/source/src/screen.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1292</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// NewClient enum smaller</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1293</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1294</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub(crate) fn screen_thread_main(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cargo-semverver&nbsp;0.34.0</span><a href="https://docs.rs/crate/cargo-semverver/0.34.0/source/src/cargo/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>cargo/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cargo-semverver/0.34.0/source/src/cargo/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// Clippy isn't enforced by CI, and know that @alexcrichton isn't a fan :)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)] // bug rust-lang-nursery/rust-clippy#1123</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::cyclomatic_complexity)] // large project</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">constellation-internal&nbsp;0.2.0-alpha.2</span><a href="https://docs.rs/crate/constellation-internal/0.2.0-alpha.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/constellation-internal/0.2.0-alpha.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::option_option,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::boxed_local</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::needless_pass_by_value,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">faux&nbsp;0.1.9</span><a href="https://docs.rs/crate/faux/0.1.9/source/tests/arbitrary_self.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">arbitrary_self.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/faux/0.1.9/source/tests/arbitrary_self.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_arbitrary_self_type,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::boxed_local</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::redundant_clone</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lib-ruby-parser&nbsp;4.0.4+ruby-3.1.1</span><a href="https://docs.rs/crate/lib-ruby-parser/4.0.4+ruby-3.1.1/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lib-ruby-parser/4.0.4+ruby-3.1.1/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![warn(unused_lifetimes)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![forbid(unsafe_code)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">orml-authority&nbsp;0.4.0</span><a href="https://docs.rs/crate/orml-authority/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/orml-authority/0.4.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::string_lit_as_bytes)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::borrowed_box)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">qvnt&nbsp;0.5.0-alpha</span><a href="https://docs.rs/crate/qvnt/0.5.0-alpha/source/src/qasm/int/mod.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr>qasm/<wbr>int/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/qvnt/0.5.0-alpha/source/src/qasm/int/mod.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::needless_lifetimes)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">scaproust&nbsp;0.3.2</span><a href="https://docs.rs/crate/scaproust/0.3.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/scaproust/0.3.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(<mark>boxed_local</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![cfg_attr(feature = "cargo-clippy", allow(bool_comparison))]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">serde_pipe&nbsp;0.1.3</span><a href="https://docs.rs/crate/serde_pipe/0.1.3/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/serde_pipe/0.1.3/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">46</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::new_without_default,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::boxed_local</mark></pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_css_compat&nbsp;0.20.2</span><a href="https://docs.rs/crate/swc_css_compat/0.20.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_css_compat/0.20.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![feature(box_patterns)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::vec_box)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_ecma_transforms_compat&nbsp;0.141.6</span><a href="https://docs.rs/crate/swc_ecma_transforms_compat/0.141.6/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_ecma_transforms_compat/0.141.6/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::vec_box)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::match_like_matches_macro)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_ecma_utils&nbsp;0.107.5</span><a href="https://docs.rs/crate/swc_ecma_utils/0.107.5/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_ecma_utils/0.107.5/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![deny(clippy::all)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::match_like_matches_macro)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">swc_plugin_loadable_components&nbsp;0.12.2</span><a href="https://docs.rs/crate/swc_plugin_loadable_components/0.12.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/swc_plugin_loadable_components/0.12.2/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::not_unsafe_ptr_arg_deref)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tlfs-api&nbsp;0.1.0</span><a href="https://docs.rs/crate/tlfs-api/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tlfs-api/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xi-core-lib&nbsp;0.3.0</span><a href="https://docs.rs/crate/xi-core-lib/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xi-core-lib/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::boxed_local</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::cast_lossless,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xi-rpc&nbsp;0.3.0</span><a href="https://docs.rs/crate/xi-rpc/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xi-rpc/0.3.0/source/src/lib.rs#:~:text=clippy%3a%3aboxed_local','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>//! the `"jsonrpc"` member is omitted from request and response objects.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::boxed_local</mark>, clippy::or_fun_call)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

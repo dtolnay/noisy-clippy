@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">polars-core&nbsp;0.26.1</span><a href="https://docs.rs/crate/polars-core/0.26.1/source/src/chunked_array/drop.rs#:~:text=clippy%3a%3atransmute_undefined_repr"><span class="result-file-directory">/src/<wbr>chunked_array/<wbr></span><span class="result-file-name">drop.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/polars-core/0.26.1/source/src/chunked_array/drop.rs#:~:text=clippy%3a%3atransmute_undefined_repr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">10</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            // (which we are)</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">11</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            unsafe {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">polars-core&nbsp;0.26.1</span><a href="https://docs.rs/crate/polars-core/0.26.1/source/src/chunked_array/ops/bit_repr.rs#:~:text=clippy%3a%3atransmute_undefined_repr"><span class="result-file-directory">/src/<wbr>chunked_array/<wbr>ops/<wbr></span><span class="result-file-name">bit_repr.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/polars-core/0.26.1/source/src/chunked_array/ops/bit_repr.rs#:~:text=clippy%3a%3atransmute_undefined_repr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let ptr = buf.as_slice().as_ptr() as usize;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">19</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">20</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let reinterpreted_buf = unsafe { std::mem::transmute::&lt;_, Buffer&lt;u16&gt;&gt;(buf) };</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let ptr = buf.as_slice().as_ptr() as usize;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">49</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">50</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let reinterpreted_buf = unsafe { std::mem::transmute::&lt;_, Buffer&lt;u8&gt;&gt;(buf) };</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">90</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let ptr = buf.as_slice().as_ptr() as usize;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">91</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">92</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let reinterpreted_buf = unsafe { std::mem::transmute::&lt;_, Buffer&lt;u64&gt;&gt;(buf) };</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">126</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let ptr = buf.as_slice().as_ptr() as usize;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">128</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    let reinterpreted_buf = unsafe { std::mem::transmute::&lt;_, Buffer&lt;u32&gt;&gt;(buf) };</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">163</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let ptr = buf.as_slice().as_ptr() as usize;</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">164</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">165</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                let reinterpreted_buf = unsafe { std::mem::transmute::&lt;_, Buffer&lt;i64&gt;&gt;(buf) };</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">polars-core&nbsp;0.26.1</span><a href="https://docs.rs/crate/polars-core/0.26.1/source/src/frame/mod.rs#:~:text=clippy%3a%3atransmute_undefined_repr"><span class="result-file-directory">/src/<wbr>frame/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/polars-core/0.26.1/source/src/frame/mod.rs#:~:text=clippy%3a%3atransmute_undefined_repr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">239</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            // we are guarded by the type system here.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">240</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">241</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let series_cols = unsafe { std::mem::transmute::&lt;Vec&lt;S&gt;, Vec&lt;Series&gt;&gt;(columns) };</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">polars-core&nbsp;0.26.1</span><a href="https://docs.rs/crate/polars-core/0.26.1/source/src/testing.rs#:~:text=clippy%3a%3atransmute_undefined_repr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">testing.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/polars-core/0.26.1/source/src/testing.rs#:~:text=clippy%3a%3atransmute_undefined_repr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">57</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // a trait object, therefore this is sound.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">58</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::transmute_undefined_repr</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">59</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let (data_ptr, _vtable_ptr) =</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cxx&nbsp;1.0.88</span><a href="https://docs.rs/crate/cxx/1.0.88/source/src/lib.rs#:~:text=clippy%3a%3atransmute_undefined_repr"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cxx/1.0.88/source/src/lib.rs#:~:text=clippy%3a%3atransmute_undefined_repr','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">394</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::toplevel_ref_arg,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">395</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::transmute_undefined_repr</mark>, // clippy bug: https://github.com/rust-lang/rust-clippy/issues/8417</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">396</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::useless_let_if_seq,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

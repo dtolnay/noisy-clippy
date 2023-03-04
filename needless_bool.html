@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">arimaa_engine_step&nbsp;1.0.1</span><a href="https://docs.rs/crate/arimaa_engine_step/1.0.1/source/src/engine.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">engine.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/arimaa_engine_step/1.0.1/source/src/engine.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">315</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        clippy::if_same_then_else,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">316</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        <mark>clippy::needless_bool</mark></pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">317</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    )]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">cranefack&nbsp;0.4.1</span><a href="https://docs.rs/crate/cranefack/0.4.1/source/src/optimizations/passes.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>optimizations/<wbr></span><span class="result-file-name">passes.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/cranefack/0.4.1/source/src/optimizations/passes.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1834</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            OpType::LLoop(children, info) =&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1835</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                #[allow(<mark>clippy::needless_bool</mark>, clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">1836</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                if !children.is_empty()</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">erfa-sys&nbsp;0.2.1</span><a href="https://docs.rs/crate/erfa-sys/0.2.1/source/build.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/</span><span class="result-file-name">build.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/erfa-sys/0.2.1/source/build.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg(not(feature = "static"))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn infer_static(name: &amp;str) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">everscale-types&nbsp;0.1.0-pre.4</span><a href="https://docs.rs/crate/everscale-types/0.1.0-pre.4/source/src/util.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">util.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/everscale-types/0.1.0-pre.4/source/src/util.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub const fn unlikely(b: bool) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_bool</mark>, clippy::bool_to_int_with_if)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if (1i32).checked_div(if b { 0 } else { 1 }).is_none() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hakari&nbsp;0.13.1</span><a href="https://docs.rs/crate/hakari/0.13.1/source/src/cli_ops/manage_deps.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>cli_ops/<wbr></span><span class="result-file-name">manage_deps.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hakari/0.13.1/source/src/cli_ops/manage_deps.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn needs_update_v2(hakari_package: &amp;PackageMetadata&lt;'_&gt;, link: PackageLink&lt;'_&gt;) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hid-io&nbsp;0.1.0-beta1</span><a href="https://docs.rs/crate/hid-io/0.1.0-beta1/source/src/device/hidusb/mod.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>device/<wbr>hidusb/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hid-io/0.1.0-beta1/source/src/device/hidusb/mod.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let buf = {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            let prepend = if cfg!(target_os = "linux") || cfg!(target_os = "macos") {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">hid-io-core&nbsp;0.1.2</span><a href="https://docs.rs/crate/hid-io-core/0.1.2/source/src/device/hidapi/mod.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>device/<wbr>hidapi/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/hid-io-core/0.1.2/source/src/device/hidapi/mod.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">73</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let buf = {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">intdate&nbsp;0.1.0</span><a href="https://docs.rs/crate/intdate/0.1.0/source/src/helpers.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">helpers.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/intdate/0.1.0/source/src/helpers.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// Allowed to make the code clearer.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">15</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub(crate) fn is_year_leap(date: u32) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lexical-parse-float&nbsp;0.8.5</span><a href="https://docs.rs/crate/lexical-parse-float/0.8.5/source/src/options.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">options.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lexical-parse-float/0.8.5/source/src/options.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">129</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">130</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">131</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn nan_str_is_valid(&amp;self) -&gt; bool {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">150</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn inf_str_is_valid(&amp;self) -&gt; bool {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">176</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">177</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">178</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn infinity_string_is_valid(&amp;self) -&gt; bool {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">201</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">202</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">203</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn is_valid(&amp;self) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lexical-util&nbsp;0.8.5</span><a href="https://docs.rs/crate/lexical-util/0.8.5/source/src/format_flags.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">format_flags.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lexical-util/0.8.5/source/src/format_flags.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">765</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[inline]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">766</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">767</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub const fn is_valid_options_punctuation(format: u128, exponent: u8, decimal_point: u8) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">lexical-write-float&nbsp;0.8.5</span><a href="https://docs.rs/crate/lexical-write-float/0.8.5/source/src/options.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">options.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/lexical-write-float/0.8.5/source/src/options.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">226</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">227</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">228</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn nan_str_is_valid(&amp;self) -&gt; bool {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">247</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">248</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">249</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn inf_str_is_valid(&amp;self) -&gt; bool {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">268</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[inline(always)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">269</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">270</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn is_valid(&amp;self) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">likely_stable&nbsp;0.1.2</span><a href="https://docs.rs/crate/likely_stable/0.1.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/likely_stable/0.1.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">64</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub const fn likely(b: bool) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">66</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if (1i32).checked_div(if b { 1 } else { 0 }).is_some() {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">77</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub const fn unlikely(b: bool) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if (1i32).checked_div(if b { 0 } else { 1 }).is_none() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">marlu&nbsp;0.8.0</span><a href="https://docs.rs/crate/marlu/0.8.0/source/build.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/</span><span class="result-file-name">build.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/marlu/0.8.0/source/build.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg(feature = "cuda")]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn infer_static(name: &amp;str) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mockall_derive&nbsp;0.11.3</span><a href="https://docs.rs/crate/mockall_derive/0.11.3/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mockall_derive/0.11.3/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">605</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // standard names.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">606</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">607</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">mwalib&nbsp;0.16.0</span><a href="https://docs.rs/crate/mwalib/0.16.0/source/build.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/</span><span class="result-file-name">build.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/mwalib/0.16.0/source/build.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn infer_static(name: &amp;str) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if env::var(format!("{}_STATIC", name.to_uppercase())).is_ok() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">pal-sys&nbsp;0.1.0</span><a href="https://docs.rs/crate/pal-sys/0.1.0/source/build.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/</span><span class="result-file-name">build.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/pal-sys/0.1.0/source/build.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">12</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg(not(feature = "static"))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">13</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::if_same_then_else, <mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">14</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>fn infer_static(name: &amp;str) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">r3_kernel&nbsp;0.1.4</span><a href="https://docs.rs/crate/r3_kernel/0.1.4/source/src/utils/ctz.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>utils/<wbr></span><span class="result-file-name">ctz.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/r3_kernel/0.1.4/source/src/utils/ctz.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">7</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>const HAS_CTZ: bool = if cfg!(target_arch = "riscv32") || cfg!(target_arch = "riscv64") {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">23</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Indicates whether the target includes a 32-bit hardware multiplier.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">24</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">25</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>const HAS_MUL: bool = if cfg!(target_arch = "riscv32") || cfg!(target_arch = "riscv64") {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">36</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// Indicates whether the target includes a 32-bit barrel shifter.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">37</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>const HAS_SHIFTER: bool = if cfg!(target_arch = "msp430") {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">65</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>/// must be avoided at any cost.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">66</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">67</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>const HAS_FAST_LOAD: bool =</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">random_name_generator&nbsp;0.1.2</span><a href="https://docs.rs/crate/random_name_generator/0.1.2/source/src/rng_joiner.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">rng_joiner.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/random_name_generator/0.1.2/source/src/rng_joiner.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">rrdb&nbsp;0.0.1</span><a href="https://docs.rs/crate/rrdb/0.0.1/source/src/lib/parser/implements/common.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>lib/<wbr>parser/<wbr>implements/<wbr></span><span class="result-file-name">common.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/rrdb/0.0.1/source/src/lib/parser/implements/common.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">376</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    // BETWEEN 파싱중이면서 괄호가 없는 상태라면 연산자가 아닌 것으로 간주.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">377</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">378</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>                    if context.in_between_clause &amp;&amp; !context.in_parentheses {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">substrait-validator&nbsp;0.0.11</span><a href="https://docs.rs/crate/substrait-validator/0.0.11/source/src/output/extension/namespace.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>output/<wbr>extension/<wbr></span><span class="result-file-name">namespace.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/substrait-validator/0.0.11/source/src/output/extension/namespace.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">116</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">117</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">118</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if local &amp;&amp; !with_prefix {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tl-proto&nbsp;0.4.1</span><a href="https://docs.rs/crate/tl-proto/0.4.1/source/src/util.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">util.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tl-proto/0.4.1/source/src/util.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">3</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub const fn unlikely(b: bool) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_bool</mark>, clippy::bool_to_int_with_if)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    if (1i32).checked_div(if b { 0 } else { 1 }).is_none() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ungoliant&nbsp;1.2.3</span><a href="https://docs.rs/crate/ungoliant/1.2.3/source/src/filtering/record.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>filtering/<wbr></span><span class="result-file-name">record.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ungoliant/1.2.3/source/src/filtering/record.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">78</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        // clippy lint to avoid having to use a match pattern due to PartialOrd</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">79</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">80</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        if f64::from(bucket_upper) &lt; threshold {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">unic-char-property&nbsp;0.9.0</span><a href="https://docs.rs/crate/unic-char-property/0.9.0/source/tests/bool_property_macro.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/tests/<wbr></span><span class="result-file-name">bool_property_macro.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/unic-char-property/0.9.0/source/tests/bool_property_macro.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg_attr(feature = "cargo-clippy", allow(<mark>needless_bool</mark>))]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">41</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[test]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">uu_ls&nbsp;0.0.17</span><a href="https://docs.rs/crate/uu_ls/0.0.17/source/src/ls.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">ls.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/uu_ls/0.0.17/source/src/ls.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">675</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">676</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let mut show_control = if options.get_flag(options::HIDE_CONTROL_CHARS) {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zcash_primitives&nbsp;0.10.0</span><a href="https://docs.rs/crate/zcash_primitives/0.10.0/source/src/sapling/note_encryption.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>sapling/<wbr></span><span class="result-file-name">note_encryption.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zcash_primitives/0.10.0/source/src/sapling/note_encryption.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">386</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">387</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">388</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub fn plaintext_version_is_valid&lt;P: consensus::Parameters&gt;(</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-resol-vbus&nbsp;0.1.0</span><a href="https://docs.rs/crate/async-resol-vbus/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-resol-vbus/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">80</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::large_enum_variant)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">81</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::needless_pass_by_value)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">chipmunk-sdl2&nbsp;1.0.0</span><a href="https://docs.rs/crate/chipmunk-sdl2/1.0.0/source/src/drivers/mod.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>drivers/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/chipmunk-sdl2/1.0.0/source/src/drivers/mod.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">clap&nbsp;4.1.4</span><a href="https://docs.rs/crate/clap/4.1.4/source/src/parser/parser.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>parser/<wbr></span><span class="result-file-name">parser.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/clap/4.1.4/source/src/parser/parser.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">643</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn is_new_arg(&amp;self, next: &amp;clap_lex::ParsedArg&lt;'_&gt;, current_positional: &amp;Arg) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">644</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #![allow(<mark>clippy::needless_bool</mark>)] // Prefer consistent if/else-if ladder</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">clap2&nbsp;4.0.32</span><a href="https://docs.rs/crate/clap2/4.0.32/source/src/parser/parser.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>parser/<wbr></span><span class="result-file-name">parser.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/clap2/4.0.32/source/src/parser/parser.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">647</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn is_new_arg(&amp;self, next: &amp;clap_lex::ParsedArg&lt;'_&gt;, current_positional: &amp;Arg) -&gt; bool {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">648</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #![allow(<mark>clippy::needless_bool</mark>)] // Prefer consistent if/else-if ladder</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">compiler_builtins&nbsp;0.1.86</span><a href="https://docs.rs/crate/compiler_builtins/0.1.86/source/src/int/specialized_div_rem/mod.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>int/<wbr>specialized_div_rem/<wbr></span><span class="result-file-name">mod.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/compiler_builtins/0.1.86/source/src/int/specialized_div_rem/mod.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">8</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">9</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">directx_math&nbsp;0.2.2</span><a href="https://docs.rs/crate/directx_math/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/directx_math/0.2.2/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">82</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::useless_let_if_seq)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">84</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::assign_op_pattern)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">etterna&nbsp;0.1.0</span><a href="https://docs.rs/crate/etterna/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/etterna/0.1.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::collapsible_if,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::needless_bool</mark></pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">etternaonline_api&nbsp;0.2.0</span><a href="https://docs.rs/crate/etternaonline_api/0.2.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/etternaonline_api/0.2.0/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::collapsible_if,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	<mark>clippy::needless_bool</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">6</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>	clippy::too_many_arguments</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">flo_curves&nbsp;0.6.1</span><a href="https://docs.rs/crate/flo_curves/0.6.1/source/src/bezier/path/ray.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr>bezier/<wbr>path/<wbr></span><span class="result-file-name">ray.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/flo_curves/0.6.1/source/src/bezier/path/ray.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_bool</mark>)]        // Couple of places where two different conditions have the same result: don't want to combine them as the algorithms are much harder to parse</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">resol-vbus&nbsp;0.2.1</span><a href="https://docs.rs/crate/resol-vbus/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/resol-vbus/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">132</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::large_enum_variant)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">133</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">134</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::needless_pass_by_value)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">tokio-resol-vbus&nbsp;0.1.0</span><a href="https://docs.rs/crate/tokio-resol-vbus/0.1.0/source/src/live_data_stream.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">live_data_stream.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/tokio-resol-vbus/0.1.0/source/src/live_data_stream.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">1</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(clippy::if_same_then_else)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">2</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::needless_bool</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ux-dx&nbsp;0.2.1</span><a href="https://docs.rs/crate/ux-dx/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ux-dx/0.2.1/source/src/lib.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::new_without_default,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::needless_bool</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::comparison_to_empty,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xi-trace&nbsp;0.2.0</span><a href="https://docs.rs/crate/xi-trace/0.2.0/source/src/chrome_trace_dump.rs#:~:text=clippy%3a%3aneedless_bool"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">chrome_trace_dump.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xi-trace/0.2.0/source/src/chrome_trace_dump.rs#:~:text=clippy%3a%3aneedless_bool','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">16</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::if_same_then_else,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">17</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    <mark>clippy::needless_bool</mark>,</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    clippy::needless_pass_by_value,</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

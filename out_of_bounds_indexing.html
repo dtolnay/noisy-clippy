@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">signature_ps&nbsp;0.35.0</span><a href="https://docs.rs/crate/signature_ps/0.35.0/source/src/blind_signature.rs#:~:text=clippy%3a%3aout_of_bounds_indexing"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">blind_signature.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/signature_ps/0.35.0/source/src/blind_signature.rs#:~:text=clippy%3a%3aout_of_bounds_indexing','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">181</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::out_of_bounds_indexing</mark>)] // TODO - BUG</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">182</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        bytes[96..128].copy_from_slice(&amp;scalar_to_bytes(self.m_tick));</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">193</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::out_of_bounds_indexing</mark>)] // TODO - BUG</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">194</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let m_t = scalar_from_bytes(slicer!(data, 96, 128, FIELD_BYTES));</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

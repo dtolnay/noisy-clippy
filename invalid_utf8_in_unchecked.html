@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">uu_head&nbsp;0.0.17</span><a href="https://docs.rs/crate/uu_head/0.0.17/source/src/head.rs#:~:text=clippy%3a%3ainvalid_utf8_in_unchecked"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">head.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/uu_head/0.0.17/source/src/head.rs#:~:text=clippy%3a%3ainvalid_utf8_in_unchecked','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">629</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn test_arg_iterate_bad_encoding() {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">630</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::invalid_utf8_in_unchecked</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">631</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        let invalid = unsafe { std::str::from_utf8_unchecked(b"\x80\x81") };</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

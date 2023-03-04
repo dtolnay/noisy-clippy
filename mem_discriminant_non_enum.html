@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">async-mavlink&nbsp;0.1.3</span><a href="https://docs.rs/crate/async-mavlink/0.1.3/source/src/types.rs#:~:text=clippy%3a%3amem_discriminant_non_enum"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">types.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/async-mavlink/0.1.3/source/src/types.rs#:~:text=clippy%3a%3amem_discriminant_non_enum','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">56</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn new(message: &amp;M) -&gt; MavMessageType&lt;M&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">57</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::mem_discriminant_non_enum</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">58</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        Self(discriminant(message))</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">eternity&nbsp;0.1.0</span><a href="https://docs.rs/crate/eternity/0.1.0/source/src/multi_bucket.rs#:~:text=clippy%3a%3amem_discriminant_non_enum"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">multi_bucket.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/eternity/0.1.0/source/src/multi_bucket.rs#:~:text=clippy%3a%3amem_discriminant_non_enum','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">570</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // There is no way to check whether a type is an enum in Rust yet.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">571</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_discriminant_non_enum</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">572</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // `map_or`-solution won't compile due to moved `key` in `default`-closure.</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">588</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Inserts an already created bucket for a `key`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">589</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_discriminant_non_enum</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">590</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn insert_bucket(&amp;mut self, key: &amp;Key, bucket: Bucket&lt;Key, Value&gt;) {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">598</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// The method returns a new builder to add it to `self`.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">599</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_discriminant_non_enum</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">600</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn build_group&lt;'a&gt;(</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">652</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // There is no way to check whether a type is an enum in Rust yet.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">653</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_discriminant_non_enum</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">654</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub async fn hit_limit(&amp;mut self, key: &amp;Key) -&gt; Option&lt;RateLimitInfo&lt;Value&gt;&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">674</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    // There is no way to check whether a type is an enum in Rust yet.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">675</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::mem_discriminant_non_enum</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">676</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[cfg(feature = "cache")]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

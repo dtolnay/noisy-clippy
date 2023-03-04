@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">serde-cw-value&nbsp;0.7.0</span><a href="https://docs.rs/crate/serde-cw-value/0.7.0/source/src/lib.rs#:~:text=clippy%3a%3aunit_hash"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/serde-cw-value/0.7.0/source/src/lib.rs#:~:text=clippy%3a%3aunit_hash','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">54</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            Value::String(ref v) =&gt; v.hash(hasher),</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">55</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            #[allow(<mark>clippy::unit_hash</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">56</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>            Value::Unit =&gt; ().hash(hasher),</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

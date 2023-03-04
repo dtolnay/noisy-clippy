@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">futures-task&nbsp;0.3.26</span><a href="https://docs.rs/crate/futures-task/0.3.26/source/src/future_obj.rs#:~:text=clippy%3a%3aunnecessary_safety_doc"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">future_obj.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/futures-task/0.3.26/source/src/future_obj.rs#:~:text=clippy%3a%3aunnecessary_safety_doc','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">151</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// until `UnsafeFutureObj::drop` is called with it.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">152</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::unnecessary_safety_doc</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">153</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn into_raw(self) -&gt; *mut (dyn Future&lt;Output = T&gt; + 'a);</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">futures-util&nbsp;0.3.26</span><a href="https://docs.rs/crate/futures-util/0.3.26/source/src/future/future/shared.rs#:~:text=clippy%3a%3aunnecessary_safety_doc"><span class="result-file-directory">/src/<wbr>future/<wbr>future/<wbr></span><span class="result-file-name">shared.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/futures-util/0.3.26/source/src/future/future/shared.rs#:~:text=clippy%3a%3aunnecessary_safety_doc','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">142</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// and acting on the result.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">143</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::unnecessary_safety_doc</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">144</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn strong_count(&amp;self) -&gt; Option&lt;usize&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">156</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// and acting on the result.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">157</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::unnecessary_safety_doc</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">158</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn weak_count(&amp;self) -&gt; Option&lt;usize&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

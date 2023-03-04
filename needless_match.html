@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">safecoin-transaction-status&nbsp;1.14.3</span><a href="https://docs.rs/crate/safecoin-transaction-status/1.14.3/source/src/option_serializer.rs#:~:text=clippy%3a%3aneedless_match"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">option_serializer.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/safecoin-transaction-status/1.14.3/source/src/option_serializer.rs#:~:text=clippy%3a%3aneedless_match','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_ref(&amp;self) -&gt; OptionSerializer&lt;&amp;T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_match</mark>)] // The nightly clippy used by CI is incorrect here</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        match self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">solana-transaction-status&nbsp;1.14.13</span><a href="https://docs.rs/crate/solana-transaction-status/1.14.13/source/src/option_serializer.rs#:~:text=clippy%3a%3aneedless_match"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">option_serializer.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/solana-transaction-status/1.14.13/source/src/option_serializer.rs#:~:text=clippy%3a%3aneedless_match','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">30</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_ref(&amp;self) -&gt; OptionSerializer&lt;&amp;T&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">31</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        #[allow(<mark>clippy::needless_match</mark>)] // The nightly clippy used by CI is incorrect here</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">32</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>        match self {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xlang_abi&nbsp;0.2.0</span><a href="https://docs.rs/crate/xlang_abi/0.2.0/source/src/option.rs#:~:text=clippy%3a%3aneedless_match"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">option.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xlang_abi/0.2.0/source/src/option.rs#:~:text=clippy%3a%3aneedless_match','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">126</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Maps `self` into an Option containing a reference to the inner value if `self` is `Some` or `None` otherwise</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">127</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_match</mark>)] // False positive</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">128</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn as_ref(&amp;self) -&gt; Option&lt;&amp;T&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">135</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Maps `self` into an Option containing a mutable reference to the inner value if `self` is `Some` or `None` otherwise</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">136</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_match</mark>)] // False positive</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">137</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_mut(&amp;mut self) -&gt; Option&lt;&amp;mut T&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">144</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Maps `self` into an Option dereferencing the inner value if `self` is `Some`, or `None` otherwise.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">145</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_match</mark>)] // False positive</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">146</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_deref(&amp;self) -&gt; Option&lt;&amp;&lt;T as Deref&gt;::Target&gt;</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">156</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Maps `self` into an Option mutably dereferencing the inner value if `self` is `Some`, or `None` otherwise.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">157</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_match</mark>)] // False positive</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">158</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_deref_mut(&amp;mut self) -&gt; Option&lt;&amp;&lt;T as Deref&gt;::Target&gt;</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">xlang_abi&nbsp;0.2.0</span><a href="https://docs.rs/crate/xlang_abi/0.2.0/source/src/result.rs#:~:text=clippy%3a%3aneedless_match"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">result.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/xlang_abi/0.2.0/source/src/result.rs#:~:text=clippy%3a%3aneedless_match','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">74</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Maps self by returning a reference to the contained value, if any, or a reference to the contained error otherwise</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">75</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_match</mark>)] // False positive</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">76</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub const fn as_ref(&amp;self) -&gt; Result&lt;&amp;T, &amp;E&gt; {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">83</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    /// Maps self by returning a mutable reference to the contained value, if any, or a mutable reference to the contained error otherwise</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">84</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::needless_match</mark>)] // False positive</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">85</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    pub fn as_mut(&amp;mut self) -&gt; Result&lt;&amp;mut T, &amp;mut E&gt; {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="results-container">
+    <li class="result" id="local">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">ark-module&nbsp;0.17.0-pre.15</span><a href="https://docs.rs/crate/ark-module/0.17.0-pre.15/source/src/panic.rs#:~:text=clippy%3a%3adisallowed_types"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">panic.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/ark-module/0.17.0-pre.15/source/src/panic.rs#:~:text=clippy%3a%3adisallowed_types','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">38</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[doc(hidden)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">39</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::disallowed_types</mark>)] // we generally prefer `parking_lot::Once`, but in Wasm this is fine and avoids dependency</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">40</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>pub unsafe fn ark_register_panic_hook() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bevy_reflect&nbsp;0.9.1</span><a href="https://docs.rs/crate/bevy_reflect/0.9.1/source/src/lib.rs#:~:text=clippy%3a%3adisallowed_types"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bevy_reflect/0.9.1/source/src/lib.rs#:~:text=clippy%3a%3adisallowed_types','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">95</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg(test)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">96</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::disallowed_types</mark>, clippy::approx_constant)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">97</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod tests {</pre>
+                  <div class="jump"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">190</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[test]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">191</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    #[allow(<mark>clippy::disallowed_types</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">192</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>    fn reflect_unit_struct() {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">bevy_tasks&nbsp;0.9.1</span><a href="https://docs.rs/crate/bevy_tasks/0.9.1/source/src/task_pool.rs#:~:text=clippy%3a%3adisallowed_types"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">task_pool.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/bevy_tasks/0.9.1/source/src/task_pool.rs#:~:text=clippy%3a%3adisallowed_types','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">415</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[cfg(test)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">416</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#[allow(<mark>clippy::disallowed_types</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">417</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>mod tests {</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result" id="global">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">deno_ast&nbsp;0.23.2</span><a href="https://docs.rs/crate/deno_ast/0.23.2/source/src/comments.rs#:~:text=clippy%3a%3adisallowed_types"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">comments.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/deno_ast/0.23.2/source/src/comments.rs#:~:text=clippy%3a%3adisallowed_types','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>// implement swc's `Comments` trait</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">5</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::disallowed_types</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">perchance&nbsp;0.5.0</span><a href="https://docs.rs/crate/perchance/0.5.0/source/src/lib.rs#:~:text=clippy%3a%3adisallowed_types"><span class="result-file-directory">/src/<wbr></span><span class="result-file-name">lib.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/perchance/0.5.0/source/src/lib.rs#:~:text=clippy%3a%3adisallowed_types','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">47</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>//! Perchance does NOT guarantee the same random number generator across new versions of the crate.</pre>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="lineno">48</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::disallowed_types</mark>)] // allow usage of std::sync::Mutex (instead of parking_lot) as this is typically intended for Wasm</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zspell&nbsp;0.3.3</span><a href="https://docs.rs/crate/zspell/0.3.3/source/benches/datastructure.rs#:~:text=clippy%3a%3adisallowed_types"><span class="result-file-directory">/benches/<wbr></span><span class="result-file-name">datastructure.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zspell/0.3.3/source/benches/datastructure.rs#:~:text=clippy%3a%3adisallowed_types','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">4</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::disallowed_types</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+    <li class="result">
+      <div class="result-title">
+        <div class="result-file-info">
+          <div class="result-file"><span class="result-crate">zspell&nbsp;0.3.3</span><a href="https://docs.rs/crate/zspell/0.3.3/source/benches/small_map.rs#:~:text=clippy%3a%3adisallowed_types"><span class="result-file-directory">/benches/<wbr></span><span class="result-file-name">small_map.rs</span></a></div>
+        </div>
+      </div>
+      <div class="result-body" onclick="window.open('https://docs.rs/crate/zspell/0.3.3/source/benches/small_map.rs#:~:text=clippy%3a%3adisallowed_types','docsrs')">
+        <div class="result-background"></div>
+        <div class="result-details">
+          <table class="highlight-table">
+            <tr>
+              <td><div class="lineno">18</div></td>
+              <td>
+                <div class="highlight">
+                  <pre>#![allow(<mark>clippy::disallowed_types</mark>)]</pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
