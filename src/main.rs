@@ -9,6 +9,7 @@
     clippy::uninlined_format_args
 )]
 
+mod lints;
 mod name;
 mod parse;
 mod render;
@@ -16,6 +17,7 @@ mod render;
 #[cfg(test)]
 mod tests;
 
+use crate::lints::{Lint, LintGroup, LintLevel};
 use crate::name::Crate;
 use crate::render::render;
 use anyhow::Result;
@@ -27,11 +29,9 @@ use proc_macro2::LineColumn;
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use rayon::ThreadPoolBuilder;
 use semver::Version;
-use serde::Deserialize;
 use std::cmp::Reverse;
 use std::collections::btree_map::{BTreeMap as Map, Entry};
 use std::ffi::OsStr;
-use std::fmt::{self, Display};
 use std::fs::File;
 use std::io::{self, BufReader, Read, Write};
 use std::iter::{self, FromIterator};
@@ -102,44 +102,6 @@ impl<'ast, 'a> Visit<'ast> for AttrVisitor<'a> {
                 AttrStyle::Inner(_) => locations.global.push(span),
             }
         }
-    }
-}
-
-#[derive(Deserialize)]
-struct Lint {
-    id: String,
-    group: LintGroup,
-    level: LintLevel,
-}
-
-#[derive(Deserialize, PartialEq, Copy, Clone, Debug)]
-#[serde(rename_all = "lowercase")]
-enum LintGroup {
-    Cargo,
-    Complexity,
-    Correctness,
-    Deprecated,
-    Nursery,
-    Pedantic,
-    Perf,
-    Restriction,
-    Style,
-    Suspicious,
-    Unknown,
-}
-
-#[derive(Deserialize, PartialEq, Copy, Clone)]
-#[serde(rename_all = "lowercase")]
-enum LintLevel {
-    Allow,
-    Warn,
-    Deny,
-    None,
-}
-
-impl Display for LintGroup {
-    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
-        formatter.write_str(&format!("{:?}", self).to_lowercase())
     }
 }
 
@@ -221,8 +183,7 @@ fn main() -> Result<()> {
     });
 
     // Download clippy lints.json to get group and level for every lint.
-    let req = reqwest::blocking::get("https://rust-lang.github.io/rust-clippy/master/lints.json")?;
-    let lints: Vec<Lint> = req.json()?;
+    let lints = lints::download_lint_list()?;
     let lints: Map<&str, &Lint> = lints.iter().map(|lint| (lint.id.as_str(), lint)).collect();
 
     // Print markdown table of results.
@@ -260,7 +221,7 @@ fn main() -> Result<()> {
         let _ = write!(stdout, "[{1}]({0}#{1})", clippy_index_html, lint_id);
         let _ = write!(stdout, "{}", if allowed { "*~" } else { "**" });
         let _ = write!(stdout, " | ");
-        let mut former_group = former_lint_group(lint_id);
+        let mut former_group = lints::former_lint_group(lint_id);
         if former_group == Some(group) {
             former_group = None;
         }
@@ -403,47 +364,6 @@ fn parse_contents(
         visitor.visit_file(&syn);
     }
     Ok(())
-}
-
-fn former_lint_group(lint_id: &str) -> Option<LintGroup> {
-    match lint_id {
-        // @dtolnay
-        "cognitive_complexity" => Some(LintGroup::Complexity), // https://github.com/rust-lang/rust-clippy/pull/5428
-        "implicit_hasher" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5411
-        "inefficient_to_string" => Some(LintGroup::Perf), // https://github.com/rust-lang/rust-clippy/pull/5412
-        "integer_division" => Some(LintGroup::Pedantic), // https://github.com/rust-lang/rust-clippy/pull/4210
-        "large_digit_groups" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/3479
-        "let_unit_value" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5409
-        "manual_map" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/6796
-        "match_bool" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5408
-        "needless_pass_by_value" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/3439
-        "new_ret_no_self" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5420
-        "nonstandard_macro_braces" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/7424
-        "option_if_let_else" => Some(LintGroup::Pedantic), // https://github.com/rust-lang/rust-clippy/pull/7568
-        "option_option" => Some(LintGroup::Complexity), // https://github.com/rust-lang/rust-clippy/pull/5401
-        "rc_buffer" => Some(LintGroup::Perf), // https://github.com/rust-lang/rust-clippy/pull/6128
-        "string_lit_as_bytes" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/6117
-        "trivial_regex" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/6696
-        "trivially_copy_pass_by_ref" => Some(LintGroup::Perf), // https://github.com/rust-lang/rust-clippy/pull/5410
-        "unnested_or_patterns" => Some(LintGroup::Complexity), // https://github.com/rust-lang/rust-clippy/pull/5705
-        "unreadable_literal" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5419
-        "unsafe_vector_initialization" => Some(LintGroup::Correctness), // https://github.com/rust-lang/rust-clippy/pull/3478
-        "useless_let_if_seq" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5599
-
-        // others
-        "await_holding_lock" => Some(LintGroup::Correctness), // https://github.com/rust-lang/rust-clippy/pull/6354
-        "await_holding_refcell_ref" => Some(LintGroup::Correctness), // https://github.com/rust-lang/rust-clippy/pull/6354
-        "borrow_interior_mutable_const" => Some(LintGroup::Correctness), // https://github.com/rust-lang/rust-clippy/pull/6098
-        "cast_ptr_alignment" => Some(LintGroup::Correctness), // https://github.com/rust-lang/rust-clippy/pull/5667
-        "declare_interior_mutable_const" => Some(LintGroup::Correctness), // https://github.com/rust-lang/rust-clippy/pull/6098
-        "match_wild_err_arm" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5622
-        "range_plus_one" => Some(LintGroup::Complexity), // https://github.com/rust-lang/rust-clippy/pull/5057
-        "suspicious_operation_groupings" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/7266
-        "unnecessary_wraps" => Some(LintGroup::Complexity), // https://github.com/rust-lang/rust-clippy/pull/6765
-        "verbose_bit_mask" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/6036
-
-        _ => None,
-    }
 }
 
 #[test]
