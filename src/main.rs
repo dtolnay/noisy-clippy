@@ -18,7 +18,8 @@ mod tests;
 
 use crate::name::Crate;
 use crate::render::render;
-use anyhow::{ensure, Result};
+use anyhow::Result;
+use clap::Parser;
 use flate2::read::GzDecoder;
 use git2::{BranchType, FileMode, Repository, Signature};
 use parking_lot::Mutex;
@@ -29,7 +30,6 @@ use semver::Version;
 use serde::Deserialize;
 use std::cmp::Reverse;
 use std::collections::btree_map::{BTreeMap as Map, Entry};
-use std::env;
 use std::ffi::OsStr;
 use std::fmt::{self, Display};
 use std::fs::File;
@@ -143,19 +143,23 @@ impl Display for LintGroup {
     }
 }
 
+#[derive(Parser)]
+#[command(version, author)]
+struct Opt {
+    /// Path to directory containing *.crate files.
+    /// https://github.com/dtolnay/get-all-crates
+    #[arg(value_name = "DIR")]
+    crates_dir: PathBuf,
+}
+
 fn main() -> Result<()> {
-    // Argument is path to a directory containing *.crate files.
-    // https://github.com/dtolnay/get-all-crates
-    let mut args = env::args_os();
-    ensure!(args.len() == 2);
-    let _arg0 = args.next().unwrap();
-    let crates_dir = PathBuf::from(args.next().unwrap());
+    let opt = Opt::parse();
 
     // Find the most recent version among .crate files with the same crate name.
     let mut crate_max_versions = Map::new();
-    for entry in WalkDir::new(&crates_dir) {
+    for entry in WalkDir::new(&opt.crates_dir) {
         let entry = entry?;
-        if let Some((krate, version)) = parse_crate_file_path(&crates_dir, entry.path()) {
+        if let Some((krate, version)) = parse_crate_file_path(&opt.crates_dir, entry.path()) {
             match crate_max_versions.entry(krate) {
                 Entry::Vacant(entry) => {
                     entry.insert(version);
@@ -179,7 +183,7 @@ fn main() -> Result<()> {
     crate_max_versions
         .into_par_iter()
         .for_each(|(krate, version)| {
-            let path = reconstruct_crate_file_path(&crates_dir, &krate, &version);
+            let path = reconstruct_crate_file_path(&opt.crates_dir, &krate, &version);
             if let Err(err) = parse_contents(krate, version, &path, &findings) {
                 eprintln!("{}: {}", path.display(), err);
             }
@@ -440,4 +444,9 @@ fn former_lint_group(lint_id: &str) -> Option<LintGroup> {
 
         _ => None,
     }
+}
+
+#[test]
+fn test_cli() {
+    <Opt as clap::CommandFactory>::command().debug_assert();
 }
