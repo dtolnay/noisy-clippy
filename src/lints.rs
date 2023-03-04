@@ -54,6 +54,7 @@ pub(crate) fn former_lint_group(lint_id: &str) -> Option<LintGroup> {
         "inefficient_to_string" => Some(LintGroup::Perf), // https://github.com/rust-lang/rust-clippy/pull/5412
         "integer_division" => Some(LintGroup::Pedantic), // https://github.com/rust-lang/rust-clippy/pull/4210
         "large_digit_groups" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/3479
+        "let_underscore_untyped" => Some(LintGroup::Pedantic), // https://github.com/rust-lang/rust-clippy/pull/10442
         "let_unit_value" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/5409
         "manual_map" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/6796
         "many_single_char_names" => Some(LintGroup::Style), // https://github.com/rust-lang/rust-clippy/pull/7671
