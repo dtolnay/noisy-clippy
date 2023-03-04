@@ -34,7 +34,7 @@ pub(crate) fn render(lint_id: &str, findings: &Map<SourceFile, Locations>) -> St
     // files containing only global suppression
     let mut global_anchor = Some("global");
     for (source_file, locations) in findings {
-        if locations.local.is_empty() {
+        if locations.local.is_empty() && !locations.global.is_empty() {
             let contents = &locations.contents;
             let spans = locations.global.iter().copied().collect();
             let anchor = global_anchor.take();
