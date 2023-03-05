@@ -1,5 +1,6 @@
 use anyhow::Result;
 use serde::Deserialize;
+use std::collections::BTreeSet as Set;
 use std::fmt::{self, Display};
 
 #[derive(Deserialize)]
@@ -7,6 +8,8 @@ pub(crate) struct Lint {
     pub id: String,
     pub group: LintGroup,
     pub level: LintLevel,
+    #[serde(default)]
+    pub former_ids: Set<String>,
 }
 
 #[derive(Deserialize, PartialEq, Copy, Clone, Debug)]

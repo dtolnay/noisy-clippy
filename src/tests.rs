@@ -29,6 +29,7 @@ fn test_attr_visitor() {
         },
         contents: Arc::new(input.to_string()),
         findings: &findings,
+        lints: &Map::new(),
     };
 
     let file: File = syn::parse_str(&visitor.contents).unwrap();
