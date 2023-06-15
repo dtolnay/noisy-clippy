@@ -1,5 +1,5 @@
 use anyhow::Result;
-use serde::Deserialize;
+use serde_derive::Deserialize;
 use std::collections::BTreeSet as Set;
 use std::fmt::{self, Display};
 
