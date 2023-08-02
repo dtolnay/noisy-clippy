@@ -6,7 +6,8 @@
     clippy::match_same_arms,
     clippy::similar_names,
     clippy::too_many_lines,
-    clippy::uninlined_format_args
+    clippy::uninlined_format_args,
+    clippy::unwrap_or_default
 )]
 
 mod lints;
