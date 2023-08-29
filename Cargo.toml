@@ -13,7 +13,7 @@ repository = "https://github.com/dtolnay/noisy-clippy"
 anyhow = "1.0"
 clap = { version = "4", features = ["deprecated", "derive"] }
 flate2 = "1.0"
-git2 = "0.17"
+git2 = "0.18"
 parking_lot = "0.12"
 proc-macro2 = { version = "1.0", features = ["span-locations"] }
 rayon = "1.0"
