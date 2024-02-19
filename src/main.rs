@@ -35,7 +35,7 @@ use std::collections::btree_map::{BTreeMap as Map, Entry};
 use std::ffi::OsStr;
 use std::fs::File;
 use std::io::{self, BufReader, Read, Write};
-use std::iter::{self, FromIterator};
+use std::iter;
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use syn::visit::Visit;
