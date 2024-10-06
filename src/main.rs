@@ -5,6 +5,7 @@
     clippy::items_after_statements,
     clippy::let_underscore_untyped,
     clippy::match_same_arms,
+    clippy::needless_lifetimes,
     clippy::similar_names,
     clippy::too_many_lines,
     clippy::uninlined_format_args,
